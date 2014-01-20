@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        self.view.backgroundColor = FDColor.sharedInstance.desertSand;
+    self.view.backgroundColor = FDColor.sharedInstance.desertSand;
+    self.title = @"Media";
 }
 
 @end

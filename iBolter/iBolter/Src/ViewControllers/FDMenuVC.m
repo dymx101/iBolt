@@ -8,6 +8,13 @@
 
 #import "FDMenuVC.h"
 
+// view controllers
+#import "FDBrowserVC.h"
+#import "FDDownloadsVC.h"
+#import "FDMediaVC.h"
+#import "FDPlayListsVC.h"
+#import "FDSettingsVC.h"
+
 static NSArray *g_testDatas;
 
 @interface FDMenuVC () <UITableViewDelegate, UITableViewDataSource> {
@@ -21,7 +28,7 @@ static NSArray *g_testDatas;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = FDColor.sharedInstance.magicMint;
+
     g_testDatas = @[@"Browser", @"Downloads", @"Media", @"Playlist", @"Settings"];
     
     _tv = [UITableView new];
@@ -91,7 +98,25 @@ static NSArray *g_testDatas;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self postNotification:DF_NOTIFY_CLOSE_DRAWER];
+
+    int row = indexPath.row;
+    
+    UIViewController *vc;
+    if (row == 0) {
+        vc = [FDBrowserVC new];
+    } else if (row == 1) {
+        vc = [FDDownloadsVC new];
+    } else if (row == 2) {
+        vc = [FDMediaVC new];
+    } else if (row == 3) {
+        vc = [FDPlayListsVC new];
+    } else if (row == 4) {
+        vc = [FDSettingsVC new];
+    }
+    
+    [self postNotification:DF_NOTIFY_SET_CENTER_CONTROLLER withObject:vc];
+    //[self postNotification:DF_NOTIFY_CLOSE_DRAWER];
+    
 }
 
 @end

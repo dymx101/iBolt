@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = FDColor.sharedInstance.orangeRed;
+    self.view.backgroundColor = FDColor.sharedInstance.purpleHeart;
+    self.title = @"Browser";
 }
 
 @end

@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = FDColor.sharedInstance.midnightBlue;
+    self.title = @"Downloads";
 }
 
 @end

@@ -21,8 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // observe notifications
-    [self observeNotification:DF_NOTIFY_CLOSE_DRAWER];
-    [self observeNotification:DF_NOTIFY_OPEN_DRAWER];
+    [self watchOut];
     
     // create window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -31,8 +30,8 @@
     // create drawer controller
     FDMenuVC *menuVC = [FDMenuVC new];
     FDBrowserVC *browserVC = [FDBrowserVC new];
-    UIViewController *centerVC = [[UINavigationController alloc] initWithRootViewController:browserVC];
-    _drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerVC leftDrawerViewController:menuVC];
+    
+    _drawerController = [[MMDrawerController alloc] initWithCenterViewController:[self naviWithVC:browserVC] leftDrawerViewController:menuVC];
     self.window.rootViewController = _drawerController;
     [self setupDrawerController];
     
@@ -76,10 +75,32 @@
      }];
 }
 
+-(UINavigationController *)naviWithVC:(UIViewController *)aController
+{
+    if (aController) {
+        return [[UINavigationController alloc] initWithRootViewController:aController];
+    }
+    
+    return nil;
+}
+
+
+#pragma mark - notifications
+-(void)watchOut {
+    [self observeNotification:DF_NOTIFY_CLOSE_DRAWER];
+    [self observeNotification:DF_NOTIFY_OPEN_DRAWER];
+    [self observeNotification:DF_NOTIFY_SET_CENTER_CONTROLLER];
+}
+
 -(void)handleNotification:(NSNotification *)notification {
     NSString *name = notification.name;
     if ([name isEqualToString:DF_NOTIFY_CLOSE_DRAWER]) {
         [_drawerController closeDrawerAnimated:YES completion:nil];
+    } else if ([name isEqualToString:DF_NOTIFY_SET_CENTER_CONTROLLER]) {
+        id object = notification.object;
+        if ([object isKindOfClass:[UIViewController class]]) {
+            [_drawerController setCenterViewController:[self naviWithVC:object] withCloseAnimation:YES completion:nil];
+        }
     }
 }
 

@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = FDColor.sharedInstance.red;
+    self.view.backgroundColor = FDColor.sharedInstance.caribbeanGreen;
+    self.title = @"Settings";
 }
 
 @end

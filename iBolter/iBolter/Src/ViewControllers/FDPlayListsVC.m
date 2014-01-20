@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = FDColor.sharedInstance.black;
+    self.view.backgroundColor = FDColor.sharedInstance.magicMint;
+    self.title = @"Playlists";
 }
 
 @end
