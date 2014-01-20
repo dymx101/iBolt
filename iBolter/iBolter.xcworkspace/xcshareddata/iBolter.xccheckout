@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DB398DC6-6112-4240-B6A7-97E753985C24</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iBolter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CADA05C1-EBE1-4AF7-BB95-6E97A3C551CF</key>
+		<string>https://github.com/gagein/iBolt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iBolter/iBolter.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CADA05C1-EBE1-4AF7-BB95-6E97A3C551CF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gagein/iBolt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CADA05C1-EBE1-4AF7-BB95-6E97A3C551CF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CADA05C1-EBE1-4AF7-BB95-6E97A3C551CF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iBolt</string>
+		</dict>
+	</array>
+</dict>
+</plist>

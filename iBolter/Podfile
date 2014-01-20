@@ -1,0 +1,16 @@
+platform :ios, '6.0'
+
+pod 'MMDrawerController', '~> 0.4.0'
+# pod 'MSDynamicsDrawerViewController'
+pod 'EDColor'
+pod 'CocoaLumberjack'
+pod 'FMDB'
+pod 'AFNetworking'
+
+# pod 'CorePlot'
+# pod 'FMDB/SQLCipher'   # If using FMDB with SQLCipher
+# pod 'Nimbus'
+# pod 'TTTAttributedLabel'
+# pod 'SSToolkit'
+# pod 'MagicalRecord'
+# pod 'RestKit', '~> 0.20.0'
