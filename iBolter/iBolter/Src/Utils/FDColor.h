@@ -9,9 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @interface FDColor : NSObject
+AS_SINGLETON(FDColor)
+
 @property (nonatomic, strong) UIColor *magicMint;
 @property (nonatomic, strong) UIColor *midnightBlue;
 @property (nonatomic, strong) UIColor *orangeRed;
 @property (nonatomic, strong) UIColor *caribbeanGreen;
 @property (nonatomic, strong) UIColor *desertSand;
+
+@property (nonatomic, strong) UIColor *black;
+@property (nonatomic, strong) UIColor *white;
+@property (nonatomic, strong) UIColor *gray;
+@property (nonatomic, strong) UIColor *blue;
+@property (nonatomic, strong) UIColor *green;
+@property (nonatomic, strong) UIColor *red;
 @end

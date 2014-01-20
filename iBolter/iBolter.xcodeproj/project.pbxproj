@@ -18,6 +18,8 @@
 		EA186B32188CEE1200F14348 /* FDSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B29188CEE1200F14348 /* FDSettingsVC.m */; };
 		EA186B36188CEE4A00F14348 /* FDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B35188CEE4A00F14348 /* FDBaseVC.m */; };
 		EA186B3A188CEFA400F14348 /* FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B39188CEFA400F14348 /* FDColor.m */; };
+		EA186B3D188CF1B800F14348 /* FDDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B3C188CF1B800F14348 /* FDDefine.m */; };
+		EA186B40188CF63600F14348 /* MMDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */; };
 		EABC2FFA188CE2970042A9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FF9188CE2970042A9DB /* Foundation.framework */; };
 		EABC2FFC188CE2970042A9DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */; };
 		EABC2FFE188CE2970042A9DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFD188CE2970042A9DB /* UIKit.framework */; };
@@ -62,6 +64,10 @@
 		EA186B35188CEE4A00F14348 /* FDBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseVC.m; sourceTree = "<group>"; };
 		EA186B38188CEFA400F14348 /* FDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDColor.h; sourceTree = "<group>"; };
 		EA186B39188CEFA400F14348 /* FDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDColor.m; sourceTree = "<group>"; };
+		EA186B3B188CF1B800F14348 /* FDDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDefine.h; sourceTree = "<group>"; };
+		EA186B3C188CF1B800F14348 /* FDDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDefine.m; sourceTree = "<group>"; };
+		EA186B3E188CF63600F14348 /* MMDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		EABC2FF6188CE2970042A9DB /* iBolter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBolter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABC2FF9188CE2970042A9DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,8 +152,12 @@
 		EA186B37188CEF9100F14348 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EA186B3E188CF63600F14348 /* MMDrawerVisualStateManager.h */,
+				EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */,
 				EA186B38188CEFA400F14348 /* FDColor.h */,
 				EA186B39188CEFA400F14348 /* FDColor.m */,
+				EA186B3B188CF1B800F14348 /* FDDefine.h */,
+				EA186B3C188CF1B800F14348 /* FDDefine.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -354,7 +364,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA186B2B188CEE1200F14348 /* main.m in Sources */,
+				EA186B40188CF63600F14348 /* MMDrawerVisualStateManager.m in Sources */,
 				EA186B3A188CEFA400F14348 /* FDColor.m in Sources */,
+				EA186B3D188CF1B800F14348 /* FDDefine.m in Sources */,
 				EA186B31188CEE1200F14348 /* FDPlayListsVC.m in Sources */,
 				EA186B32188CEE1200F14348 /* FDSettingsVC.m in Sources */,
 				EA186B2E188CEE1200F14348 /* FDDownloadsVC.m in Sources */,

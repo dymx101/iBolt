@@ -11,6 +11,7 @@
 #import "FDColor.h"
 
 @implementation FDColor
+DEF_SINGLETON(FDColor)
 
 - (id)init
 {
@@ -21,6 +22,13 @@
         _orangeRed = [UIColor colorWithCrayola:@"Orange Red"];
         _caribbeanGreen = [UIColor colorWithCrayola:@"Caribbean Green"];
         _desertSand = [UIColor colorWithCrayola:@"Desert Sand"];
+        
+        _black = [UIColor blackColor];
+        _white = [UIColor whiteColor];
+        _gray = [UIColor grayColor];
+        _blue = [UIColor blueColor];
+        _green = [UIColor greenColor];
+        _red = [UIColor redColor];
     }
     return self;
 }
