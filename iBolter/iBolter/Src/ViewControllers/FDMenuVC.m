@@ -32,7 +32,7 @@ static NSArray *g_testDatas;
     g_testDatas = @[@"Browser", @"Downloads", @"Media", @"Playlist", @"Settings"];
     
     _tv = [UITableView new];
-    _tv.translatesAutoresizingMaskIntoConstraints = NO;
+    
     _tv.delegate = self;
     _tv.dataSource = self;
     [self.view addSubview:_tv];
@@ -42,6 +42,8 @@ static NSArray *g_testDatas;
 
 #pragma mark - setup table view layout
 -(void)setupLayoutConstraints {
+    
+    _tv.translatesAutoresizingMaskIntoConstraints = NO;
     NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:_tv
                                                                   attribute:NSLayoutAttributeRight
                                                                   relatedBy:NSLayoutRelationEqual

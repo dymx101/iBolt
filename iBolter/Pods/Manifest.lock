@@ -47,7 +47,7 @@ DEPENDENCIES:
   - CocoaLumberjack
   - EDColor
   - FMDB
-  - MMDrawerController
+  - MMDrawerController (~> 0.4.0)
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
