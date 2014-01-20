@@ -10,4 +10,6 @@
 
 @interface FDBaseVC : UIViewController
 
+-(void)setupLayoutConstraints;
+
 @end
