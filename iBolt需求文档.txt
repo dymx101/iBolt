@@ -4,6 +4,8 @@ iBolt 需求文档v1.0
 创建时间: 2014.1.20.
 
 ------------------
+说明：目前仅对iPhone版本进行了目测，iPad版本需求应该有所不同(UI部分)
+
 基本功能描述：本应用为用户提供一个内嵌浏览器，当网页中包含视频或音频链接时，能够为用户下载到本地。
 
 功能模块：
@@ -40,23 +42,77 @@ iBolt 需求文档v1.0
 二.Downloads(下载管理)
 	a.下载列表管理(删除)
 	b.暂停/继续下载
+	c.tab显示正在下载的badge
 
 三.Videos(视频管理，其实不仅仅是视频，还有音频)
 	a.排序(Name/Size/Date --- 升序/降序)
 	b.下载列表管理(删除)
 	c.下载信息显示(文件类型图标、文件名、长度、大小、下载时间)
 	d.搜索文件
-	e.文件操作(文件名、Open In…(AirDrop), Rename, Delete)
+	e.文件操作(文件名、Open In…(AirDrop), Rename, Delete,Share)
 	f.点击播放
 	g.画中画显示
+	h.tab显示新下载的badge
 
 四.播放器
+	a.播放进度条
+	b.画面缩放
+	c.文件名显示
+	d.上部工具条
+		i. 循环播放？？
+		ii.睡眠关机计时
+		iii.文件列表slideShow
+		iv. Share
+		v.随机播放
+	e.播放控制 (上一首/快退/播放暂停/快进/下一首)
+	f.自动旋转锁定开关
+	g.音量条
+	h.画中画按钮
 
-四.Playlists(播放列表)
+五.Playlists(播放列表)
+	a.Add Playlist
+	b.编辑playlist(Add/Delete文件)
+	c.清空播放列表
+	d.删除播放列表
+	e.随机播放
 
-五.Settings(设置)
+六.Settings(设置)
+	a.Browser
+		i.Home Page
+		ii.New tab open with
+		iii.伪装设备(iPhone4/iPad2/Mac/Firefox/IE/Chrome…)
+		iv. 阻止弹出网页开关
+		v.Private Browsing开关
 
-六.其他
+	b.download
+		i.同时下载数
+		ii.Download via WWAN 开关
+
+	c.player
+		i.自动播放下一个文件开关
+		ii.记录播放位置开关
+
+	d.general
+		i.提示升级开关
+		ii.允许屏幕旋转开关
+		iii.文件共享开关
+	e.privacy
+		i.高级密码锁
+		ii.Cookie列表&清除
+		iii.Cache使用情况&清除
+		iv.清除所有隐私数据
+	f.buy
+		i.清除广告(6.00, In-app Purchase)
+		ii.升级到pro版本(跳到AppStore)
+	g.Share
+		i.分享给好友
+
+	h.help
+		i.Issue & Suggestion(发邮件)
+		ii.Write a Review (发评论，跳到appStore)
+
+
+七.其他
 1.支持横竖屏切换&布局
 2.提醒升级到付费版本
-
+3.广告条显示
