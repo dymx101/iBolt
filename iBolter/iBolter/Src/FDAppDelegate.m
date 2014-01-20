@@ -20,6 +20,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // observe notifications
+    [self observeNotification:DF_NOTIFY_CLOSE_DRAWER];
+    [self observeNotification:DF_NOTIFY_OPEN_DRAWER];
+    
     // create window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -69,15 +73,14 @@
              block(drawerController, drawerSide, percentVisible);
          }
          
-         //
-         UIViewController * sideDrawerViewController;
-         
-         if(drawerSide == MMDrawerSideRight){
-             sideDrawerViewController = drawerController.rightDrawerViewController;
-         }
-         [sideDrawerViewController.view setAlpha:percentVisible];
-         
      }];
+}
+
+-(void)handleNotification:(NSNotification *)notification {
+    NSString *name = notification.name;
+    if ([name isEqualToString:DF_NOTIFY_CLOSE_DRAWER]) {
+        [_drawerController closeDrawerAnimated:YES completion:nil];
+    }
 }
 
 @end

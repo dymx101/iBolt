@@ -13,5 +13,6 @@
     #import <EDColor.h>
 
 #import "FDDefine.h"
+#import "NSObject+BeeNotification.h"
 #import "FDColor.h"
 #endif
