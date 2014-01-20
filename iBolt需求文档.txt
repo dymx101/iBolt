@@ -116,3 +116,10 @@ iBolt 需求文档v1.0
 1.支持横竖屏切换&布局
 2.提醒升级到付费版本
 3.广告条显示
+
+
+八.资源URL
+
+关于获取视频URL在DEVDIV上的提问
+http://www.devdiv.com/iOS_iPhone-ios_url_-thread-208903-1-1.html
+
