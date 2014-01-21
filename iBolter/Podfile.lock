@@ -41,6 +41,7 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.4.0):
     - MMDrawerController/Core
+  - SVProgressHUD (1.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - EDColor
   - FMDB
   - MMDrawerController (~> 0.4.0)
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
@@ -55,5 +57,6 @@ SPEC CHECKSUMS:
   EDColor: d3717ea14cd90bf47591d0dc66aeb871bd6c850d
   FMDB: 97472cfacf0d9e445e915704fb43b4b142799c36
   MMDrawerController: 44baaee6b79487b4681eb61597fb790586909c0c
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
 
 COCOAPODS: 0.28.0

@@ -59,6 +59,7 @@
     NSString *html = [webView stringByEvaluatingJavaScriptFromString:
                       @"document.body.innerHTML"];
     DLog(@"%@", html);
+    [SVProgressHUD dismiss];
 }
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
@@ -66,7 +67,7 @@
 }
 
 -(void)webViewDidStartLoad:(UIWebView *)webView {
-    
+    [SVProgressHUD showWithStatus:@"Loading..."];
 }
 
 @end

@@ -120,3 +120,9 @@
 #define COCOAPODS_VERSION_MINOR_MMDrawerController_Subclass 4
 #define COCOAPODS_VERSION_PATCH_MMDrawerController_Subclass 0
 
+// SVProgressHUD
+#define COCOAPODS_POD_AVAILABLE_SVProgressHUD
+#define COCOAPODS_VERSION_MAJOR_SVProgressHUD 1
+#define COCOAPODS_VERSION_MINOR_SVProgressHUD 0
+#define COCOAPODS_VERSION_PATCH_SVProgressHUD 0
+

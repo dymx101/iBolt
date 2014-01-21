@@ -13,10 +13,10 @@
             buildForTesting = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
-               BlueprintName = "Pods-MMDrawerController"
-               BlueprintIdentifier = "BD418F5C07EE4D20804E40FB"
+               BlueprintName = "Pods-SVProgressHUD"
+               BlueprintIdentifier = "ADE49CAE8C4E49CA87390D73"
                BuildableIdentifier = "primary"
-               BuildableName = "libPods-MMDrawerController.a"
+               BuildableName = "libPods-SVProgressHUD.a"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
