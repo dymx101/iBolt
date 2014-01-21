@@ -10,8 +10,10 @@
 
 @interface FDBrowserVC () <UIWebViewDelegate, UITextFieldDelegate> {
     UIWebView           *_webview;
-    UIView     *_topBar;
+    UIView              *_topBar;
     UITextField         *_tfURL;
+    
+    NSString            *_currentURL;
 }
 
 @end
@@ -49,7 +51,7 @@
     
     [self setupLayoutConstraints];
     
-    [self loadURL:@"http://www.baidu.com"];
+    [self loadURL:@"http://m.letv.com/vplay_2224523.html"];
 }
 
 -(void)loadURL:(NSString *)aURL {
@@ -113,10 +115,13 @@
 }
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    _currentURL = request.URL.absoluteString;
+    DLog(@"URL:%@", _currentURL);
     return YES;
 }
 
 -(void)webViewDidStartLoad:(UIWebView *)webView {
+    _tfURL.text = _currentURL;
     [SVProgressHUD showWithStatus:@"Loading..."];
 }
 
