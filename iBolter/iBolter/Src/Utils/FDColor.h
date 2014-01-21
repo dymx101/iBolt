@@ -24,4 +24,7 @@ AS_SINGLETON(FDColor)
 @property (nonatomic, strong) UIColor *blue;
 @property (nonatomic, strong) UIColor *green;
 @property (nonatomic, strong) UIColor *red;
+
+@property (nonatomic, strong) UIColor *silver;
+
 @end

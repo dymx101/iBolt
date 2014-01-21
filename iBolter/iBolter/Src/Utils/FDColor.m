@@ -30,6 +30,8 @@ DEF_SINGLETON(FDColor)
         _blue = [UIColor blueColor];
         _green = [UIColor greenColor];
         _red = [UIColor redColor];
+        
+        _silver = [UIColor colorWithHexString:@"EFEFEF"];
     }
     return self;
 }

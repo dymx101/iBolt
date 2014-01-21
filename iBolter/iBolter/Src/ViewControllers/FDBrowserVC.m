@@ -8,9 +8,9 @@
 
 #import "FDBrowserVC.h"
 
-@interface FDBrowserVC () <UIWebViewDelegate> {
+@interface FDBrowserVC () <UIWebViewDelegate, UITextFieldDelegate> {
     UIWebView           *_webview;
-    UINavigationBar     *_topBar;
+    UIView     *_topBar;
     UITextField         *_tfURL;
 }
 
@@ -28,9 +28,19 @@
     self.navigationController.navigationBarHidden = YES;
     
     // create top bar
-    _topBar = [UINavigationBar new];
-    _topBar.tintColor = FDColor.sharedInstance.midnightBlue;
+    _topBar = [UIView new];
+    _topBar.backgroundColor = FDColor.sharedInstance.white;
     [self.view addSubview:_topBar];
+    
+    // create url text field
+    _tfURL = [UITextField new];
+    _tfURL.delegate = self;
+    _tfURL.backgroundColor = FDColor.sharedInstance.silver;
+    _tfURL.keyboardType = UIKeyboardTypeEmailAddress;
+    _tfURL.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    _tfURL.returnKeyType = UIReturnKeyGo;
+    _tfURL.clearButtonMode = UITextFieldViewModeAlways;
+    [_topBar addSubview:_tfURL];
     
     // create web view
     _webview = [UIWebView new];
@@ -44,6 +54,10 @@
 
 -(void)loadURL:(NSString *)aURL {
     if (aURL.length) {
+        if ([aURL.lowercaseString rangeOfString:@"http://"].location == NSNotFound
+            && [aURL.lowercaseString rangeOfString:@"https://"].location == NSNotFound) {
+            aURL = [NSString stringWithFormat:@"http://%@", aURL];
+        }
         NSURL *url = [NSURL URLWithString:aURL];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         [_webview loadRequest:request];
@@ -53,10 +67,11 @@
 -(void)setupLayoutConstraints {
     _topBar.translatesAutoresizingMaskIntoConstraints = NO;
     _webview.translatesAutoresizingMaskIntoConstraints = NO;
+    _tfURL.translatesAutoresizingMaskIntoConstraints = NO;
     
     NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_topBar, _webview);
     
-    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"|[_topBar]-|" options:0
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"|[_topBar]|" options:0
                                                                    metrics:nil
                                                                      views:viewsDictionary];
     [self.view addConstraints:constraints];
@@ -66,10 +81,26 @@
                                                                      views:viewsDictionary];
     [self.view addConstraints:constraints];
     
-    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_topBar(44)]-[_webview]|" options:0
+    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_topBar(44)][_webview]|" options:0
                                                           metrics:nil
                                                             views:viewsDictionary];
     [self.view addConstraints:constraints];
+    
+    // text field lay out constraints
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:_tfURL attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:_topBar attribute:NSLayoutAttributeLeading multiplier:1 constant:10];
+    [_topBar addConstraint:constraint];
+    
+    constraint = [NSLayoutConstraint constraintWithItem:_tfURL attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:_topBar attribute:NSLayoutAttributeTrailing multiplier:1 constant:-10];
+    [_topBar addConstraint:constraint];
+    
+    constraint = [NSLayoutConstraint constraintWithItem:_tfURL attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_topBar attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+    [_topBar addConstraint:constraint];
+    
+    constraint = [NSLayoutConstraint constraintWithItem:_tfURL attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:44];
+    [_tfURL addConstraint:constraint];
+    
+//    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"|[_tfURL(44)]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_tfURL)];
+//    [_topBar addConstraints:constraints];
 }
 
 
@@ -87,6 +118,15 @@
 
 -(void)webViewDidStartLoad:(UIWebView *)webView {
     [SVProgressHUD showWithStatus:@"Loading..."];
+}
+
+#pragma mark - text field delegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField.text.length) {
+        [self loadURL:textField.text];
+        [textField resignFirstResponder];
+    }
+    return YES;
 }
 
 @end
