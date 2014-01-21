@@ -9,7 +9,9 @@
 #import "FDBrowserVC.h"
 
 @interface FDBrowserVC () <UIWebViewDelegate> {
-    UIWebView   *_webview;
+    UIWebView           *_webview;
+    UINavigationBar     *_topBar;
+    UITextField         *_tfURL;
 }
 
 @end
@@ -22,9 +24,19 @@
     self.view.backgroundColor = FDColor.sharedInstance.purpleHeart;
     self.title = @"Browser";
     
+    // hide navigation bar
+    self.navigationController.navigationBarHidden = YES;
+    
+    // create top bar
+    _topBar = [UINavigationBar new];
+    _topBar.tintColor = FDColor.sharedInstance.midnightBlue;
+    [self.view addSubview:_topBar];
+    
+    // create web view
     _webview = [UIWebView new];
     _webview.delegate = self;
     [self.view addSubview:_webview];
+    
     [self setupLayoutConstraints];
     
     [self loadURL:@"http://www.baidu.com"];
@@ -39,15 +51,22 @@
 }
 
 -(void)setupLayoutConstraints {
+    _topBar.translatesAutoresizingMaskIntoConstraints = NO;
     _webview.translatesAutoresizingMaskIntoConstraints = NO;
     
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_webview);
-    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"|[_webview]|" options:0
+    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_topBar, _webview);
+    
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"|[_topBar]-|" options:0
                                                                    metrics:nil
                                                                      views:viewsDictionary];
     [self.view addConstraints:constraints];
     
-    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_webview]|" options:0
+    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"|[_webview]|" options:0
+                                                                   metrics:nil
+                                                                     views:viewsDictionary];
+    [self.view addConstraints:constraints];
+    
+    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_topBar(44)]-[_webview]|" options:0
                                                           metrics:nil
                                                             views:viewsDictionary];
     [self.view addConstraints:constraints];
