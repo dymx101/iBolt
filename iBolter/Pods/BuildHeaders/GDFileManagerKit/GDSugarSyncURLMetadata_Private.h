@@ -1,0 +1,1 @@
+../../GDFileManagerKit/Source/GDSugarSyncURLMetadata_Private.h

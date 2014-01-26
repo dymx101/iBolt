@@ -1,0 +1,2 @@
+PODS_GDFILEMANAGERKIT_HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2
+PODS_GDFILEMANAGERKIT_OTHER_LDFLAGS = -framework CoreData -framework Foundation -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration

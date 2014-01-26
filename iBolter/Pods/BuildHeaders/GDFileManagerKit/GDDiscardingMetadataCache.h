@@ -1,0 +1,1 @@
+../../GDFileManagerKit/Source/GDDiscardingMetadataCache.h

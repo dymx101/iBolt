@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GDFileManagerKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AFKissXMLRequestOperation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AFOAuth2Client.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,12 +39,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-GDFileManagerKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ISO8601DateFormatter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-KissXML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MMDrawerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-QuickDialog.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UIAlertView-Blocks.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +87,82 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4F37072F23AD4ACD8C39DD7C</key>
+		<key>034BBEDC88DC4824AAAD9E55</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A83EF98D4D7048958740019D</key>
+		<key>0CBAB57565E54BD9A08F5566</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ADE49CAE8C4E49CA87390D73</key>
+		<key>0D5F2C1C3A984132980E22B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD418F5C07EE4D20804E40FB</key>
+		<key>206A1254366E40B5A6BDD69B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C6538A77693F4448AAEC6BB8</key>
+		<key>2F24FDA7768842369C93E0AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD08B0BDCD8C4488843908FC</key>
+		<key>30D4CF6DC76249D89763481C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E572AA983341403D81D3B9FA</key>
+		<key>3E9FCF626FAC4A2A80B202F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4B05DA47B409406EA8F4B5E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75814F3D18C64E998720176E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75CB06DF8A354E68BB948141</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9354EEFA2AB142A3833C6DD8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0B5243A825548F190BE31E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A552CE7DC661415A8AA6E026</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A93783A0972F41C8A68178F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4976AFED0F344EC824A68ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC006E50986F4FD887C221C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

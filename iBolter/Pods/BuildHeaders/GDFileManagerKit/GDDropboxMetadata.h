@@ -1,0 +1,1 @@
+../../GDFileManagerKit/Source/GDDropboxMetadata.h

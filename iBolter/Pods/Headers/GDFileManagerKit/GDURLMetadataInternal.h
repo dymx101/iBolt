@@ -1,0 +1,1 @@
+../../GDFileManagerKit/Source/GDURLMetadataInternal.h

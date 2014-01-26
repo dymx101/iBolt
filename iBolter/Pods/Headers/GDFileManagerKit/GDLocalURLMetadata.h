@@ -1,0 +1,1 @@
+../../GDFileManagerKit/Source/GDLocalURLMetadata.h
