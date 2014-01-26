@@ -12,4 +12,6 @@
 
 -(void)setupLayoutConstraints;
 
+-(void)addConstraintsWithVFLString:(NSString *)aVFLString views:(NSDictionary *)aViewsDic;
+
 @end

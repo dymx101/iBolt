@@ -54,6 +54,10 @@
     [self loadURL:@"http://m.letv.com/vplay_2224523.html"];
 }
 
+-(void)viewWillDisappear:(BOOL)animated {
+    [SVProgressHUD dismiss];
+}
+
 -(void)loadURL:(NSString *)aURL {
     if (aURL.length) {
         if ([aURL.lowercaseString rangeOfString:@"http://"].location == NSNotFound
@@ -72,21 +76,9 @@
     _tfURL.translatesAutoresizingMaskIntoConstraints = NO;
     
     NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_topBar, _webview);
-    
-    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"|[_topBar]|" options:0
-                                                                   metrics:nil
-                                                                     views:viewsDictionary];
-    [self.view addConstraints:constraints];
-    
-    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"|[_webview]|" options:0
-                                                                   metrics:nil
-                                                                     views:viewsDictionary];
-    [self.view addConstraints:constraints];
-    
-    constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_topBar(44)][_webview]|" options:0
-                                                          metrics:nil
-                                                            views:viewsDictionary];
-    [self.view addConstraints:constraints];
+    [self addConstraintsWithVFLString:@"|[_topBar]|" views:viewsDictionary];
+    [self addConstraintsWithVFLString:@"|[_webview]|" views:viewsDictionary];
+    [self addConstraintsWithVFLString:@"V:|-20-[_topBar(44)][_webview]|" views:viewsDictionary];
     
     // text field lay out constraints
     NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:_tfURL attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:_topBar attribute:NSLayoutAttributeLeading multiplier:1 constant:10];

@@ -13,7 +13,10 @@
     #import <EDColor.h>
 #import <SVProgressHUD.h>
 
+#import <UIAlertView+Blocks.h>
+
 #import "FDDefine.h"
 #import "NSObject+BeeNotification.h"
 #import "FDColor.h"
+#import "FDUtil.h"
 #endif

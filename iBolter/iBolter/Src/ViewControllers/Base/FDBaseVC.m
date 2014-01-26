@@ -32,6 +32,7 @@
     }
 }
 
+
 -(void)setupLayoutConstraints {
 }
 
@@ -39,6 +40,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - helper
+-(void)addConstraintsWithVFLString:(NSString *)aVFLString views:(NSDictionary *)aViewsDic {
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:aVFLString options:0 metrics:nil views:aViewsDic];
+    [self.view addConstraints:constraints];
 }
 
 @end

@@ -21,6 +21,7 @@
 		EA186B3D188CF1B800F14348 /* FDDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B3C188CF1B800F14348 /* FDDefine.m */; };
 		EA186B40188CF63600F14348 /* MMDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */; };
 		EA186B44188CFDAC00F14348 /* NSObject+BeeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B43188CFDAC00F14348 /* NSObject+BeeNotification.m */; };
+		EA4B62841894F03000CCEE65 /* FDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4B62831894F03000CCEE65 /* FDUtil.m */; };
 		EABC2FFA188CE2970042A9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FF9188CE2970042A9DB /* Foundation.framework */; };
 		EABC2FFC188CE2970042A9DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */; };
 		EABC2FFE188CE2970042A9DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFD188CE2970042A9DB /* UIKit.framework */; };
@@ -72,6 +73,8 @@
 		EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		EA186B42188CFDAC00F14348 /* NSObject+BeeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BeeNotification.h"; sourceTree = "<group>"; };
 		EA186B43188CFDAC00F14348 /* NSObject+BeeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeNotification.m"; sourceTree = "<group>"; };
+		EA4B62821894F03000CCEE65 /* FDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUtil.h; sourceTree = "<group>"; };
+		EA4B62831894F03000CCEE65 /* FDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUtil.m; sourceTree = "<group>"; };
 		EABC2FF6188CE2970042A9DB /* iBolter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBolter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABC2FF9188CE2970042A9DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -164,6 +167,8 @@
 				EA186B39188CEFA400F14348 /* FDColor.m */,
 				EA186B3B188CF1B800F14348 /* FDDefine.h */,
 				EA186B3C188CF1B800F14348 /* FDDefine.m */,
+				EA4B62821894F03000CCEE65 /* FDUtil.h */,
+				EA4B62831894F03000CCEE65 /* FDUtil.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				EA186B44188CFDAC00F14348 /* NSObject+BeeNotification.m in Sources */,
 				EA186B30188CEE1200F14348 /* FDMenuVC.m in Sources */,
 				EA186B36188CEE4A00F14348 /* FDBaseVC.m in Sources */,
+				EA4B62841894F03000CCEE65 /* FDUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
