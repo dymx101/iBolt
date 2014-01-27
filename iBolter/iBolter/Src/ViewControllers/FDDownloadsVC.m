@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Frodo. All rights reserved.
 //
 
-#warning TODO: 进入下一级目录
+
 #warning TODO: 文件删除
 #warning TODO: 文件改名
 
@@ -64,6 +64,7 @@
     [super viewDidLoad];
     UIBarButtonItem *addFolderItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(createFolderAction)];
     self.navigationItem.rightBarButtonItem = addFolderItem;
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     
     self.view.backgroundColor = FDColor.sharedInstance.midnightBlue;
     
@@ -105,6 +106,16 @@
     }
     
     return cell;
+}
+
+#pragma mark - tableview delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *fileName = _files[indexPath.row];
+    if ([self isDirectory:fileName]) {
+        NSString *filePath = [_path stringByAppendingPathComponent:fileName];
+        FDDownloadsVC *vc = [[FDDownloadsVC alloc] initWithPath:filePath];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma mark - file operations
