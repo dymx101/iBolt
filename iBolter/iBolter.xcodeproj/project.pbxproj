@@ -22,6 +22,7 @@
 		EA186B40188CF63600F14348 /* MMDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */; };
 		EA186B44188CFDAC00F14348 /* NSObject+BeeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B43188CFDAC00F14348 /* NSObject+BeeNotification.m */; };
 		EA4B62841894F03000CCEE65 /* FDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4B62831894F03000CCEE65 /* FDUtil.m */; };
+		EA96A5001896039E00AE1D2D /* BackLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96A4FF1896039E00AE1D2D /* BackLog.m */; };
 		EABC2FFA188CE2970042A9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FF9188CE2970042A9DB /* Foundation.framework */; };
 		EABC2FFC188CE2970042A9DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */; };
 		EABC2FFE188CE2970042A9DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFD188CE2970042A9DB /* UIKit.framework */; };
@@ -32,7 +33,6 @@
 		EABC3015188CE2970042A9DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFD188CE2970042A9DB /* UIKit.framework */; };
 		EABC301D188CE2970042A9DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EABC301B188CE2970042A9DB /* InfoPlist.strings */; };
 		EABC301F188CE2970042A9DB /* iBolterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC301E188CE2970042A9DB /* iBolterTests.m */; };
-		EACB9AEB188E291000D685B3 /* Backlog.txt in Resources */ = {isa = PBXBuildFile; fileRef = EACB9AEA188E291000D685B3 /* Backlog.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +75,8 @@
 		EA186B43188CFDAC00F14348 /* NSObject+BeeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeNotification.m"; sourceTree = "<group>"; };
 		EA4B62821894F03000CCEE65 /* FDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUtil.h; sourceTree = "<group>"; };
 		EA4B62831894F03000CCEE65 /* FDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUtil.m; sourceTree = "<group>"; };
+		EA96A4FE1896039E00AE1D2D /* BackLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackLog.h; sourceTree = "<group>"; };
+		EA96A4FF1896039E00AE1D2D /* BackLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackLog.m; sourceTree = "<group>"; };
 		EABC2FF6188CE2970042A9DB /* iBolter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBolter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABC2FF9188CE2970042A9DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,7 +90,6 @@
 		EABC301A188CE2970042A9DB /* iBolterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBolterTests-Info.plist"; sourceTree = "<group>"; };
 		EABC301C188CE2970042A9DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EABC301E188CE2970042A9DB /* iBolterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBolterTests.m; sourceTree = "<group>"; };
-		EACB9AEA188E291000D685B3 /* Backlog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Backlog.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,7 +257,8 @@
 		EACB9AE9188E28FB00D685B3 /* Documentations */ = {
 			isa = PBXGroup;
 			children = (
-				EACB9AEA188E291000D685B3 /* Backlog.txt */,
+				EA96A4FE1896039E00AE1D2D /* BackLog.h */,
+				EA96A4FF1896039E00AE1D2D /* BackLog.m */,
 			);
 			path = Documentations;
 			sourceTree = "<group>";
@@ -339,7 +341,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EACB9AEB188E291000D685B3 /* Backlog.txt in Resources */,
 				EABC3004188CE2970042A9DB /* InfoPlist.strings in Resources */,
 				EABC300C188CE2970042A9DB /* Images.xcassets in Resources */,
 			);
@@ -403,6 +404,7 @@
 				EA186B2F188CEE1200F14348 /* FDMediaVC.m in Sources */,
 				EA186B2A188CEE1200F14348 /* FDAppDelegate.m in Sources */,
 				EA186B2D188CEE1200F14348 /* FDBrowserVC.m in Sources */,
+				EA96A5001896039E00AE1D2D /* BackLog.m in Sources */,
 				EA186B44188CFDAC00F14348 /* NSObject+BeeNotification.m in Sources */,
 				EA186B30188CEE1200F14348 /* FDMenuVC.m in Sources */,
 				EA186B36188CEE4A00F14348 /* FDBaseVC.m in Sources */,
