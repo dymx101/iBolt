@@ -1,0 +1,8 @@
+QQ音乐API分析记录
+2012-05-18 17:33 by Mr.Xer
+http://www.cnblogs.com/Xer-Lee/archive/2012/05/18/2508141.html
+
+
+QQ音乐的各种相关API   
+2012-09-08 21:10
+http://www.cocoachina.com/bbs/read.php?tid=115028
