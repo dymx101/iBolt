@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA7137E91899DA0C004CA79B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7137E81899DA0C004CA79B /* Foundation.framework */; };
+		EA7137EB1899DA0C004CA79B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7137EA1899DA0C004CA79B /* CoreGraphics.framework */; };
+		EA7137ED1899DA0C004CA79B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7137EC1899DA0C004CA79B /* UIKit.framework */; };
+		EA7137F31899DA0C004CA79B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA7137F11899DA0C004CA79B /* InfoPlist.strings */; };
+		EA7137F51899DA0C004CA79B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7137F41899DA0C004CA79B /* main.m */; };
+		EA7137F91899DA0C004CA79B /* FDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7137F81899DA0C004CA79B /* FDAppDelegate.m */; };
+		EA7137FB1899DA0C004CA79B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7137FA1899DA0C004CA79B /* Images.xcassets */; };
+		EA7138021899DA0C004CA79B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7138011899DA0C004CA79B /* XCTest.framework */; };
+		EA7138031899DA0C004CA79B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7137E81899DA0C004CA79B /* Foundation.framework */; };
+		EA7138041899DA0C004CA79B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7137EC1899DA0C004CA79B /* UIKit.framework */; };
+		EA71380C1899DA0C004CA79B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA71380A1899DA0C004CA79B /* InfoPlist.strings */; };
+		EA71380E1899DA0C004CA79B /* MusicDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA71380D1899DA0C004CA79B /* MusicDownloaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA7138051899DA0C004CA79B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA7137DD1899DA0B004CA79B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA7137E41899DA0C004CA79B;
+			remoteInfo = MusicDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA7137E51899DA0C004CA79B /* MusicDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7137E81899DA0C004CA79B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA7137EA1899DA0C004CA79B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA7137EC1899DA0C004CA79B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA7137F01899DA0C004CA79B /* MusicDownloader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicDownloader-Info.plist"; sourceTree = "<group>"; };
+		EA7137F21899DA0C004CA79B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA7137F41899DA0C004CA79B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA7137F61899DA0C004CA79B /* MusicDownloader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicDownloader-Prefix.pch"; sourceTree = "<group>"; };
+		EA7137F71899DA0C004CA79B /* FDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAppDelegate.h; sourceTree = "<group>"; };
+		EA7137F81899DA0C004CA79B /* FDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAppDelegate.m; sourceTree = "<group>"; };
+		EA7137FA1899DA0C004CA79B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA7138001899DA0C004CA79B /* MusicDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7138011899DA0C004CA79B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA7138091899DA0C004CA79B /* MusicDownloaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicDownloaderTests-Info.plist"; sourceTree = "<group>"; };
+		EA71380B1899DA0C004CA79B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA71380D1899DA0C004CA79B /* MusicDownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicDownloaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA7137E21899DA0C004CA79B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7137EB1899DA0C004CA79B /* CoreGraphics.framework in Frameworks */,
+				EA7137ED1899DA0C004CA79B /* UIKit.framework in Frameworks */,
+				EA7137E91899DA0C004CA79B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7137FD1899DA0C004CA79B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7138021899DA0C004CA79B /* XCTest.framework in Frameworks */,
+				EA7138041899DA0C004CA79B /* UIKit.framework in Frameworks */,
+				EA7138031899DA0C004CA79B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA7137DC1899DA0B004CA79B = {
+			isa = PBXGroup;
+			children = (
+				EA7137EE1899DA0C004CA79B /* MusicDownloader */,
+				EA7138071899DA0C004CA79B /* MusicDownloaderTests */,
+				EA7137E71899DA0C004CA79B /* Frameworks */,
+				EA7137E61899DA0C004CA79B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA7137E61899DA0C004CA79B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA7137E51899DA0C004CA79B /* MusicDownloader.app */,
+				EA7138001899DA0C004CA79B /* MusicDownloaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA7137E71899DA0C004CA79B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA7137E81899DA0C004CA79B /* Foundation.framework */,
+				EA7137EA1899DA0C004CA79B /* CoreGraphics.framework */,
+				EA7137EC1899DA0C004CA79B /* UIKit.framework */,
+				EA7138011899DA0C004CA79B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA7137EE1899DA0C004CA79B /* MusicDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				EA7137F71899DA0C004CA79B /* FDAppDelegate.h */,
+				EA7137F81899DA0C004CA79B /* FDAppDelegate.m */,
+				EA7137FA1899DA0C004CA79B /* Images.xcassets */,
+				EA7137EF1899DA0C004CA79B /* Supporting Files */,
+			);
+			path = MusicDownloader;
+			sourceTree = "<group>";
+		};
+		EA7137EF1899DA0C004CA79B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA7137F01899DA0C004CA79B /* MusicDownloader-Info.plist */,
+				EA7137F11899DA0C004CA79B /* InfoPlist.strings */,
+				EA7137F41899DA0C004CA79B /* main.m */,
+				EA7137F61899DA0C004CA79B /* MusicDownloader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA7138071899DA0C004CA79B /* MusicDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA71380D1899DA0C004CA79B /* MusicDownloaderTests.m */,
+				EA7138081899DA0C004CA79B /* Supporting Files */,
+			);
+			path = MusicDownloaderTests;
+			sourceTree = "<group>";
+		};
+		EA7138081899DA0C004CA79B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA7138091899DA0C004CA79B /* MusicDownloaderTests-Info.plist */,
+				EA71380A1899DA0C004CA79B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA7137E41899DA0C004CA79B /* MusicDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7138111899DA0C004CA79B /* Build configuration list for PBXNativeTarget "MusicDownloader" */;
+			buildPhases = (
+				EA7137E11899DA0C004CA79B /* Sources */,
+				EA7137E21899DA0C004CA79B /* Frameworks */,
+				EA7137E31899DA0C004CA79B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicDownloader;
+			productName = MusicDownloader;
+			productReference = EA7137E51899DA0C004CA79B /* MusicDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA7137FF1899DA0C004CA79B /* MusicDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7138141899DA0C004CA79B /* Build configuration list for PBXNativeTarget "MusicDownloaderTests" */;
+			buildPhases = (
+				EA7137FC1899DA0C004CA79B /* Sources */,
+				EA7137FD1899DA0C004CA79B /* Frameworks */,
+				EA7137FE1899DA0C004CA79B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA7138061899DA0C004CA79B /* PBXTargetDependency */,
+			);
+			name = MusicDownloaderTests;
+			productName = MusicDownloaderTests;
+			productReference = EA7138001899DA0C004CA79B /* MusicDownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA7137DD1899DA0B004CA79B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Frodo;
+				TargetAttributes = {
+					EA7137FF1899DA0C004CA79B = {
+						TestTargetID = EA7137E41899DA0C004CA79B;
+					};
+				};
+			};
+			buildConfigurationList = EA7137E01899DA0B004CA79B /* Build configuration list for PBXProject "MusicDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA7137DC1899DA0B004CA79B;
+			productRefGroup = EA7137E61899DA0C004CA79B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA7137E41899DA0C004CA79B /* MusicDownloader */,
+				EA7137FF1899DA0C004CA79B /* MusicDownloaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA7137E31899DA0C004CA79B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7137F31899DA0C004CA79B /* InfoPlist.strings in Resources */,
+				EA7137FB1899DA0C004CA79B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7137FE1899DA0C004CA79B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA71380C1899DA0C004CA79B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA7137E11899DA0C004CA79B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7137F91899DA0C004CA79B /* FDAppDelegate.m in Sources */,
+				EA7137F51899DA0C004CA79B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7137FC1899DA0C004CA79B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA71380E1899DA0C004CA79B /* MusicDownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA7138061899DA0C004CA79B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA7137E41899DA0C004CA79B /* MusicDownloader */;
+			targetProxy = EA7138051899DA0C004CA79B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA7137F11899DA0C004CA79B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA7137F21899DA0C004CA79B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA71380A1899DA0C004CA79B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA71380B1899DA0C004CA79B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA71380F1899DA0C004CA79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA7138101899DA0C004CA79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA7138121899DA0C004CA79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicDownloader/MusicDownloader-Prefix.pch";
+				INFOPLIST_FILE = "MusicDownloader/MusicDownloader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA7138131899DA0C004CA79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicDownloader/MusicDownloader-Prefix.pch";
+				INFOPLIST_FILE = "MusicDownloader/MusicDownloader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA7138151899DA0C004CA79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MusicDownloader.app/MusicDownloader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicDownloader/MusicDownloader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MusicDownloaderTests/MusicDownloaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EA7138161899DA0C004CA79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MusicDownloader.app/MusicDownloader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicDownloader/MusicDownloader-Prefix.pch";
+				INFOPLIST_FILE = "MusicDownloaderTests/MusicDownloaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA7137E01899DA0B004CA79B /* Build configuration list for PBXProject "MusicDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA71380F1899DA0C004CA79B /* Debug */,
+				EA7138101899DA0C004CA79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA7138111899DA0C004CA79B /* Build configuration list for PBXNativeTarget "MusicDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7138121899DA0C004CA79B /* Debug */,
+				EA7138131899DA0C004CA79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA7138141899DA0C004CA79B /* Build configuration list for PBXNativeTarget "MusicDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7138151899DA0C004CA79B /* Debug */,
+				EA7138161899DA0C004CA79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA7137DD1899DA0B004CA79B /* Project object */;
+}
