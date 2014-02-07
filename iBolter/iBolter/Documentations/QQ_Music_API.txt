@@ -6,3 +6,23 @@ http://www.cnblogs.com/Xer-Lee/archive/2012/05/18/2508141.html
 QQ音乐的各种相关API   
 2012-09-08 21:10
 http://www.cocoachina.com/bbs/read.php?tid=115028
+
+
+
+
+http://shopcgi.qqmusic.qq.com/fcgi-bin/shopsearch.fcg?value=yesterday&type=qry_song&out=json&page_no=1&page_record_num=5
+
+{result:"0",msg:"",totalnum:"145",curnum:"5",search:"yesterday",songlist:[{idx:"1",song_id:"1823695",song_name:"Yesterday",album_name:"Ììô¥¸ÖÇÙ",singer_name:"Å·ÃÀÈºÐÇ(Various Artists)",location:"7",singer_id:"6658",album_id:"143037",price:"250"},{idx:"2",song_id:"1777723",song_name:"Yesterday",album_name:"Best & Live",singer_name:"½ð¾©ºÆ",location:"1",singer_id:"8628",album_id:"139931",price:"250"},{idx:"3",song_id:"1787774",song_name:"Yesterday",album_name:"Heartbreakers",singer_name:"ÂóÌØ¡¤ÃÉÂå(Matt Monro)",location:"1",singer_id:"12279",album_id:"140611",price:"250"},{idx:"4",song_id:"1794786",song_name:"Yesterday",album_name:"His Greatest Hits",singer_name:"À×¡¤²é¶ûË¹(Ray Charles)",location:"10",singer_id:"1246",album_id:"141071",price:"250"},{idx:"5",song_id:"1794049",song_name:"Yesterday",album_name:"The Definitive Ray Charles",singer_name:"À×¡¤²é¶ûË¹(Ray Charles)",location:"1",singer_id:"1246",album_id:"141031",price:"250"}]}
+
+
+
+★获取音乐地址
+http://stream1歌曲信息中的location值.qqmusic.qq.com/3歌曲ID（7位数，不足在前面补0）. mp3
+
+http://stream17.qqmusic.qq.com/31823695.mp3
+{idx:"1",song_id:"1823695",song_name:"Yesterday",album_name:"Ììô¥¸ÖÇÙ",singer_name:"Å·ÃÀÈºÐÇ(Various Artists)",location:"7",singer_id:"6658",album_id:"143037",price:"250"}
+
+例如之前搜索出来的第一首歌的地址应该是:
+http://stream18.qqmusic.qq.com/31679711. mp3
+第二首歌的地址应该是
+http://stream13.qqmusic.qq.com/31516144. mp3

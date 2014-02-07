@@ -34,6 +34,7 @@
 		EABC3015188CE2970042A9DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFD188CE2970042A9DB /* UIKit.framework */; };
 		EABC301D188CE2970042A9DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EABC301B188CE2970042A9DB /* InfoPlist.strings */; };
 		EABC301F188CE2970042A9DB /* iBolterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC301E188CE2970042A9DB /* iBolterTests.m */; };
+		EACDC8C618A4B62F0008A6A6 /* requirement_doc.txt in Resources */ = {isa = PBXBuildFile; fileRef = EACDC8C518A4B62F0008A6A6 /* requirement_doc.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		EABC301A188CE2970042A9DB /* iBolterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBolterTests-Info.plist"; sourceTree = "<group>"; };
 		EABC301C188CE2970042A9DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EABC301E188CE2970042A9DB /* iBolterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBolterTests.m; sourceTree = "<group>"; };
+		EACDC8C518A4B62F0008A6A6 /* requirement_doc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = requirement_doc.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 				EA96A4FE1896039E00AE1D2D /* BackLog.h */,
 				EA96A4FF1896039E00AE1D2D /* BackLog.m */,
 				EA702DEE1898E83C0022AB0B /* QQ_Music_API.txt */,
+				EACDC8C518A4B62F0008A6A6 /* requirement_doc.txt */,
 			);
 			path = Documentations;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				EABC3004188CE2970042A9DB /* InfoPlist.strings in Resources */,
 				EABC300C188CE2970042A9DB /* Images.xcassets in Resources */,
 				EA702DEF1898E83C0022AB0B /* QQ_Music_API.txt in Resources */,
+				EACDC8C618A4B62F0008A6A6 /* requirement_doc.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
