@@ -21,6 +21,8 @@
 		EA186B3D188CF1B800F14348 /* FDDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B3C188CF1B800F14348 /* FDDefine.m */; };
 		EA186B40188CF63600F14348 /* MMDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */; };
 		EA186B44188CFDAC00F14348 /* NSObject+BeeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = EA186B43188CFDAC00F14348 /* NSObject+BeeNotification.m */; };
+		EA1C640818A617780009417C /* FDMoviePlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C640718A617780009417C /* FDMoviePlayerVC.m */; };
+		EA1C640B18A618620009417C /* popeye.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA1C640A18A618620009417C /* popeye.mp4 */; };
 		EA4B62841894F03000CCEE65 /* FDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4B62831894F03000CCEE65 /* FDUtil.m */; };
 		EA702DEF1898E83C0022AB0B /* QQ_Music_API.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA702DEE1898E83C0022AB0B /* QQ_Music_API.txt */; };
 		EA96A5001896039E00AE1D2D /* BackLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96A4FF1896039E00AE1D2D /* BackLog.m */; };
@@ -76,6 +78,9 @@
 		EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		EA186B42188CFDAC00F14348 /* NSObject+BeeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BeeNotification.h"; sourceTree = "<group>"; };
 		EA186B43188CFDAC00F14348 /* NSObject+BeeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeNotification.m"; sourceTree = "<group>"; };
+		EA1C640618A617780009417C /* FDMoviePlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDMoviePlayerVC.h; sourceTree = "<group>"; };
+		EA1C640718A617780009417C /* FDMoviePlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDMoviePlayerVC.m; sourceTree = "<group>"; };
+		EA1C640A18A618620009417C /* popeye.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = popeye.mp4; sourceTree = "<group>"; };
 		EA4B62821894F03000CCEE65 /* FDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUtil.h; sourceTree = "<group>"; };
 		EA4B62831894F03000CCEE65 /* FDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUtil.m; sourceTree = "<group>"; };
 		EA702DEE1898E83C0022AB0B /* QQ_Music_API.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QQ_Music_API.txt; sourceTree = "<group>"; };
@@ -152,6 +157,8 @@
 				EA186B27188CEE1200F14348 /* FDPlayListsVC.m */,
 				EA186B28188CEE1200F14348 /* FDSettingsVC.h */,
 				EA186B29188CEE1200F14348 /* FDSettingsVC.m */,
+				EA1C640618A617780009417C /* FDMoviePlayerVC.h */,
+				EA1C640718A617780009417C /* FDMoviePlayerVC.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,6 +196,14 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		EA1C640918A618570009417C /* SampleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EA1C640A18A618620009417C /* popeye.mp4 */,
+			);
+			path = SampleFiles;
+			sourceTree = "<group>";
+		};
 		EABC2FED188CE2970042A9DB = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +239,7 @@
 		EABC2FFF188CE2970042A9DB /* iBolter */ = {
 			isa = PBXGroup;
 			children = (
+				EA1C640918A618570009417C /* SampleFiles */,
 				EACB9AE9188E28FB00D685B3 /* Documentations */,
 				EA186B17188CEE1200F14348 /* Src */,
 				EABC300B188CE2970042A9DB /* Images.xcassets */,
@@ -355,6 +371,7 @@
 				EABC300C188CE2970042A9DB /* Images.xcassets in Resources */,
 				EA702DEF1898E83C0022AB0B /* QQ_Music_API.txt in Resources */,
 				EACDC8C618A4B62F0008A6A6 /* requirement_doc.txt in Resources */,
+				EA1C640B18A618620009417C /* popeye.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +435,7 @@
 				EA186B2D188CEE1200F14348 /* FDBrowserVC.m in Sources */,
 				EA96A5001896039E00AE1D2D /* BackLog.m in Sources */,
 				EA186B44188CFDAC00F14348 /* NSObject+BeeNotification.m in Sources */,
+				EA1C640818A617780009417C /* FDMoviePlayerVC.m in Sources */,
 				EA186B30188CEE1200F14348 /* FDMenuVC.m in Sources */,
 				EA186B36188CEE4A00F14348 /* FDBaseVC.m in Sources */,
 				EA4B62841894F03000CCEE65 /* FDUtil.m in Sources */,

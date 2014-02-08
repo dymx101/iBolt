@@ -14,4 +14,9 @@
 
 -(void)addConstraintsWithVFLString:(NSString *)aVFLString views:(NSDictionary *)aViewsDic;
 
+-(void)addConstraintsWithVFLString:(NSString *)aVFLString options:(NSLayoutFormatOptions)aOptions views:(NSDictionary *)aViewsDic;
+
+-(void)centerXInSuperView:(UIView *)aSubView;
+
+-(void)centerYInSuperView:(UIView *)aSubView;
 @end

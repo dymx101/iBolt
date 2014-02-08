@@ -44,8 +44,47 @@
 
 #pragma mark - helper
 -(void)addConstraintsWithVFLString:(NSString *)aVFLString views:(NSDictionary *)aViewsDic {
-    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:aVFLString options:0 metrics:nil views:aViewsDic];
+    [self addConstraintsWithVFLString:aVFLString options:0 views:aViewsDic];
+}
+
+-(void)addConstraintsWithVFLString:(NSString *)aVFLString options:(NSLayoutFormatOptions)aOptions views:(NSDictionary *)aViewsDic {
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:aVFLString options:aOptions metrics:nil views:aViewsDic];
     [self.view addConstraints:constraints];
 }
+
+-(void)centerXInSuperView:(UIView *)aSubView {
+    if (aSubView == nil || aSubView.superview == nil) {
+        return;
+    }
+    
+    UIView *superview = aSubView.superview;
+    
+    [superview addConstraint:
+     [NSLayoutConstraint constraintWithItem:aSubView
+                                  attribute:NSLayoutAttributeCenterX
+                                  relatedBy:NSLayoutRelationEqual
+                                     toItem:superview
+                                  attribute:NSLayoutAttributeCenterX
+                                 multiplier:1
+                                   constant:0]];
+}
+
+-(void)centerYInSuperView:(UIView *)aSubView {
+    if (aSubView == nil || aSubView.superview == nil) {
+        return;
+    }
+    
+    UIView *superview = aSubView.superview;
+    
+    [superview addConstraint:
+     [NSLayoutConstraint constraintWithItem:aSubView
+                                  attribute:NSLayoutAttributeCenterY
+                                  relatedBy:NSLayoutRelationEqual
+                                     toItem:superview
+                                  attribute:NSLayoutAttributeCenterY
+                                 multiplier:1
+                                   constant:0]];
+}
+
 
 @end
