@@ -9,6 +9,7 @@ pod 'FMDB'
 pod 'AFNetworking', '~> 1.0'
 pod 'SVProgressHUD'
 pod 'GDFileManagerKit', '~> 0.0.2'
+pod 'ALMoviePlayerController', '~> 0.3.0'
 
 # pod 'CorePlot'
 # pod 'FMDB/SQLCipher'   # If using FMDB with SQLCipher

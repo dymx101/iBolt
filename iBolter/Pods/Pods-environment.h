@@ -24,6 +24,12 @@
 #define COCOAPODS_VERSION_MINOR_AFOAuth2Client 1
 #define COCOAPODS_VERSION_PATCH_AFOAuth2Client 2
 
+// ALMoviePlayerController
+#define COCOAPODS_POD_AVAILABLE_ALMoviePlayerController
+#define COCOAPODS_VERSION_MAJOR_ALMoviePlayerController 0
+#define COCOAPODS_VERSION_MINOR_ALMoviePlayerController 3
+#define COCOAPODS_VERSION_PATCH_ALMoviePlayerController 0
+
 // CocoaLumberjack
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack
 #define COCOAPODS_VERSION_MAJOR_CocoaLumberjack 1
