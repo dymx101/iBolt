@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA52932418A7747D003415DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52932318A7747D003415DD /* Foundation.framework */; };
+		EA52932618A7747D003415DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52932518A7747D003415DD /* CoreGraphics.framework */; };
+		EA52932818A7747D003415DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52932718A7747D003415DD /* UIKit.framework */; };
+		EA52932E18A7747D003415DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA52932C18A7747D003415DD /* InfoPlist.strings */; };
+		EA52933018A7747D003415DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA52932F18A7747D003415DD /* main.m */; };
+		EA52933418A7747D003415DD /* FDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA52933318A7747D003415DD /* FDAppDelegate.m */; };
+		EA52933618A7747D003415DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA52933518A7747D003415DD /* Images.xcassets */; };
+		EA52933D18A7747D003415DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52933C18A7747D003415DD /* XCTest.framework */; };
+		EA52933E18A7747D003415DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52932318A7747D003415DD /* Foundation.framework */; };
+		EA52933F18A7747D003415DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52932718A7747D003415DD /* UIKit.framework */; };
+		EA52934718A7747D003415DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA52934518A7747D003415DD /* InfoPlist.strings */; };
+		EA52934918A7747D003415DD /* BannerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA52934818A7747D003415DD /* BannerExampleTests.m */; };
+		EA52935D18A774A6003415DD /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52935C18A774A6003415DD /* libGoogleAdMobAds.a */; };
+		EA52935F18A77510003415DD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52935E18A77510003415DD /* AdSupport.framework */; };
+		EA52936118A77520003415DD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52936018A77520003415DD /* AudioToolbox.framework */; };
+		EA52936318A77529003415DD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52936218A77529003415DD /* AVFoundation.framework */; };
+		EA52936518A7753B003415DD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52936418A7753B003415DD /* CoreTelephony.framework */; };
+		EA52936718A77544003415DD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52936618A77544003415DD /* MessageUI.framework */; };
+		EA52936918A7754C003415DD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52936818A7754C003415DD /* StoreKit.framework */; };
+		EA52936B18A77556003415DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52936A18A77556003415DD /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA52934018A7747D003415DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA52931818A7747D003415DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA52931F18A7747D003415DD;
+			remoteInfo = BannerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA52932018A7747D003415DD /* BannerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BannerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA52932318A7747D003415DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA52932518A7747D003415DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA52932718A7747D003415DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA52932B18A7747D003415DD /* BannerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BannerExample-Info.plist"; sourceTree = "<group>"; };
+		EA52932D18A7747D003415DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA52932F18A7747D003415DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA52933118A7747D003415DD /* BannerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BannerExample-Prefix.pch"; sourceTree = "<group>"; };
+		EA52933218A7747D003415DD /* FDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAppDelegate.h; sourceTree = "<group>"; };
+		EA52933318A7747D003415DD /* FDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAppDelegate.m; sourceTree = "<group>"; };
+		EA52933518A7747D003415DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA52933B18A7747D003415DD /* BannerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BannerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA52933C18A7747D003415DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA52934418A7747D003415DD /* BannerExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BannerExampleTests-Info.plist"; sourceTree = "<group>"; };
+		EA52934618A7747D003415DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA52934818A7747D003415DD /* BannerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerExampleTests.m; sourceTree = "<group>"; };
+		EA52935318A774A6003415DD /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		EA52935418A774A6003415DD /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		EA52935518A774A6003415DD /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		EA52935618A774A6003415DD /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		EA52935718A774A6003415DD /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		EA52935818A774A6003415DD /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		EA52935918A774A6003415DD /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		EA52935A18A774A6003415DD /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		EA52935B18A774A6003415DD /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		EA52935C18A774A6003415DD /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		EA52935E18A77510003415DD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EA52936018A77520003415DD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EA52936218A77529003415DD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA52936418A7753B003415DD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EA52936618A77544003415DD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EA52936818A7754C003415DD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EA52936A18A77556003415DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA52931D18A7747D003415DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52936B18A77556003415DD /* SystemConfiguration.framework in Frameworks */,
+				EA52936918A7754C003415DD /* StoreKit.framework in Frameworks */,
+				EA52936718A77544003415DD /* MessageUI.framework in Frameworks */,
+				EA52936518A7753B003415DD /* CoreTelephony.framework in Frameworks */,
+				EA52932618A7747D003415DD /* CoreGraphics.framework in Frameworks */,
+				EA52936318A77529003415DD /* AVFoundation.framework in Frameworks */,
+				EA52936118A77520003415DD /* AudioToolbox.framework in Frameworks */,
+				EA52935F18A77510003415DD /* AdSupport.framework in Frameworks */,
+				EA52935D18A774A6003415DD /* libGoogleAdMobAds.a in Frameworks */,
+				EA52932818A7747D003415DD /* UIKit.framework in Frameworks */,
+				EA52932418A7747D003415DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52933818A7747D003415DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52933D18A7747D003415DD /* XCTest.framework in Frameworks */,
+				EA52933F18A7747D003415DD /* UIKit.framework in Frameworks */,
+				EA52933E18A7747D003415DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA52931718A7747D003415DD = {
+			isa = PBXGroup;
+			children = (
+				EA52935218A77499003415DD /* Admob */,
+				EA52932918A7747D003415DD /* BannerExample */,
+				EA52934218A7747D003415DD /* BannerExampleTests */,
+				EA52932218A7747D003415DD /* Frameworks */,
+				EA52932118A7747D003415DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA52932118A7747D003415DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA52932018A7747D003415DD /* BannerExample.app */,
+				EA52933B18A7747D003415DD /* BannerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA52932218A7747D003415DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA52936A18A77556003415DD /* SystemConfiguration.framework */,
+				EA52936818A7754C003415DD /* StoreKit.framework */,
+				EA52936618A77544003415DD /* MessageUI.framework */,
+				EA52936418A7753B003415DD /* CoreTelephony.framework */,
+				EA52936218A77529003415DD /* AVFoundation.framework */,
+				EA52936018A77520003415DD /* AudioToolbox.framework */,
+				EA52935E18A77510003415DD /* AdSupport.framework */,
+				EA52932318A7747D003415DD /* Foundation.framework */,
+				EA52932518A7747D003415DD /* CoreGraphics.framework */,
+				EA52932718A7747D003415DD /* UIKit.framework */,
+				EA52933C18A7747D003415DD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA52932918A7747D003415DD /* BannerExample */ = {
+			isa = PBXGroup;
+			children = (
+				EA52933218A7747D003415DD /* FDAppDelegate.h */,
+				EA52933318A7747D003415DD /* FDAppDelegate.m */,
+				EA52933518A7747D003415DD /* Images.xcassets */,
+				EA52932A18A7747D003415DD /* Supporting Files */,
+			);
+			path = BannerExample;
+			sourceTree = "<group>";
+		};
+		EA52932A18A7747D003415DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA52932B18A7747D003415DD /* BannerExample-Info.plist */,
+				EA52932C18A7747D003415DD /* InfoPlist.strings */,
+				EA52932F18A7747D003415DD /* main.m */,
+				EA52933118A7747D003415DD /* BannerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA52934218A7747D003415DD /* BannerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA52934818A7747D003415DD /* BannerExampleTests.m */,
+				EA52934318A7747D003415DD /* Supporting Files */,
+			);
+			path = BannerExampleTests;
+			sourceTree = "<group>";
+		};
+		EA52934318A7747D003415DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA52934418A7747D003415DD /* BannerExampleTests-Info.plist */,
+				EA52934518A7747D003415DD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA52935218A77499003415DD /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				EA52935318A774A6003415DD /* GADAdMobExtras.h */,
+				EA52935418A774A6003415DD /* GADAdNetworkExtras.h */,
+				EA52935518A774A6003415DD /* GADAdSize.h */,
+				EA52935618A774A6003415DD /* GADBannerView.h */,
+				EA52935718A774A6003415DD /* GADBannerViewDelegate.h */,
+				EA52935818A774A6003415DD /* GADInterstitial.h */,
+				EA52935918A774A6003415DD /* GADInterstitialDelegate.h */,
+				EA52935A18A774A6003415DD /* GADRequest.h */,
+				EA52935B18A774A6003415DD /* GADRequestError.h */,
+				EA52935C18A774A6003415DD /* libGoogleAdMobAds.a */,
+			);
+			path = Admob;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA52931F18A7747D003415DD /* BannerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA52934C18A7747D003415DD /* Build configuration list for PBXNativeTarget "BannerExample" */;
+			buildPhases = (
+				EA52931C18A7747D003415DD /* Sources */,
+				EA52931D18A7747D003415DD /* Frameworks */,
+				EA52931E18A7747D003415DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BannerExample;
+			productName = BannerExample;
+			productReference = EA52932018A7747D003415DD /* BannerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA52933A18A7747D003415DD /* BannerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA52934F18A7747D003415DD /* Build configuration list for PBXNativeTarget "BannerExampleTests" */;
+			buildPhases = (
+				EA52933718A7747D003415DD /* Sources */,
+				EA52933818A7747D003415DD /* Frameworks */,
+				EA52933918A7747D003415DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA52934118A7747D003415DD /* PBXTargetDependency */,
+			);
+			name = BannerExampleTests;
+			productName = BannerExampleTests;
+			productReference = EA52933B18A7747D003415DD /* BannerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA52931818A7747D003415DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Frodo;
+				TargetAttributes = {
+					EA52933A18A7747D003415DD = {
+						TestTargetID = EA52931F18A7747D003415DD;
+					};
+				};
+			};
+			buildConfigurationList = EA52931B18A7747D003415DD /* Build configuration list for PBXProject "BannerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA52931718A7747D003415DD;
+			productRefGroup = EA52932118A7747D003415DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA52931F18A7747D003415DD /* BannerExample */,
+				EA52933A18A7747D003415DD /* BannerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA52931E18A7747D003415DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52932E18A7747D003415DD /* InfoPlist.strings in Resources */,
+				EA52933618A7747D003415DD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52933918A7747D003415DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52934718A7747D003415DD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA52931C18A7747D003415DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52933418A7747D003415DD /* FDAppDelegate.m in Sources */,
+				EA52933018A7747D003415DD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA52933718A7747D003415DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA52934918A7747D003415DD /* BannerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA52934118A7747D003415DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA52931F18A7747D003415DD /* BannerExample */;
+			targetProxy = EA52934018A7747D003415DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA52932C18A7747D003415DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA52932D18A7747D003415DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA52934518A7747D003415DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA52934618A7747D003415DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA52934A18A7747D003415DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA52934B18A7747D003415DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA52934D18A7747D003415DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BannerExample/BannerExample-Prefix.pch";
+				INFOPLIST_FILE = "BannerExample/BannerExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dongyiming/Daniel/Code/Git/iBolt/Widgets/BannerExample/Admob,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA52934E18A7747D003415DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BannerExample/BannerExample-Prefix.pch";
+				INFOPLIST_FILE = "BannerExample/BannerExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dongyiming/Daniel/Code/Git/iBolt/Widgets/BannerExample/Admob,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA52935018A7747D003415DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BannerExample.app/BannerExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BannerExample/BannerExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BannerExampleTests/BannerExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EA52935118A7747D003415DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BannerExample.app/BannerExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BannerExample/BannerExample-Prefix.pch";
+				INFOPLIST_FILE = "BannerExampleTests/BannerExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA52931B18A7747D003415DD /* Build configuration list for PBXProject "BannerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA52934A18A7747D003415DD /* Debug */,
+				EA52934B18A7747D003415DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA52934C18A7747D003415DD /* Build configuration list for PBXNativeTarget "BannerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA52934D18A7747D003415DD /* Debug */,
+				EA52934E18A7747D003415DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA52934F18A7747D003415DD /* Build configuration list for PBXNativeTarget "BannerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA52935018A7747D003415DD /* Debug */,
+				EA52935118A7747D003415DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA52931818A7747D003415DD /* Project object */;
+}

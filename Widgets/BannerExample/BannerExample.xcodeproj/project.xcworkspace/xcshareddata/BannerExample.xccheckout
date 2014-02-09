@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D455B20F-273C-4948-BD7A-7AF80F89B7E1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BannerExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1FC641AF-3674-40E8-BF8E-0EC81D6C5CAE</key>
+		<string>https://github.com/gagein/iBolt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Widgets/BannerExample/BannerExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1FC641AF-3674-40E8-BF8E-0EC81D6C5CAE</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gagein/iBolt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1FC641AF-3674-40E8-BF8E-0EC81D6C5CAE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1FC641AF-3674-40E8-BF8E-0EC81D6C5CAE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iBolt</string>
+		</dict>
+	</array>
+</dict>
+</plist>
