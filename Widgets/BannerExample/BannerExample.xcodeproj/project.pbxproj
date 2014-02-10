@@ -28,6 +28,7 @@
 		EA52936918A7754C003415DD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52936818A7754C003415DD /* StoreKit.framework */; };
 		EA52936B18A77556003415DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52936A18A77556003415DD /* SystemConfiguration.framework */; };
 		EA52936E18A77630003415DD /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA52936D18A77630003415DD /* FDViewController.m */; };
+		EA53585718A8B88A008346CC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA53585618A8B88A008346CC /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		EA52936A18A77556003415DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EA52936C18A77630003415DD /* FDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
 		EA52936D18A77630003415DD /* FDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
+		EA53585618A8B88A008346CC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA53585718A8B88A008346CC /* iAd.framework in Frameworks */,
 				EA52936B18A77556003415DD /* SystemConfiguration.framework in Frameworks */,
 				EA52936918A7754C003415DD /* StoreKit.framework in Frameworks */,
 				EA52936718A77544003415DD /* MessageUI.framework in Frameworks */,
@@ -133,6 +136,7 @@
 		EA52932218A7747D003415DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA53585618A8B88A008346CC /* iAd.framework */,
 				EA52936A18A77556003415DD /* SystemConfiguration.framework */,
 				EA52936818A7754C003415DD /* StoreKit.framework */,
 				EA52936618A77544003415DD /* MessageUI.framework */,
@@ -424,11 +428,13 @@
 		EA52934D18A7747D003415DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BannerExample/BannerExample-Prefix.pch";
 				INFOPLIST_FILE = "BannerExample/BannerExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/dongyiming/Daniel/Code/Git/iBolt/Widgets/BannerExample/Admob,
@@ -442,11 +448,13 @@
 		EA52934E18A7747D003415DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BannerExample/BannerExample-Prefix.pch";
 				INFOPLIST_FILE = "BannerExample/BannerExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/dongyiming/Daniel/Code/Git/iBolt/Widgets/BannerExample/Admob,
@@ -518,6 +526,7 @@
 				EA52934E18A7747D003415DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA52934F18A7747D003415DD /* Build configuration list for PBXNativeTarget "BannerExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				EA52935118A7747D003415DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
