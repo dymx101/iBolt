@@ -161,17 +161,17 @@
     [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonPressedImg] forState:UIControlStateHighlighted];
     
  
-    [self.text1 setFont:[UIFont fontWithName:@"DuanNing-XIng" size:18]];
-    [self.text1_2 setFont:[UIFont fontWithName:@"DuanNing-XIng" size:18]];
+    [self.text1 setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:18]];
+    [self.text1_2 setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:18]];
 
-    [self.text2 setFont:[UIFont fontWithName:@"DuanNing-XIng" size:18]];
-    [self.text2_2 setFont:[UIFont fontWithName:@"DuanNing-XIng" size:18]];
+    [self.text2 setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:18]];
+    [self.text2_2 setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:18]];
 
-    [self.text3 setFont:[UIFont fontWithName:@"DuanNing-XIng" size:18]];
-    [self.text3_2 setFont:[UIFont fontWithName:@"DuanNing-XIng" size:18]];
+    [self.text3 setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:18]];
+    [self.text3_2 setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:18]];
     
-    [self.text4 setFont:[UIFont fontWithName:@"DuanNing-XIng" size:18]];
-    [self.text4_2 setFont:[UIFont fontWithName:@"DuanNing-XIng" size:18]];
+    [self.text4 setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:18]];
+    [self.text4_2 setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:18]];
     
 	// Do any additional setup after loading the view.
     

@@ -158,13 +158,13 @@
         
         [self.hintView setFrame:CGRectMake(35, 125, 250, 200) ];
         
-        [self.Display setFont:[UIFont fontWithName:@"DuanNing-XIng" size:20]];
-        [self.TextDisplay setFont:[UIFont fontWithName:@"DuanNing-XIng" size:20]];
+        [self.Display setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:20]];
+        [self.TextDisplay setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:20]];
 
     }
     else {
-        [self.Display setFont:[UIFont fontWithName:@"DuanNing-XIng" size:25]];
-        [self.TextDisplay setFont:[UIFont fontWithName:@"DuanNing-XIng" size:25]];
+        [self.Display setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:25]];
+        [self.TextDisplay setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:25]];
     }
     
     // set images

@@ -187,13 +187,13 @@
     
     
     // default settings for labels
-    [self.descriptionDisplay setFont:[UIFont fontWithName:@"DuanNing-XIng" size:25]];
+    [self.descriptionDisplay setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:25]];
     
     self.descriptionDisplay.numberOfLines = 5;
     
     self.descriptionDisplay.text = self.cardsInformation[1][1];
     
-    [self.cardNameDisplay setFont:[UIFont fontWithName:@"DuanNing-XIng" size:30]];
+    [self.cardNameDisplay setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:30]];
     
     self.cardNameDisplay.text = self.cardsInformation[1][0];
     
@@ -224,7 +224,7 @@
     
     self.achLabelBG.image = [UIImage imageNamed:_AchLabelImg];
     
-    [self.achDisplay setFont:[UIFont fontWithName:@"DuanNing-XIng" size:17]];
+    [self.achDisplay setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:17]];
     
 }
 

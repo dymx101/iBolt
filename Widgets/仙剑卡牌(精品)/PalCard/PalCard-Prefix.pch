@@ -16,4 +16,5 @@
 
 #define TOTAL_CARD_COUNT    (62)
 
-#define _DefaultCardImg @"cardface.png"
+#define _DefaultCardImg             @"cardface.png"
+#define FONT_NAME_DUAN_NING_XING    @"DuanNing-XIng"
