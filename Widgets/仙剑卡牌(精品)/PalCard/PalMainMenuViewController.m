@@ -160,9 +160,7 @@ typedef enum {
     // check whether user has turned off sound
     if (!_soundOff)
     {
-        NSString *mp3File = [NSString stringWithFormat:@"main0%d.mp3", arc4random() % 2 + 1];
-        NSString *mp3Path = [[NSBundle mainBundle] pathForResource:mp3File ofType:nil];
-        [MCSoundBoard addAudioAtPath:mp3Path forKey:@"MainBGM"];
+        [MCSoundBoard addAudioAtPath:[PalUtil mainBgMusicFile] forKey:@"MainBGM"];
         
         [MCSoundBoard addSoundAtPath:[[NSBundle mainBundle] pathForResource:_ButtonPressedSound ofType:nil] forKey:@"button"];
         
@@ -272,7 +270,7 @@ typedef enum {
         
         if (![MCSoundBoard audioPlayerForKey:@"MainBGM"])
         {
-            [MCSoundBoard addAudioAtPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"main0%d.mp3", arc4random() % 2 + 1] ofType:nil] forKey:@"MainBGM"];
+            [MCSoundBoard addAudioAtPath:[PalUtil mainBgMusicFile] forKey:@"MainBGM"];
         }
         
         [MCSoundBoard loopAudioForKey:@"MainBGM" numberOfLoops:-1];

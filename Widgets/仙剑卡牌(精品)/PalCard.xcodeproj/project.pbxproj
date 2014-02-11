@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA6CA55718AA75FA0098B880 /* PalUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6CA55618AA75FA0098B880 /* PalUtil.m */; };
 		EA7557BA18A923FF00211CB3 /* button_pressed.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557AE18A923FF00211CB3 /* button_pressed.wav */; };
 		EA7557BB18A923FF00211CB3 /* los.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557AF18A923FF00211CB3 /* los.wav */; };
-		EA7557BC18A923FF00211CB3 /* main01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B018A923FF00211CB3 /* main01.mp3 */; };
-		EA7557BD18A923FF00211CB3 /* main02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B118A923FF00211CB3 /* main02.mp3 */; };
+		EA7557BC18A923FF00211CB3 /* main_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B018A923FF00211CB3 /* main_bg.mp3 */; };
+		EA7557BD18A923FF00211CB3 /* game_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B118A923FF00211CB3 /* game_bg.mp3 */; };
 		EA7557BE18A923FF00211CB3 /* selected.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B218A923FF00211CB3 /* selected.wav */; };
 		EA7557BF18A923FF00211CB3 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B318A923FF00211CB3 /* win.wav */; };
 		EA7557C018A923FF00211CB3 /* zd01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B418A923FF00211CB3 /* zd01.mp3 */; };
@@ -65,10 +66,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA6CA55518AA75FA0098B880 /* PalUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalUtil.h; sourceTree = "<group>"; };
+		EA6CA55618AA75FA0098B880 /* PalUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalUtil.m; sourceTree = "<group>"; };
 		EA7557AE18A923FF00211CB3 /* button_pressed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_pressed.wav; sourceTree = "<group>"; };
 		EA7557AF18A923FF00211CB3 /* los.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = los.wav; sourceTree = "<group>"; };
-		EA7557B018A923FF00211CB3 /* main01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main01.mp3; sourceTree = "<group>"; };
-		EA7557B118A923FF00211CB3 /* main02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main02.mp3; sourceTree = "<group>"; };
+		EA7557B018A923FF00211CB3 /* main_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main_bg.mp3; sourceTree = "<group>"; };
+		EA7557B118A923FF00211CB3 /* game_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game_bg.mp3; sourceTree = "<group>"; };
 		EA7557B218A923FF00211CB3 /* selected.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = selected.wav; sourceTree = "<group>"; };
 		EA7557B318A923FF00211CB3 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		EA7557B418A923FF00211CB3 /* zd01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd01.mp3; sourceTree = "<group>"; };
@@ -162,13 +165,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA6CA55418AA75EC0098B880 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EA6CA55518AA75FA0098B880 /* PalUtil.h */,
+				EA6CA55618AA75FA0098B880 /* PalUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		EA7557AD18A923FF00211CB3 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
 				EA7557AE18A923FF00211CB3 /* button_pressed.wav */,
 				EA7557AF18A923FF00211CB3 /* los.wav */,
-				EA7557B018A923FF00211CB3 /* main01.mp3 */,
-				EA7557B118A923FF00211CB3 /* main02.mp3 */,
+				EA7557B018A923FF00211CB3 /* main_bg.mp3 */,
+				EA7557B118A923FF00211CB3 /* game_bg.mp3 */,
 				EA7557B218A923FF00211CB3 /* selected.wav */,
 				EA7557B318A923FF00211CB3 /* win.wav */,
 				EA7557B418A923FF00211CB3 /* zd01.mp3 */,
@@ -259,6 +271,7 @@
 		F7F7002416B7211D00876181 /* PalCard */ = {
 			isa = PBXGroup;
 			children = (
+				EA6CA55418AA75EC0098B880 /* Util */,
 				F7F7002D16B7211D00876181 /* PalAppDelegate.h */,
 				F7F7002E16B7211D00876181 /* PalAppDelegate.m */,
 				F70F92A016D0527D00151527 /* PalDataViewController.h */,
@@ -386,8 +399,8 @@
 				F71F39A716BE647A00F39979 /* 钟齐段宁行书.ttf in Resources */,
 				EA7557BE18A923FF00211CB3 /* selected.wav in Resources */,
 				EA7557C018A923FF00211CB3 /* zd01.mp3 in Resources */,
-				EA7557BD18A923FF00211CB3 /* main02.mp3 in Resources */,
-				EA7557BC18A923FF00211CB3 /* main01.mp3 in Resources */,
+				EA7557BD18A923FF00211CB3 /* game_bg.mp3 in Resources */,
+				EA7557BC18A923FF00211CB3 /* main_bg.mp3 in Resources */,
 				EA7557BB18A923FF00211CB3 /* los.wav in Resources */,
 				F7F7002916B7211D00876181 /* InfoPlist.strings in Resources */,
 				F7F7003116B7211D00876181 /* Default.png in Resources */,
@@ -423,6 +436,7 @@
 				F7F7002B16B7211D00876181 /* main.m in Sources */,
 				F7F7002F16B7211D00876181 /* PalAppDelegate.m in Sources */,
 				F7F7003B16B7211D00876181 /* PalViewController.m in Sources */,
+				EA6CA55718AA75FA0098B880 /* PalUtil.m in Sources */,
 				F7ED0FCA16BB67DE0036B782 /* PalMainMenuViewController.m in Sources */,
 				F7ED0FE416BC96C60036B782 /* PalModeMenuViewController.m in Sources */,
 				F71F399F16BE5E3600F39979 /* PalAchievementViewController.m in Sources */,

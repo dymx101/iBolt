@@ -181,8 +181,8 @@
         else if ([turnOffSound isEqualToString:@"NO"]) {
             _soundOff = NO;
             
-            NSString *gameBGM;
-            gameBGM = [NSString stringWithFormat:@"zd0%d.mp3", arc4random() % 6 + 1 ];
+            NSString *gameBGM = @"game_bg.mp3";
+            //gameBGM = [NSString stringWithFormat:@"zd0%d.mp3", arc4random() % 6 + 1 ];
             
             [MCSoundBoard addAudioAtPath:[[NSBundle mainBundle] pathForResource:gameBGM ofType:nil]     forKey:@"BGM"];
             [MCSoundBoard addSoundAtPath:[[NSBundle mainBundle] pathForResource:_GameLoseSound ofType:nil] forKey:@"LOS"];
@@ -683,7 +683,7 @@
         
         if (!_soundOff) {
             
-            [MCSoundBoard addAudioAtPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"main0%d.mp3", arc4random() % 2 + 1] ofType:nil] forKey:@"MainBGM"];
+            [MCSoundBoard addAudioAtPath:[PalUtil mainBgMusicFile] forKey:@"MainBGM"];
             
             [MCSoundBoard loopAudioForKey:@"MainBGM" numberOfLoops:-1];
             [MCSoundBoard playAudioForKey:@"MainBGM" fadeInInterval:1.0];
