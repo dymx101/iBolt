@@ -8,8 +8,6 @@
 
 #import "PalCard.h"
 
-#define DefaultImg @"palsource/888.png"
-
 @interface PalCard ()
 
 @property (nonatomic, copy) NSString *cardImagePath;
@@ -40,7 +38,7 @@
     if (self.subviews.count == 0) {
         
         _defaultView = [[UIImageView alloc] initWithFrame:self.bounds];
-        self.defaultView.image = [UIImage imageNamed:DefaultImg];
+        self.defaultView.image = [UIImage imageNamed:_DefaultCardImg];
         [self addShadow:self.defaultView];
     
         _cardView = [[UIImageView alloc] initWithFrame:self.bounds];

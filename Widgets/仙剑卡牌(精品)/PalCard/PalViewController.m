@@ -18,7 +18,6 @@
 #define _ANITIME_SHORT 0.3
 #define _AMOUNT_OF_CARDS 12
 
-#define _BGPIC @"palsource/888.png"
 #define _GameBG @"palsource/bg4_R.jpg"
 
 #define _GameLoseImg @"UIimages/fal.png"

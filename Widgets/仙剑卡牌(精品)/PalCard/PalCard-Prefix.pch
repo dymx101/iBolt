@@ -15,3 +15,5 @@
 
 
 #define TOTAL_CARD_COUNT    (62)
+
+#define _DefaultCardImg @"cardface.png"

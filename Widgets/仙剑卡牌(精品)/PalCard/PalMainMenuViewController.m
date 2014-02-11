@@ -27,7 +27,6 @@
 #define _SoundOffImg @"UIimages/sound_off1.png"
 #define _SoundOnImg @"UIimages/sound_on.png"
 
-#define _DefaultCardImg @"palsource/888.png"
 
 #define _ReturnButtonImg @"UIimages/back.png"
 #define _ReturnButtonPressedImg @"UIimages/back_push.png"

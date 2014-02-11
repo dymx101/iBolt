@@ -15,7 +15,7 @@
 
 #define _LOGOPIC @"UIimages/main_logo.png"
 
-#define _DefaultCardImg @"palsource/888.png"
+
 
 #define _ReturnButtonImg @"UIimages/back_new.png"
 #define _ReturnButtonPressedImg @"UIimages/back_new_p.png"
