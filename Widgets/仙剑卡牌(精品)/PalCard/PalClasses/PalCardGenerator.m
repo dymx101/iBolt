@@ -8,8 +8,8 @@
 
 #import "PalCardGenerator.h"
 
-#define TOTAL_CARD_COUNT    (64)
-#define CARD_START_NUMBER   (301)
+
+#define CARD_START_NUMBER   (10001)
 
 @interface PalCardGenerator () {
     bool _initialized;
@@ -104,7 +104,7 @@
     
     if(self.NumbersOfBlackCards == 2) {
         if (cardNumber == blackRandomNumber1 || cardNumber == blackRandomNumber2) {
-            path = [NSString stringWithFormat:@"palsource_black/%d.png", cards[cardNumber]];
+            path = [NSString stringWithFormat:@"1Free/premium/%dp.png", cards[cardNumber]]; //[NSString stringWithFormat:@"palsource_black/%d.png", cards[cardNumber]];
             _lastIsBlack = YES;
             return path;
         }
@@ -112,13 +112,13 @@
     
     if(self.NumbersOfBlackCards == 1) {
         if (cardNumber == blackRandomNumber1) {
-            path = [NSString stringWithFormat:@"palsource_black/%d.png", cards[cardNumber]];
+            path = [NSString stringWithFormat:@"1Free/premium/%dp.png", cards[cardNumber]]; //[NSString stringWithFormat:@"palsource_black/%d.png", cards[cardNumber]];
             _lastIsBlack = YES;
             return path;
         }
     }
 
-    path = [NSString stringWithFormat:@"palsource/%d.png", cards[cardNumber]];
+    path = [NSString stringWithFormat:@"1Free/original/%d.png", cards[cardNumber]];//[NSString stringWithFormat:@"palsource/%d.png", cards[cardNumber]];
     _lastIsBlack = NO;
     return path;
 }

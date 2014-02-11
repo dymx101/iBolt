@@ -12,7 +12,6 @@
 #import "MCSoundBoard.h"
 
 #define ITEM_SPACING 200
-#define AmountOfCards 64
 
 #define _LOGOPIC @"UIimages/main_logo.png"
 
@@ -172,14 +171,14 @@
     carousel.dataSource = self;
     carousel.type = iCarouselTypeCoverFlow;
     
-    for (int i = 1; i <= AmountOfCards; i++) {
+    for (int i = 1; i <= TOTAL_CARD_COUNT; i++) {
         if([[self.CardIsUnlocked objectAtIndex:i] isEqualToString:@"YES"]) {
             _amountOfUnlockedCards ++;
         }
     }
     
-    self.achDisplay.text = [NSString stringWithFormat: @"卡牌解锁进度: %.1f%%",(float)_amountOfUnlockedCards * 100.0 / AmountOfCards];
-    self.indexLabel.text = [NSString stringWithFormat:@"1/%d", AmountOfCards];
+    self.achDisplay.text = [NSString stringWithFormat: @"卡牌解锁进度: %.1f%%",(float)_amountOfUnlockedCards * 100.0 / TOTAL_CARD_COUNT];
+    self.indexLabel.text = [NSString stringWithFormat:@"1/%d", TOTAL_CARD_COUNT];
     
     // read cards information from CardsInformation.plist
     NSString *path = [[NSBundle mainBundle] pathForResource:@"CardsInformation" ofType:@"plist"];
@@ -265,7 +264,7 @@
     _cardViews = [[NSMutableArray alloc] init];
     _unlockedCardViews = [[NSMutableArray alloc] init];
     
-    for (int i = 1; i <= AmountOfCards; i++)
+    for (int i = 1; i <= TOTAL_CARD_COUNT; i++)
     {
         UIView *view;
         NSString *viewPath;
@@ -276,12 +275,18 @@
             unlocked = false;
             
         }
-        else if (i < 10) {
-            viewPath = [NSString stringWithFormat:@"palsource/30%d.png", i];
-        }
+        
         else {
-            viewPath = [NSString stringWithFormat:@"palsource/3%d.png", i];
+            int number = i + 10000;
+            viewPath = [NSString stringWithFormat:@"1Free/original/%d.png", number];
         }
+        
+//        else if (i < 10) {
+//            viewPath = [NSString stringWithFormat:@"palsource/30%d.png", i];
+//        }
+//        else {
+//            viewPath = [NSString stringWithFormat:@"palsource/3%d.png", i];
+//        }
    
         FXImageView *imageView = [[FXImageView alloc] initWithFrame:CGRectMake(70, 80, 180, 260)];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -353,13 +358,13 @@
     
     self.cardNameDisplay.text = self.cardsInformation[index + 1][0];
     self.descriptionDisplay.text = self.cardsInformation[index + 1][1];
-    self.indexLabel.text = [NSString stringWithFormat:@"%d/%d", index + 1, AmountOfCards];
+    self.indexLabel.text = [NSString stringWithFormat:@"%d/%d", index + 1, TOTAL_CARD_COUNT];
 
 }
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
-    return AmountOfCards;
+    return TOTAL_CARD_COUNT;
 }
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
