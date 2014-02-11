@@ -19,6 +19,7 @@
 		EA7557C318A923FF00211CB3 /* zd04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B718A923FF00211CB3 /* zd04.mp3 */; };
 		EA7557C418A923FF00211CB3 /* zd05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B818A923FF00211CB3 /* zd05.mp3 */; };
 		EA7557C518A923FF00211CB3 /* zd06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B918A923FF00211CB3 /* zd06.mp3 */; };
+		EACFD08E18AA0C530024EECF /* 1Free in Resources */ = {isa = PBXBuildFile; fileRef = EACFD08D18AA0C530024EECF /* 1Free */; };
 		F70F928616CF40E700151527 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928316CF40E700151527 /* FXImageView.m */; };
 		F70F928716CF40E700151527 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928516CF40E700151527 /* UIImage+FX.m */; };
 		F70F929016CF523D00151527 /* ASImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928A16CF523D00151527 /* ASImageScrollView.m */; };
@@ -75,6 +76,7 @@
 		EA7557B718A923FF00211CB3 /* zd04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd04.mp3; sourceTree = "<group>"; };
 		EA7557B818A923FF00211CB3 /* zd05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd05.mp3; sourceTree = "<group>"; };
 		EA7557B918A923FF00211CB3 /* zd06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd06.mp3; sourceTree = "<group>"; };
+		EACFD08D18AA0C530024EECF /* 1Free */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 1Free; sourceTree = "<group>"; };
 		F70F928216CF40E700151527 /* FXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXImageView.h; sourceTree = "<group>"; };
 		F70F928316CF40E700151527 /* FXImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXImageView.m; sourceTree = "<group>"; };
 		F70F928416CF40E700151527 /* UIImage+FX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FX.h"; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		F7F7002516B7211D00876181 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EACFD08D18AA0C530024EECF /* 1Free */,
 				EA7557AD18A923FF00211CB3 /* Sounds */,
 				F7ED0FF016BCF9910036B782 /* UIimages */,
 				F7ED0FF316BD11540036B782 /* palsource_black */,
@@ -376,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACFD08E18AA0C530024EECF /* 1Free in Resources */,
 				F71F39A716BE647A00F39979 /* 钟齐段宁行书.ttf in Resources */,
 				EA7557BE18A923FF00211CB3 /* selected.wav in Resources */,
 				EA7557C018A923FF00211CB3 /* zd01.mp3 in Resources */,
