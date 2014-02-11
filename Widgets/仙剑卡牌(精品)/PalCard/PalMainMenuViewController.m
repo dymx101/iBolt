@@ -41,6 +41,15 @@
 
 #define DEVICE_IS_IPHONE5 ([[UIScreen mainScreen] bounds].size.height == 568)
 
+
+typedef enum {
+    kMenuTypeGame = 0
+    , kMenuTypeAchivement
+    , kMenuTypeInstruction
+    , kMenuTypeInformation
+}EMenuType;
+
+
 @interface PalMainMenuViewController (){
     bool _soundOff;
 }
@@ -78,11 +87,7 @@
 {
     [PalMountainAndCloudView backgroundAnimation:self.view];
     
-    if(!_bgAnimationView.animationStarted){
-        
-        [self.bgAnimationView setup];
-        [self.bgAnimationView startAnimation];
-    }
+    [self restartAnimation];
 
 }
 
@@ -197,47 +202,60 @@
 }
 
 
-- (IBAction)gameStartButtonPressed:(UIButton *)sender {
+
+-(void)menuPressed:(EMenuType)aMenuType {
     
     if (!_soundOff) {
         [MCSoundBoard playSoundForKey:@"button"];
     }
     
-    PalModeMenuViewController *modeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"mainGameSegue"];
-    [self presentViewController:modeVC animated:NO completion:nil];
+    UIViewController *vc = nil;
+    
+    switch (aMenuType) {
+        case kMenuTypeGame:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"mainGameSegue"];
+            break;
+            
+        case kMenuTypeAchivement:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"achRootSegue"];
+            break;
+            
+        case kMenuTypeInstruction:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"insSegue"];
+            break;
+            
+        case kMenuTypeInformation:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"infoSegue"];
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self presentViewController:vc animated:NO completion:nil];
+}
+
+- (IBAction)gameStartButtonPressed:(UIButton *)sender {
+    
+    [self menuPressed:kMenuTypeGame];
     
 }
 
 - (IBAction)achievementButtonPressed:(UIButton *)sender {
     
-    if (!_soundOff) {
-        [MCSoundBoard playSoundForKey:@"button"];
-    }
-    PalAchievementViewController *achVC = [self.storyboard instantiateViewControllerWithIdentifier:@"achRootSegue"];
-    
-    [self presentViewController:achVC animated:NO completion:nil];
+    [self menuPressed:kMenuTypeAchivement];
 
 }
 
 - (IBAction)instructionButtonPressed:(UIButton *)sender {
     
-    if (!_soundOff) {
-        [MCSoundBoard playSoundForKey:@"button"];
-    }
-    PalInstructionViewController *insVC = [self.storyboard instantiateViewControllerWithIdentifier:@"insSegue"];
-    
-    [self presentViewController:insVC animated:NO completion:nil];
+    [self menuPressed:kMenuTypeInstruction];
 
 }
 
 - (IBAction)informationButtonPressed:(UIButton *)sender {
     
-    if (!_soundOff) {
-        [MCSoundBoard playSoundForKey:@"button"];
-    }
-    PalInformationViewController *infoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"infoSegue"];
-    
-    [self presentViewController:infoVC animated:NO completion:nil];
+    [self menuPressed:kMenuTypeInformation];
 
 }
 
