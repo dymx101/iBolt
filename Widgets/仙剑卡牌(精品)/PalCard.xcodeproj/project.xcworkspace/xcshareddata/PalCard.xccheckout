@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B2265E93-8F0D-478D-9B64-6B2A8F1655B0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PalCard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>77B6CC74-BF85-4B12-A845-37B64F866D8E</key>
+		<string>https://github.com/gagein/iBolt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Widgets/仙剑卡牌(精品)/PalCard.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>77B6CC74-BF85-4B12-A845-37B64F866D8E</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gagein/iBolt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>77B6CC74-BF85-4B12-A845-37B64F866D8E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>77B6CC74-BF85-4B12-A845-37B64F866D8E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iBolt</string>
+		</dict>
+	</array>
+</dict>
+</plist>

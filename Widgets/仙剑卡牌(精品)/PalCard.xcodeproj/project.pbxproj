@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA7557BA18A923FF00211CB3 /* button_pressed.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557AE18A923FF00211CB3 /* button_pressed.wav */; };
+		EA7557BB18A923FF00211CB3 /* los.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557AF18A923FF00211CB3 /* los.wav */; };
+		EA7557BC18A923FF00211CB3 /* main01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B018A923FF00211CB3 /* main01.mp3 */; };
+		EA7557BD18A923FF00211CB3 /* main02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B118A923FF00211CB3 /* main02.mp3 */; };
+		EA7557BE18A923FF00211CB3 /* selected.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B218A923FF00211CB3 /* selected.wav */; };
+		EA7557BF18A923FF00211CB3 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B318A923FF00211CB3 /* win.wav */; };
+		EA7557C018A923FF00211CB3 /* zd01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B418A923FF00211CB3 /* zd01.mp3 */; };
+		EA7557C118A923FF00211CB3 /* zd02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B518A923FF00211CB3 /* zd02.mp3 */; };
+		EA7557C218A923FF00211CB3 /* zd03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B618A923FF00211CB3 /* zd03.mp3 */; };
+		EA7557C318A923FF00211CB3 /* zd04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B718A923FF00211CB3 /* zd04.mp3 */; };
+		EA7557C418A923FF00211CB3 /* zd05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B818A923FF00211CB3 /* zd05.mp3 */; };
+		EA7557C518A923FF00211CB3 /* zd06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA7557B918A923FF00211CB3 /* zd06.mp3 */; };
+		F70F928616CF40E700151527 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928316CF40E700151527 /* FXImageView.m */; };
+		F70F928716CF40E700151527 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928516CF40E700151527 /* UIImage+FX.m */; };
+		F70F929016CF523D00151527 /* ASImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928A16CF523D00151527 /* ASImageScrollView.m */; };
+		F70F929116CF523D00151527 /* ASMediaFocusController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928C16CF523D00151527 /* ASMediaFocusController.m */; };
+		F70F929216CF523D00151527 /* ASMediaFocusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70F928D16CF523D00151527 /* ASMediaFocusController.xib */; };
+		F70F929316CF523D00151527 /* ASMediaFocusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928F16CF523D00151527 /* ASMediaFocusManager.m */; };
+		F70F92A216D0527D00151527 /* PalDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F92A116D0527D00151527 /* PalDataViewController.m */; };
+		F710265C16CDC17700FD2836 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = F710265B16CDC17700FD2836 /* iCarousel.m */; };
+		F715910916D6CDD9006D91BF /* PalDataInit.m in Sources */ = {isa = PBXBuildFile; fileRef = F715910816D6CDD9006D91BF /* PalDataInit.m */; };
+		F71F398D16BE282200F39979 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71F398C16BE282200F39979 /* QuartzCore.framework */; };
+		F71F399F16BE5E3600F39979 /* PalAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71F399E16BE5E3600F39979 /* PalAchievementViewController.m */; };
+		F71F39A716BE647A00F39979 /* 钟齐段宁行书.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F71F39A616BE646A00F39979 /* 钟齐段宁行书.ttf */; };
+		F71F39BA16BF1F4300F39979 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F39B816BF1F4300F39979 /* iPhoneStoryboard.storyboard */; };
+		F742874E16BA209B00C8B9F9 /* palsource in Resources */ = {isa = PBXBuildFile; fileRef = F742874D16BA209B00C8B9F9 /* palsource */; };
+		F742875116BA20C000C8B9F9 /* pallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F742874F16BA20C000C8B9F9 /* pallogo.png */; };
+		F742875D16BB0F9500C8B9F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F742875C16BB0F9500C8B9F9 /* AVFoundation.framework */; };
+		F77DC60C16C4601D0002D88B /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = F77DC60B16C4601D0002D88B /* icon57.png */; };
+		F77DC60E16C460210002D88B /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = F77DC60D16C460210002D88B /* icon114.png */; };
+		F77DC61016C498290002D88B /* CardsInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = F77DC60F16C498280002D88B /* CardsInformation.plist */; };
+		F794E09016FD2AA900C4FB15 /* MCSoundBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F794E08F16FD2AA900C4FB15 /* MCSoundBoard.m */; };
+		F7A3C03F16C1CAE100D42AAF /* PalInstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A3C03E16C1CAE000D42AAF /* PalInstructionViewController.m */; };
+		F7A3C04216C1E09D00D42AAF /* PalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A3C04116C1E09D00D42AAF /* PalInformationViewController.m */; };
+		F7E40B3316BB155B00F1CF97 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E40B3216BB155B00F1CF97 /* AudioToolbox.framework */; };
+		F7ED0FCA16BB67DE0036B782 /* PalMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7ED0FC916BB67DE0036B782 /* PalMainMenuViewController.m */; };
+		F7ED0FE416BC96C60036B782 /* PalModeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7ED0FE316BC96C60036B782 /* PalModeMenuViewController.m */; };
+		F7ED0FF116BCF9910036B782 /* UIimages in Resources */ = {isa = PBXBuildFile; fileRef = F7ED0FF016BCF9910036B782 /* UIimages */; };
+		F7ED0FF416BD11540036B782 /* palsource_black in Resources */ = {isa = PBXBuildFile; fileRef = F7ED0FF316BD11540036B782 /* palsource_black */; };
+		F7F7001F16B7211D00876181 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7001E16B7211D00876181 /* UIKit.framework */; };
+		F7F7002116B7211D00876181 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7002016B7211D00876181 /* Foundation.framework */; };
+		F7F7002316B7211D00876181 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7002216B7211D00876181 /* CoreGraphics.framework */; };
+		F7F7002916B7211D00876181 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7F7002716B7211D00876181 /* InfoPlist.strings */; };
+		F7F7002B16B7211D00876181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F7002A16B7211D00876181 /* main.m */; };
+		F7F7002F16B7211D00876181 /* PalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F7002E16B7211D00876181 /* PalAppDelegate.m */; };
+		F7F7003116B7211D00876181 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F7003016B7211D00876181 /* Default.png */; };
+		F7F7003316B7211D00876181 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F7003216B7211D00876181 /* Default@2x.png */; };
+		F7F7003516B7211D00876181 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F7003416B7211D00876181 /* Default-568h@2x.png */; };
+		F7F7003B16B7211D00876181 /* PalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F7003A16B7211D00876181 /* PalViewController.m */; };
+		F7F9286016D69E91007ABB10 /* PalAchievementBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F9285916D69E91007ABB10 /* PalAchievementBrain.m */; };
+		F7F9286116D69E91007ABB10 /* PalCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F9285B16D69E91007ABB10 /* PalCard.m */; };
+		F7F9286216D69E91007ABB10 /* PalCardGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F9285D16D69E91007ABB10 /* PalCardGenerator.m */; };
+		F7F9286316D69E91007ABB10 /* PalMountainAndCloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F9285F16D69E91007ABB10 /* PalMountainAndCloudView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA7557AE18A923FF00211CB3 /* button_pressed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_pressed.wav; sourceTree = "<group>"; };
+		EA7557AF18A923FF00211CB3 /* los.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = los.wav; sourceTree = "<group>"; };
+		EA7557B018A923FF00211CB3 /* main01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main01.mp3; sourceTree = "<group>"; };
+		EA7557B118A923FF00211CB3 /* main02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main02.mp3; sourceTree = "<group>"; };
+		EA7557B218A923FF00211CB3 /* selected.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = selected.wav; sourceTree = "<group>"; };
+		EA7557B318A923FF00211CB3 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		EA7557B418A923FF00211CB3 /* zd01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd01.mp3; sourceTree = "<group>"; };
+		EA7557B518A923FF00211CB3 /* zd02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd02.mp3; sourceTree = "<group>"; };
+		EA7557B618A923FF00211CB3 /* zd03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd03.mp3; sourceTree = "<group>"; };
+		EA7557B718A923FF00211CB3 /* zd04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd04.mp3; sourceTree = "<group>"; };
+		EA7557B818A923FF00211CB3 /* zd05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd05.mp3; sourceTree = "<group>"; };
+		EA7557B918A923FF00211CB3 /* zd06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zd06.mp3; sourceTree = "<group>"; };
+		F70F928216CF40E700151527 /* FXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXImageView.h; sourceTree = "<group>"; };
+		F70F928316CF40E700151527 /* FXImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXImageView.m; sourceTree = "<group>"; };
+		F70F928416CF40E700151527 /* UIImage+FX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FX.h"; sourceTree = "<group>"; };
+		F70F928516CF40E700151527 /* UIImage+FX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FX.m"; sourceTree = "<group>"; };
+		F70F928916CF523D00151527 /* ASImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASImageScrollView.h; sourceTree = "<group>"; };
+		F70F928A16CF523D00151527 /* ASImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASImageScrollView.m; sourceTree = "<group>"; };
+		F70F928B16CF523D00151527 /* ASMediaFocusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMediaFocusController.h; sourceTree = "<group>"; };
+		F70F928C16CF523D00151527 /* ASMediaFocusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMediaFocusController.m; sourceTree = "<group>"; };
+		F70F928D16CF523D00151527 /* ASMediaFocusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASMediaFocusController.xib; sourceTree = "<group>"; };
+		F70F928E16CF523D00151527 /* ASMediaFocusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMediaFocusManager.h; sourceTree = "<group>"; };
+		F70F928F16CF523D00151527 /* ASMediaFocusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMediaFocusManager.m; sourceTree = "<group>"; };
+		F70F92A016D0527D00151527 /* PalDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalDataViewController.h; sourceTree = "<group>"; };
+		F70F92A116D0527D00151527 /* PalDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalDataViewController.m; sourceTree = "<group>"; };
+		F710265A16CDC17700FD2836 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		F710265B16CDC17700FD2836 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		F715910716D6CDD9006D91BF /* PalDataInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalDataInit.h; sourceTree = "<group>"; };
+		F715910816D6CDD9006D91BF /* PalDataInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalDataInit.m; sourceTree = "<group>"; };
+		F71F398C16BE282200F39979 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F71F399D16BE5E3600F39979 /* PalAchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalAchievementViewController.h; sourceTree = "<group>"; };
+		F71F399E16BE5E3600F39979 /* PalAchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalAchievementViewController.m; sourceTree = "<group>"; };
+		F71F39A616BE646A00F39979 /* 钟齐段宁行书.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "钟齐段宁行书.ttf"; sourceTree = "<group>"; };
+		F71F39B916BF1F4300F39979 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = PalCard/en.lproj/iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
+		F742874D16BA209B00C8B9F9 /* palsource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = palsource; sourceTree = "<group>"; };
+		F742874F16BA20C000C8B9F9 /* pallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pallogo.png; sourceTree = "<group>"; };
+		F742875C16BB0F9500C8B9F9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F77DC60B16C4601D0002D88B /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		F77DC60D16C460210002D88B /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		F77DC60F16C498280002D88B /* CardsInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CardsInformation.plist; sourceTree = "<group>"; };
+		F794E08E16FD2AA900C4FB15 /* MCSoundBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSoundBoard.h; sourceTree = "<group>"; };
+		F794E08F16FD2AA900C4FB15 /* MCSoundBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSoundBoard.m; sourceTree = "<group>"; };
+		F7A3C03D16C1CAE000D42AAF /* PalInstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalInstructionViewController.h; sourceTree = "<group>"; };
+		F7A3C03E16C1CAE000D42AAF /* PalInstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalInstructionViewController.m; sourceTree = "<group>"; };
+		F7A3C04016C1E09D00D42AAF /* PalInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalInformationViewController.h; sourceTree = "<group>"; };
+		F7A3C04116C1E09D00D42AAF /* PalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalInformationViewController.m; sourceTree = "<group>"; };
+		F7E40B3216BB155B00F1CF97 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F7ED0FC816BB67DE0036B782 /* PalMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalMainMenuViewController.h; sourceTree = "<group>"; };
+		F7ED0FC916BB67DE0036B782 /* PalMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalMainMenuViewController.m; sourceTree = "<group>"; };
+		F7ED0FE216BC96C60036B782 /* PalModeMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalModeMenuViewController.h; sourceTree = "<group>"; };
+		F7ED0FE316BC96C60036B782 /* PalModeMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalModeMenuViewController.m; sourceTree = "<group>"; };
+		F7ED0FF016BCF9910036B782 /* UIimages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIimages; sourceTree = "<group>"; };
+		F7ED0FF316BD11540036B782 /* palsource_black */ = {isa = PBXFileReference; lastKnownFileType = folder; path = palsource_black; sourceTree = "<group>"; };
+		F7F7001A16B7211D00876181 /* PalCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F7001E16B7211D00876181 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F7F7002016B7211D00876181 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7F7002216B7211D00876181 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F7F7002616B7211D00876181 /* PalCard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PalCard-Info.plist"; sourceTree = "<group>"; };
+		F7F7002816B7211D00876181 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7F7002A16B7211D00876181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7F7002C16B7211D00876181 /* PalCard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PalCard-Prefix.pch"; sourceTree = "<group>"; };
+		F7F7002D16B7211D00876181 /* PalAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalAppDelegate.h; sourceTree = "<group>"; };
+		F7F7002E16B7211D00876181 /* PalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalAppDelegate.m; sourceTree = "<group>"; };
+		F7F7003016B7211D00876181 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F7F7003216B7211D00876181 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F7F7003416B7211D00876181 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F7F7003916B7211D00876181 /* PalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalViewController.h; sourceTree = "<group>"; };
+		F7F7003A16B7211D00876181 /* PalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalViewController.m; sourceTree = "<group>"; };
+		F7F9285816D69E91007ABB10 /* PalAchievementBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalAchievementBrain.h; sourceTree = "<group>"; };
+		F7F9285916D69E91007ABB10 /* PalAchievementBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalAchievementBrain.m; sourceTree = "<group>"; };
+		F7F9285A16D69E91007ABB10 /* PalCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalCard.h; sourceTree = "<group>"; };
+		F7F9285B16D69E91007ABB10 /* PalCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalCard.m; sourceTree = "<group>"; };
+		F7F9285C16D69E91007ABB10 /* PalCardGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalCardGenerator.h; sourceTree = "<group>"; };
+		F7F9285D16D69E91007ABB10 /* PalCardGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalCardGenerator.m; sourceTree = "<group>"; };
+		F7F9285E16D69E91007ABB10 /* PalMountainAndCloudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalMountainAndCloudView.h; sourceTree = "<group>"; };
+		F7F9285F16D69E91007ABB10 /* PalMountainAndCloudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalMountainAndCloudView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7F7001716B7211D00876181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F71F398D16BE282200F39979 /* QuartzCore.framework in Frameworks */,
+				F7E40B3316BB155B00F1CF97 /* AudioToolbox.framework in Frameworks */,
+				F742875D16BB0F9500C8B9F9 /* AVFoundation.framework in Frameworks */,
+				F7F7001F16B7211D00876181 /* UIKit.framework in Frameworks */,
+				F7F7002116B7211D00876181 /* Foundation.framework in Frameworks */,
+				F7F7002316B7211D00876181 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA7557AD18A923FF00211CB3 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EA7557AE18A923FF00211CB3 /* button_pressed.wav */,
+				EA7557AF18A923FF00211CB3 /* los.wav */,
+				EA7557B018A923FF00211CB3 /* main01.mp3 */,
+				EA7557B118A923FF00211CB3 /* main02.mp3 */,
+				EA7557B218A923FF00211CB3 /* selected.wav */,
+				EA7557B318A923FF00211CB3 /* win.wav */,
+				EA7557B418A923FF00211CB3 /* zd01.mp3 */,
+				EA7557B518A923FF00211CB3 /* zd02.mp3 */,
+				EA7557B618A923FF00211CB3 /* zd03.mp3 */,
+				EA7557B718A923FF00211CB3 /* zd04.mp3 */,
+				EA7557B818A923FF00211CB3 /* zd05.mp3 */,
+				EA7557B918A923FF00211CB3 /* zd06.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F70F928116CF40E700151527 /* FXImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F70F928216CF40E700151527 /* FXImageView.h */,
+				F70F928316CF40E700151527 /* FXImageView.m */,
+				F70F928416CF40E700151527 /* UIImage+FX.h */,
+				F70F928516CF40E700151527 /* UIImage+FX.m */,
+			);
+			path = FXImageView;
+			sourceTree = "<group>";
+		};
+		F70F928816CF523D00151527 /* ASMediaFocusManager */ = {
+			isa = PBXGroup;
+			children = (
+				F70F928916CF523D00151527 /* ASImageScrollView.h */,
+				F70F928A16CF523D00151527 /* ASImageScrollView.m */,
+				F70F928B16CF523D00151527 /* ASMediaFocusController.h */,
+				F70F928C16CF523D00151527 /* ASMediaFocusController.m */,
+				F70F928D16CF523D00151527 /* ASMediaFocusController.xib */,
+				F70F928E16CF523D00151527 /* ASMediaFocusManager.h */,
+				F70F928F16CF523D00151527 /* ASMediaFocusManager.m */,
+			);
+			path = ASMediaFocusManager;
+			sourceTree = "<group>";
+		};
+		F710265916CDC17700FD2836 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				F710265A16CDC17700FD2836 /* iCarousel.h */,
+				F710265B16CDC17700FD2836 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		F710265D16CDC19900FD2836 /* MCSoundBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F794E08E16FD2AA900C4FB15 /* MCSoundBoard.h */,
+				F794E08F16FD2AA900C4FB15 /* MCSoundBoard.m */,
+			);
+			path = MCSoundBoard;
+			sourceTree = "<group>";
+		};
+		F7F7000F16B7211D00876181 = {
+			isa = PBXGroup;
+			children = (
+				F77DC60D16C460210002D88B /* icon114.png */,
+				F77DC60B16C4601D0002D88B /* icon57.png */,
+				F7F7002416B7211D00876181 /* PalCard */,
+				F7F7001D16B7211D00876181 /* Frameworks */,
+				F7F7001B16B7211D00876181 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7F7001B16B7211D00876181 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7F7001A16B7211D00876181 /* PalCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7F7001D16B7211D00876181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7E40B3216BB155B00F1CF97 /* AudioToolbox.framework */,
+				F71F398C16BE282200F39979 /* QuartzCore.framework */,
+				F742875C16BB0F9500C8B9F9 /* AVFoundation.framework */,
+				F7F7001E16B7211D00876181 /* UIKit.framework */,
+				F7F7002016B7211D00876181 /* Foundation.framework */,
+				F7F7002216B7211D00876181 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7F7002416B7211D00876181 /* PalCard */ = {
+			isa = PBXGroup;
+			children = (
+				F7F7002D16B7211D00876181 /* PalAppDelegate.h */,
+				F7F7002E16B7211D00876181 /* PalAppDelegate.m */,
+				F70F92A016D0527D00151527 /* PalDataViewController.h */,
+				F70F92A116D0527D00151527 /* PalDataViewController.m */,
+				F7A3C03D16C1CAE000D42AAF /* PalInstructionViewController.h */,
+				F7A3C03E16C1CAE000D42AAF /* PalInstructionViewController.m */,
+				F71F399D16BE5E3600F39979 /* PalAchievementViewController.h */,
+				F71F399E16BE5E3600F39979 /* PalAchievementViewController.m */,
+				F7A3C04016C1E09D00D42AAF /* PalInformationViewController.h */,
+				F7A3C04116C1E09D00D42AAF /* PalInformationViewController.m */,
+				F7ED0FC816BB67DE0036B782 /* PalMainMenuViewController.h */,
+				F7ED0FC916BB67DE0036B782 /* PalMainMenuViewController.m */,
+				F7ED0FE216BC96C60036B782 /* PalModeMenuViewController.h */,
+				F7ED0FE316BC96C60036B782 /* PalModeMenuViewController.m */,
+				F7F7003916B7211D00876181 /* PalViewController.h */,
+				F7F7003A16B7211D00876181 /* PalViewController.m */,
+				F77DC60F16C498280002D88B /* CardsInformation.plist */,
+				F71F39B816BF1F4300F39979 /* iPhoneStoryboard.storyboard */,
+				F7F9285716D69E90007ABB10 /* PalClasses */,
+				F70F928816CF523D00151527 /* ASMediaFocusManager */,
+				F70F928116CF40E700151527 /* FXImageView */,
+				F710265D16CDC19900FD2836 /* MCSoundBoard */,
+				F710265916CDC17700FD2836 /* iCarousel */,
+				F7F7002516B7211D00876181 /* Supporting Files */,
+			);
+			path = PalCard;
+			sourceTree = "<group>";
+		};
+		F7F7002516B7211D00876181 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA7557AD18A923FF00211CB3 /* Sounds */,
+				F7ED0FF016BCF9910036B782 /* UIimages */,
+				F7ED0FF316BD11540036B782 /* palsource_black */,
+				F742874D16BA209B00C8B9F9 /* palsource */,
+				F7F7002616B7211D00876181 /* PalCard-Info.plist */,
+				F7F7002716B7211D00876181 /* InfoPlist.strings */,
+				F7F7002A16B7211D00876181 /* main.m */,
+				F7F7002C16B7211D00876181 /* PalCard-Prefix.pch */,
+				F71F39A616BE646A00F39979 /* 钟齐段宁行书.ttf */,
+				F742874F16BA20C000C8B9F9 /* pallogo.png */,
+				F7F7003016B7211D00876181 /* Default.png */,
+				F7F7003216B7211D00876181 /* Default@2x.png */,
+				F7F7003416B7211D00876181 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7F9285716D69E90007ABB10 /* PalClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F715910716D6CDD9006D91BF /* PalDataInit.h */,
+				F715910816D6CDD9006D91BF /* PalDataInit.m */,
+				F7F9285816D69E91007ABB10 /* PalAchievementBrain.h */,
+				F7F9285916D69E91007ABB10 /* PalAchievementBrain.m */,
+				F7F9285A16D69E91007ABB10 /* PalCard.h */,
+				F7F9285B16D69E91007ABB10 /* PalCard.m */,
+				F7F9285C16D69E91007ABB10 /* PalCardGenerator.h */,
+				F7F9285D16D69E91007ABB10 /* PalCardGenerator.m */,
+				F7F9285E16D69E91007ABB10 /* PalMountainAndCloudView.h */,
+				F7F9285F16D69E91007ABB10 /* PalMountainAndCloudView.m */,
+			);
+			path = PalClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7F7001916B7211D00876181 /* PalCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7F7003E16B7211D00876181 /* Build configuration list for PBXNativeTarget "PalCard" */;
+			buildPhases = (
+				F7F7001616B7211D00876181 /* Sources */,
+				F7F7001716B7211D00876181 /* Frameworks */,
+				F7F7001816B7211D00876181 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PalCard;
+			productName = PalCard;
+			productReference = F7F7001A16B7211D00876181 /* PalCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7F7001116B7211D00876181 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Pal;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = FlyinGeek;
+			};
+			buildConfigurationList = F7F7001416B7211D00876181 /* Build configuration list for PBXProject "PalCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				zh,
+				Base,
+				"zh-Hans-CN",
+			);
+			mainGroup = F7F7000F16B7211D00876181;
+			productRefGroup = F7F7001B16B7211D00876181 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7F7001916B7211D00876181 /* PalCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7F7001816B7211D00876181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F71F39A716BE647A00F39979 /* 钟齐段宁行书.ttf in Resources */,
+				EA7557BE18A923FF00211CB3 /* selected.wav in Resources */,
+				EA7557C018A923FF00211CB3 /* zd01.mp3 in Resources */,
+				EA7557BD18A923FF00211CB3 /* main02.mp3 in Resources */,
+				EA7557BC18A923FF00211CB3 /* main01.mp3 in Resources */,
+				EA7557BB18A923FF00211CB3 /* los.wav in Resources */,
+				F7F7002916B7211D00876181 /* InfoPlist.strings in Resources */,
+				F7F7003116B7211D00876181 /* Default.png in Resources */,
+				EA7557C318A923FF00211CB3 /* zd04.mp3 in Resources */,
+				EA7557C218A923FF00211CB3 /* zd03.mp3 in Resources */,
+				F7F7003316B7211D00876181 /* Default@2x.png in Resources */,
+				F7F7003516B7211D00876181 /* Default-568h@2x.png in Resources */,
+				F742874E16BA209B00C8B9F9 /* palsource in Resources */,
+				F742875116BA20C000C8B9F9 /* pallogo.png in Resources */,
+				EA7557C118A923FF00211CB3 /* zd02.mp3 in Resources */,
+				F7ED0FF116BCF9910036B782 /* UIimages in Resources */,
+				F7ED0FF416BD11540036B782 /* palsource_black in Resources */,
+				EA7557BF18A923FF00211CB3 /* win.wav in Resources */,
+				F71F39BA16BF1F4300F39979 /* iPhoneStoryboard.storyboard in Resources */,
+				F77DC60C16C4601D0002D88B /* icon57.png in Resources */,
+				F77DC60E16C460210002D88B /* icon114.png in Resources */,
+				EA7557C418A923FF00211CB3 /* zd05.mp3 in Resources */,
+				EA7557C518A923FF00211CB3 /* zd06.mp3 in Resources */,
+				EA7557BA18A923FF00211CB3 /* button_pressed.wav in Resources */,
+				F77DC61016C498290002D88B /* CardsInformation.plist in Resources */,
+				F70F929216CF523D00151527 /* ASMediaFocusController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7F7001616B7211D00876181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F7002B16B7211D00876181 /* main.m in Sources */,
+				F7F7002F16B7211D00876181 /* PalAppDelegate.m in Sources */,
+				F7F7003B16B7211D00876181 /* PalViewController.m in Sources */,
+				F7ED0FCA16BB67DE0036B782 /* PalMainMenuViewController.m in Sources */,
+				F7ED0FE416BC96C60036B782 /* PalModeMenuViewController.m in Sources */,
+				F71F399F16BE5E3600F39979 /* PalAchievementViewController.m in Sources */,
+				F7A3C03F16C1CAE100D42AAF /* PalInstructionViewController.m in Sources */,
+				F7A3C04216C1E09D00D42AAF /* PalInformationViewController.m in Sources */,
+				F710265C16CDC17700FD2836 /* iCarousel.m in Sources */,
+				F70F928616CF40E700151527 /* FXImageView.m in Sources */,
+				F70F928716CF40E700151527 /* UIImage+FX.m in Sources */,
+				F70F929016CF523D00151527 /* ASImageScrollView.m in Sources */,
+				F70F929116CF523D00151527 /* ASMediaFocusController.m in Sources */,
+				F70F929316CF523D00151527 /* ASMediaFocusManager.m in Sources */,
+				F70F92A216D0527D00151527 /* PalDataViewController.m in Sources */,
+				F7F9286016D69E91007ABB10 /* PalAchievementBrain.m in Sources */,
+				F7F9286116D69E91007ABB10 /* PalCard.m in Sources */,
+				F7F9286216D69E91007ABB10 /* PalCardGenerator.m in Sources */,
+				F7F9286316D69E91007ABB10 /* PalMountainAndCloudView.m in Sources */,
+				F715910916D6CDD9006D91BF /* PalDataInit.m in Sources */,
+				F794E09016FD2AA900C4FB15 /* MCSoundBoard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F71F39B816BF1F4300F39979 /* iPhoneStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F71F39B916BF1F4300F39979 /* en */,
+			);
+			name = iPhoneStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F7F7002716B7211D00876181 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7F7002816B7211D00876181 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7F7003C16B7211D00876181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F7F7003D16B7211D00876181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7F7003F16B7211D00876181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PalCard/PalCard-Prefix.pch";
+				INFOPLIST_FILE = "PalCard/PalCard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F7F7004016B7211D00876181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: JIAQI LIU";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PalCard/PalCard-Prefix.pch";
+				INFOPLIST_FILE = "PalCard/PalCard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "24BC9142-FF11-4218-B067-7C929F675506";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7F7001416B7211D00876181 /* Build configuration list for PBXProject "PalCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F7003C16B7211D00876181 /* Debug */,
+				F7F7003D16B7211D00876181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7F7003E16B7211D00876181 /* Build configuration list for PBXNativeTarget "PalCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F7003F16B7211D00876181 /* Debug */,
+				F7F7004016B7211D00876181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7F7001116B7211D00876181 /* Project object */;
+}
