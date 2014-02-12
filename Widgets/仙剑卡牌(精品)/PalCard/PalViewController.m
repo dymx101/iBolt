@@ -181,8 +181,7 @@
         else if ([turnOffSound isEqualToString:@"NO"]) {
             _soundOff = NO;
             
-            NSString *gameBGM = @"game_bg.mp3";
-            //gameBGM = [NSString stringWithFormat:@"zd0%d.mp3", arc4random() % 6 + 1 ];
+            NSString *gameBGM = [NSString stringWithFormat:@"play0%d.mp3", arc4random() % 6 + 1 ];
             
             [MCSoundBoard addAudioAtPath:[[NSBundle mainBundle] pathForResource:gameBGM ofType:nil]     forKey:@"BGM"];
             [MCSoundBoard addSoundAtPath:[[NSBundle mainBundle] pathForResource:_GameLoseSound ofType:nil] forKey:@"LOS"];
