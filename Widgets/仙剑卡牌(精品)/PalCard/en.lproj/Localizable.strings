@@ -8,3 +8,12 @@
 "game_about_start" = "Game is about to start!";
 "win_lost_times" = "Wins: %@\nLosts: %@";
 "contiuous_wins_losts" = "Continuous Wins: %@\nContinuous Losts: %@";
+"card_unlock_progress" = "Cards unlock progress: %.1f%%";
+"please_remember_card_pos" = "Please keep in mind the positions";
+"time_left" = "Time Left";
+"num_sec" = "%.0f sec";
+
+"restart" = "Restart";
+"back" = "Back";
+"new_card_unlocked" = "New card unlocked!";
+"game_over" = "Game Over";

@@ -8,3 +8,12 @@
 "game_about_start" = "游戏即将开始";
 "win_lost_times" = "获胜次数: %@\n失败次数: %@";
 "contiuous_wins_losts" = "连续获胜次数: %@\n连续失败次数: %@";
+"card_unlock_progress" = "卡牌解锁进度: %.1f%%";
+"please_remember_card_pos" = "请记忆卡牌位置";
+"time_left" = "剩余时间";
+"num_sec" = "%.0f 秒";
+
+"restart" = "重新开始";
+"back" = "返回";
+"new_card_unlocked" = "新卡牌解锁！";
+"game_over" = "游戏结束";

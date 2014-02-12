@@ -1,0 +1,6 @@
+Start Optimizing network tasks, the basic design is to use new central operation queue to manage every API calls, each API call is registered to the central queue and assigned a uid, can be canceled individually or collectively.
+The main benefit of this change is a great reduction of redundant network traffic, as well as a UX improvement.
+
+This work will take 2 days.
+Today(day #1), I've finished the backbone of this management mechanism; 
+Tomorrow(day #2), I will change all the API calls, put them under the control.

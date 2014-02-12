@@ -174,7 +174,7 @@
         }
     }
     
-    self.achDisplay.text = [NSString stringWithFormat: @"卡牌解锁进度: %.1f%%",(float)_amountOfUnlockedCards * 100.0 / TOTAL_CARD_COUNT];
+    self.achDisplay.text = [NSString stringWithFormat:LocalString(@"card_unlock_progress"),(float)_amountOfUnlockedCards * 100.0 / TOTAL_CARD_COUNT];
     self.indexLabel.text = [NSString stringWithFormat:@"1/%d", TOTAL_CARD_COUNT];
     
     // read cards information from CardsInformation.plist

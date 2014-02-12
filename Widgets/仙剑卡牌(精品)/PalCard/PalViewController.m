@@ -315,7 +315,7 @@
 - (void)prepare:(NSTimer *) timer
 {
     [self cardsVisiableWithDuration:_ANITIME_LONG];
-    self.TextDisplay.text = @"请记忆卡牌位置";
+    self.TextDisplay.text = LocalString(@"please_remember_card_pos");
 }
 
 - (void)prepareDone:(NSTimer *) timer
@@ -338,8 +338,8 @@
     self.gameProgress.alpha = 1.0;
     
     if (DEVICE_IS_IPHONE5) {
-        self.TextDisplay.text = @"剩余时间";
-        self.Display.text = @"15 秒";
+        self.TextDisplay.text = LocalString(@"time_left");
+        self.Display.text = [NSString stringWithFormat:LocalString(@"num_sec"), 15];
     }
     else {
         self.TextDisplay.text = @"";
@@ -358,7 +358,7 @@
         self.gameProgress.progress = (float)_roundTime / _totalTime;
         
         if (DEVICE_IS_IPHONE5) {
-            self.Display.text = [NSString stringWithFormat:@"%.0f 秒", _roundTime + 0.5];
+            self.Display.text = [NSString stringWithFormat:LocalString(@"num_sec"), _roundTime + 0.5];
         }
         
         if (_roundTime <= 0.0) {
@@ -404,7 +404,7 @@
     
     self.Display.text = @"";
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"\n\n\n" message:@"\n\n\n" delegate:self cancelButtonTitle:@"重新开始" otherButtonTitles:@"返回",nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"\n\n\n" message:@"\n\n\n" delegate:self cancelButtonTitle:LocalString(@"restart") otherButtonTitles:LocalString(@"back"),nil];
     [alert show];
     
     UIImageView *imgv = [alert valueForKey:@"_backgroundImageView"];
@@ -413,10 +413,10 @@
     
     if([PalAchievementBrain newAchievementUnlocked:self.mode win:YES timeUsed:_totalTime - _roundTime timeLeft:_roundTime wrongsTimes:_wrongs rightTimes:_rights endWithBlackOrNot:_endWithBlack])
     {
-        self.TextDisplay.text = @"新卡牌解锁！";
+        self.TextDisplay.text = LocalString(@"new_card_unlocked");
     }
     else {
-        self.TextDisplay.text = @"游戏结束";
+        self.TextDisplay.text = LocalString(@"game_over");
     }
     
     
@@ -442,7 +442,7 @@
     
     
     // call alert
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"\n\n\n" message:@"\n\n\n" delegate:self cancelButtonTitle:@"重新开始" otherButtonTitles:@"返回",nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"\n\n\n" message:@"\n\n\n" delegate:self cancelButtonTitle:LocalString(@"restart") otherButtonTitles:LocalString(@"back"),nil];
     [alert show];
     
     UIImageView *imgv = [alert valueForKey:@"_backgroundImageView"];
@@ -452,10 +452,10 @@
     // check whether new achievement unlocked
     if([PalAchievementBrain newAchievementUnlocked:self.mode win:NO timeUsed:_totalTime - _roundTime timeLeft:_roundTime wrongsTimes:_wrongs rightTimes:_rights endWithBlackOrNot:_endWithBlack])
     {
-        self.TextDisplay.text = @"新卡牌解锁！";
+        self.TextDisplay.text = LocalString(@"new_card_unlocked");
     }
     else {
-        self.TextDisplay.text = @"游戏结束";
+        self.TextDisplay.text = LocalString(@"game_over");
     }
     
     self.Display.text = @"";
