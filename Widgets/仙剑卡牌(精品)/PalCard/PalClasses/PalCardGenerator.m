@@ -9,7 +9,7 @@
 #import "PalCardGenerator.h"
 
 
-#define CARD_START_NUMBER   (10001)
+
 
 @interface PalCardGenerator () {
     bool _initialized;

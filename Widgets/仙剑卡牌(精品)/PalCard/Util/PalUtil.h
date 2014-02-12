@@ -10,4 +10,5 @@
 
 @interface PalUtil : NSObject
 +(NSString *)mainBgMusicFile;
++(NSString *)freeOriginalImagePath:(NSUInteger)aNumber;
 @end

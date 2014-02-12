@@ -32,7 +32,7 @@
             
             CardIsUnlocked = [NSMutableArray arrayWithCapacity:100];
             for (int i = 0; i < 100; i++) {
-                CardIsUnlocked[i] = @"NO";
+                CardIsUnlocked[i] = @0;
             }
             
             [[NSUserDefaults standardUserDefaults] setValue:CardIsUnlocked forKey:@"CardIsUnlocked"];

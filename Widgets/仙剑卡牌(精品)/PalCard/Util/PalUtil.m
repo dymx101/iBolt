@@ -15,4 +15,8 @@
     //[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"main0%d.mp3", arc4random() % 2 + 1];
 }
 
++(NSString *)freeOriginalImagePath:(NSUInteger)aNumber {
+    return [NSString stringWithFormat:@"1Free/original/%d.png", aNumber];
+}
+
 @end

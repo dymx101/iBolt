@@ -10,6 +10,8 @@
 #import "PalDataViewController.h"
 #import "PalMountainAndCloudView.h"
 #import "MCSoundBoard.h"
+#import "PalAchievementBrain.h"
+
 
 #define ITEM_SPACING 200
 
@@ -72,19 +74,12 @@
     
     if (_dataButtonPressed) {
         _dataButtonPressed = NO;
-        if(!self.bgAnimationView.animationStarted) {
-            [self.bgAnimationView setup];
-            [self.bgAnimationView startAnimation];
-        }
-        
     }
     else {
         [PalMountainAndCloudView backgroundAnimation:self.view];
-        if(!self.bgAnimationView.animationStarted) {
-            [self.bgAnimationView setup];
-            [self.bgAnimationView startAnimation];
-        }
     }
+    
+    [self restartAnimation];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stopAnimation) name:UIApplicationDidEnterBackgroundNotification object:nil];
     
@@ -125,6 +120,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [PalAchievementBrain newAchievementUnlocked:@"" win:0 timeUsed:0 timeLeft:0 wrongsTimes:0 rightTimes:0 endWithBlackOrNot:0];
     
     // I use storyboard to design UI for iphone 5
     // here are frame tweaks for iPhone 4/4S
@@ -171,8 +168,8 @@
     carousel.dataSource = self;
     carousel.type = iCarouselTypeCoverFlow;
     
-    for (int i = 1; i <= TOTAL_CARD_COUNT; i++) {
-        if([[self.CardIsUnlocked objectAtIndex:i] isEqualToString:@"YES"]) {
+    for (int i = 0; i < TOTAL_CARD_COUNT; i++) {
+        if ([_CardIsUnlocked[i] isEqualToNumber:@1]) {
             _amountOfUnlockedCards ++;
         }
     }
@@ -264,32 +261,24 @@
     _cardViews = [[NSMutableArray alloc] init];
     _unlockedCardViews = [[NSMutableArray alloc] init];
     
-    for (int i = 1; i <= TOTAL_CARD_COUNT; i++)
+    for (int i = 0; i < TOTAL_CARD_COUNT; i++)
     {
         UIView *view;
         NSString *viewPath;
         bool unlocked = true;
     
-        if ([[self.CardIsUnlocked objectAtIndex:i] isEqualToString:@"NO"]) {
+        if ([_CardIsUnlocked[i] isEqualToNumber:@0]) {
             viewPath = _DefaultCardImg;
             unlocked = false;
             
         }
         
         else {
-            int number = i + 10000;
-            viewPath = [NSString stringWithFormat:@"1Free/original/%d.png", number];
+            viewPath = [PalUtil freeOriginalImagePath:i + CARD_START_NUMBER];
         }
-        
-//        else if (i < 10) {
-//            viewPath = [NSString stringWithFormat:@"palsource/30%d.png", i];
-//        }
-//        else {
-//            viewPath = [NSString stringWithFormat:@"palsource/3%d.png", i];
-//        }
    
         FXImageView *imageView = [[FXImageView alloc] initWithFrame:CGRectMake(70, 80, 180, 260)];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        imageView.contentMode = UIViewContentModeScaleToFill;
         imageView.asynchronous = YES;
         imageView.reflectionScale = 0.35f;
         imageView.reflectionAlpha = 0.25f;
@@ -430,14 +419,11 @@
     
     int i = [self.cardViews indexOfObject:view] + 1;
     
-    if ([[self.CardIsUnlocked objectAtIndex:i] isEqualToString:@"NO"]) {
+    if ([_CardIsUnlocked[i] isEqualToNumber:@0]) {
         name = _DefaultCardImg;
     }
-    else if (i < 10) {
-        name = [NSString stringWithFormat:@"palsource/30%d.png", i];
-    }
     else {
-        name = [NSString stringWithFormat:@"palsource/3%d.png", i];
+        name = [PalUtil freeOriginalImagePath:i + CARD_START_NUMBER];//[NSString stringWithFormat:@"palsource/30%d.png", i];
     }
     
     path = [[NSBundle mainBundle] pathForResource:name ofType:nil];
