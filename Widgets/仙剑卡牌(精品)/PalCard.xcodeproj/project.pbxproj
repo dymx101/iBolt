@@ -19,6 +19,7 @@
 		EAC7D0D818AB1F6D002F1C3A /* play04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAC7D0D218AB1F6D002F1C3A /* play04.mp3 */; };
 		EAC7D0D918AB1F6D002F1C3A /* play05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAC7D0D318AB1F6D002F1C3A /* play05.mp3 */; };
 		EAC7D0DA18AB1F6D002F1C3A /* play06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAC7D0D418AB1F6D002F1C3A /* play06.mp3 */; };
+		EAC7D0DD18AB5E4E002F1C3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC7D0DF18AB5E4E002F1C3A /* Localizable.strings */; };
 		EACFD08E18AA0C530024EECF /* 1Free in Resources */ = {isa = PBXBuildFile; fileRef = EACFD08D18AA0C530024EECF /* 1Free */; };
 		EACFD09018AA296F0024EECF /* cardface.png in Resources */ = {isa = PBXBuildFile; fileRef = EACFD08F18AA296F0024EECF /* cardface.png */; };
 		F70F928616CF40E700151527 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928316CF40E700151527 /* FXImageView.m */; };
@@ -78,6 +79,9 @@
 		EAC7D0D218AB1F6D002F1C3A /* play04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = play04.mp3; sourceTree = "<group>"; };
 		EAC7D0D318AB1F6D002F1C3A /* play05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = play05.mp3; sourceTree = "<group>"; };
 		EAC7D0D418AB1F6D002F1C3A /* play06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = play06.mp3; sourceTree = "<group>"; };
+		EAC7D0DE18AB5E4E002F1C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAC7D0E018AB5FAC002F1C3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		EAC7D0E118AB637C002F1C3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EACFD08D18AA0C530024EECF /* 1Free */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 1Free; sourceTree = "<group>"; };
 		EACFD08F18AA296F0024EECF /* cardface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardface.png; sourceTree = "<group>"; };
 		F70F928216CF40E700151527 /* FXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXImageView.h; sourceTree = "<group>"; };
@@ -293,6 +297,7 @@
 				F710265D16CDC19900FD2836 /* MCSoundBoard */,
 				F710265916CDC17700FD2836 /* iCarousel */,
 				F7F7002516B7211D00876181 /* Supporting Files */,
+				EAC7D0DF18AB5E4E002F1C3A /* Localizable.strings */,
 			);
 			path = PalCard;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 				F7ED0FF116BCF9910036B782 /* UIimages in Resources */,
 				EAC7D0DA18AB1F6D002F1C3A /* play06.mp3 in Resources */,
 				F7ED0FF416BD11540036B782 /* palsource_black in Resources */,
+				EAC7D0DD18AB5E4E002F1C3A /* Localizable.strings in Resources */,
 				EAC7D0D618AB1F6D002F1C3A /* play02.mp3 in Resources */,
 				EA7557BF18A923FF00211CB3 /* win.wav in Resources */,
 				EAC7D0D818AB1F6D002F1C3A /* play04.mp3 in Resources */,
@@ -457,6 +463,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EAC7D0DF18AB5E4E002F1C3A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC7D0DE18AB5E4E002F1C3A /* en */,
+				EAC7D0E018AB5FAC002F1C3A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F71F39B816BF1F4300F39979 /* iPhoneStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -470,6 +485,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F7F7002816B7211D00876181 /* en */,
+				EAC7D0E118AB637C002F1C3A /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

@@ -277,7 +277,7 @@
     
     
     // prepare for begin
-    self.TextDisplay.text = @"游戏马上开始";
+    self.TextDisplay.text = LocalString(@"game_about_start");
     
     self.hintView.image = [UIImage imageNamed:_HintPrepareIMG];
     self.hintView.alpha = 1.0;

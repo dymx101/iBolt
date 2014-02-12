@@ -20,3 +20,4 @@
 
 #define _DefaultCardImg             @"cardface.png"
 #define FONT_NAME_DUAN_NING_XING    @"DuanNing-XIng"
+#define LocalString(key)            NSLocalizedString(key, nil) 
