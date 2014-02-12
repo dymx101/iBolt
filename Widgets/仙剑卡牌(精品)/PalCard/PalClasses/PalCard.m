@@ -7,6 +7,7 @@
 //
 
 #import "PalCard.h"
+#import "UIImage+animatedGIF.h"
 
 @interface PalCard ()
 
@@ -70,7 +71,7 @@
     [self cardSetup];
     
     self.cardImagePath = imagePath;
-    self.cardView.image = [UIImage imageNamed:self.cardImagePath];
+    self.cardView.image = [PalUtil imageFromPath:imagePath];
 }
 
 - (NSString *) cardName

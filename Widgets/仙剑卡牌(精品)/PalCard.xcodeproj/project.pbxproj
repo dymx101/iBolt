@@ -21,6 +21,8 @@
 		EAC7D0DA18AB1F6D002F1C3A /* play06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAC7D0D418AB1F6D002F1C3A /* play06.mp3 */; };
 		EAC7D0DD18AB5E4E002F1C3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC7D0DF18AB5E4E002F1C3A /* Localizable.strings */; };
 		EAC7D0E318AB6DD3002F1C3A /* whatever in Resources */ = {isa = PBXBuildFile; fileRef = EAC7D0E218AB6DD3002F1C3A /* whatever */; };
+		EAC7D0E618AB82DA002F1C3A /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC7D0E518AB82DA002F1C3A /* UIImage+animatedGIF.m */; };
+		EAC7D0E818AB83FF002F1C3A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC7D0E718AB83FF002F1C3A /* ImageIO.framework */; };
 		EACFD08E18AA0C530024EECF /* 1Free in Resources */ = {isa = PBXBuildFile; fileRef = EACFD08D18AA0C530024EECF /* 1Free */; };
 		EACFD09018AA296F0024EECF /* cardface.png in Resources */ = {isa = PBXBuildFile; fileRef = EACFD08F18AA296F0024EECF /* cardface.png */; };
 		F70F928616CF40E700151527 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928316CF40E700151527 /* FXImageView.m */; };
@@ -80,10 +82,13 @@
 		EAC7D0D218AB1F6D002F1C3A /* play04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = play04.mp3; sourceTree = "<group>"; };
 		EAC7D0D318AB1F6D002F1C3A /* play05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = play05.mp3; sourceTree = "<group>"; };
 		EAC7D0D418AB1F6D002F1C3A /* play06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = play06.mp3; sourceTree = "<group>"; };
-		EAC7D0DE18AB5E4E002F1C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EAC7D0E018AB5FAC002F1C3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		EAC7D0DE18AB5E4E002F1C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAC7D0E018AB5FAC002F1C3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EAC7D0E118AB637C002F1C3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EAC7D0E218AB6DD3002F1C3A /* whatever */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = whatever; sourceTree = "<group>"; };
+		EAC7D0E418AB82DA002F1C3A /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		EAC7D0E518AB82DA002F1C3A /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		EAC7D0E718AB83FF002F1C3A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		EACFD08D18AA0C530024EECF /* 1Free */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 1Free; sourceTree = "<group>"; };
 		EACFD08F18AA296F0024EECF /* cardface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardface.png; sourceTree = "<group>"; };
 		F70F928216CF40E700151527 /* FXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXImageView.h; sourceTree = "<group>"; };
@@ -147,7 +152,7 @@
 		F7F9285A16D69E91007ABB10 /* PalCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalCard.h; sourceTree = "<group>"; };
 		F7F9285B16D69E91007ABB10 /* PalCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalCard.m; sourceTree = "<group>"; };
 		F7F9285C16D69E91007ABB10 /* PalCardGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalCardGenerator.h; sourceTree = "<group>"; };
-		F7F9285D16D69E91007ABB10 /* PalCardGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalCardGenerator.m; sourceTree = "<group>"; };
+		F7F9285D16D69E91007ABB10 /* PalCardGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PalCardGenerator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F7F9285E16D69E91007ABB10 /* PalMountainAndCloudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalMountainAndCloudView.h; sourceTree = "<group>"; };
 		F7F9285F16D69E91007ABB10 /* PalMountainAndCloudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalMountainAndCloudView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC7D0E818AB83FF002F1C3A /* ImageIO.framework in Frameworks */,
 				F71F398D16BE282200F39979 /* QuartzCore.framework in Frameworks */,
 				F7E40B3316BB155B00F1CF97 /* AudioToolbox.framework in Frameworks */,
 				F742875D16BB0F9500C8B9F9 /* AVFoundation.framework in Frameworks */,
@@ -172,6 +178,8 @@
 		EA6CA55418AA75EC0098B880 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				EAC7D0E418AB82DA002F1C3A /* UIImage+animatedGIF.h */,
+				EAC7D0E518AB82DA002F1C3A /* UIImage+animatedGIF.m */,
 				EA6CA55518AA75FA0098B880 /* PalUtil.h */,
 				EA6CA55618AA75FA0098B880 /* PalUtil.m */,
 			);
@@ -261,6 +269,7 @@
 		F7F7001D16B7211D00876181 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAC7D0E718AB83FF002F1C3A /* ImageIO.framework */,
 				F7E40B3216BB155B00F1CF97 /* AudioToolbox.framework */,
 				F71F398C16BE282200F39979 /* QuartzCore.framework */,
 				F742875C16BB0F9500C8B9F9 /* AVFoundation.framework */,
@@ -451,6 +460,7 @@
 				F710265C16CDC17700FD2836 /* iCarousel.m in Sources */,
 				F70F928616CF40E700151527 /* FXImageView.m in Sources */,
 				F70F928716CF40E700151527 /* UIImage+FX.m in Sources */,
+				EAC7D0E618AB82DA002F1C3A /* UIImage+animatedGIF.m in Sources */,
 				F70F929016CF523D00151527 /* ASImageScrollView.m in Sources */,
 				F70F929116CF523D00151527 /* ASMediaFocusController.m in Sources */,
 				F70F929316CF523D00151527 /* ASMediaFocusManager.m in Sources */,

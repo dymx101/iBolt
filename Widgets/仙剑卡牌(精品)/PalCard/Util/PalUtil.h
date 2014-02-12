@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface PalUtil : NSObject
+
 +(NSString *)mainBgMusicFile;
+
 +(NSString *)freeOriginalImagePath:(NSUInteger)aNumber;
++(NSString *)freePremiumImagePath:(NSUInteger)aNumber;
+
++(UIImage *)imageFromPath:(NSString *)aImagePath;
 @end

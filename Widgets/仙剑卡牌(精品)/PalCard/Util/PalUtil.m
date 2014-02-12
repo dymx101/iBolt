@@ -7,6 +7,7 @@
 //
 
 #import "PalUtil.h"
+#import "UIImage+animatedGIF.h"
 
 @implementation PalUtil
 
@@ -17,6 +18,27 @@
 
 +(NSString *)freeOriginalImagePath:(NSUInteger)aNumber {
     return [NSString stringWithFormat:@"1Free/original/%d.png", aNumber];
+}
+
++(NSString *)freePremiumImagePath:(NSUInteger)aNumber {
+    return [NSString stringWithFormat:@"1Free/premium/%dp.gif", aNumber];
+}
+
++(UIImage *)imageFromPath:(NSString *)aImagePath {
+    
+    if (aImagePath.length <= 0) {
+        return nil;
+    }
+    
+    if ([aImagePath.lowercaseString rangeOfString:@"gif"].location != NSNotFound) {
+        //gif
+        NSURL *url = [[NSBundle mainBundle] URLForResource:aImagePath withExtension:nil];
+        return [UIImage animatedImageWithAnimatedGIFURL:url];
+    } else {
+        return [UIImage imageNamed:aImagePath];
+    }
+    
+    return nil;
 }
 
 @end

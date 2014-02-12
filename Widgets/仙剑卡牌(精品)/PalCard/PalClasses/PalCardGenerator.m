@@ -27,7 +27,7 @@
 @implementation PalCardGenerator
 
 -(u_int32_t)_randomCardNumber {
-    return (random() % 2 ? random() : arc4random()) % TOTAL_CARD_COUNT + CARD_START_NUMBER;
+    return (random() % 2 ? random() : arc4random()) % TOTAL_CARD_COUNT + FREE_CARD_START_NUMBER;
 }
 
 - (void)prepare
@@ -104,7 +104,7 @@
     
     if(self.NumbersOfBlackCards == 2) {
         if (cardNumber == blackRandomNumber1 || cardNumber == blackRandomNumber2) {
-            path = [NSString stringWithFormat:@"1Free/premium/%dp.png", cards[cardNumber]]; //[NSString stringWithFormat:@"palsource_black/%d.png", cards[cardNumber]];
+            path = [PalUtil freePremiumImagePath:cards[cardNumber]];//[NSString stringWithFormat:@"palsource_black/%d.png", cards[cardNumber]];
             _lastIsBlack = YES;
             return path;
         }
@@ -112,14 +112,13 @@
     
     if(self.NumbersOfBlackCards == 1) {
         if (cardNumber == blackRandomNumber1) {
-            path = [NSString stringWithFormat:@"1Free/premium/%dp.png", cards[cardNumber]]; //[NSString stringWithFormat:@"palsource_black/%d.png", cards[cardNumber]];
+            path = [PalUtil freePremiumImagePath:cards[cardNumber]];
             _lastIsBlack = YES;
             return path;
         }
     }
 
-    path = [NSString stringWithFormat:@"1Free/original/%d.png", cards[cardNumber]];//[NSString stringWithFormat:@"palsource/%d.png", cards[cardNumber]];
-    _lastIsBlack = NO;
+    path = [PalUtil freeOriginalImagePath:cards[cardNumber]]; //[NSString stringWithFormat:@"1Free/original/%d.png", cards[cardNumber]];    _lastIsBlack = NO;
     return path;
 }
 

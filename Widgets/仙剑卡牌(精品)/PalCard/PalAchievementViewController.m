@@ -274,10 +274,12 @@
         }
         
         else {
-            viewPath = [PalUtil freeOriginalImagePath:i + CARD_START_NUMBER];
+            viewPath = [PalUtil freeOriginalImagePath:i + FREE_CARD_START_NUMBER];
         }
    
-        FXImageView *imageView = [[FXImageView alloc] initWithFrame:CGRectMake(70, 80, 180, 260)];
+        FXImageView *imageView;
+#if 1
+        imageView = [[FXImageView alloc] initWithFrame:CGRectMake(70, 80, 180, 260)];
         imageView.contentMode = UIViewContentModeScaleToFill;
         imageView.asynchronous = YES;
         imageView.reflectionScale = 0.35f;
@@ -286,14 +288,19 @@
         //imageView.shadowOffset = CGSizeMake(0.0f, 2.0f);
         //imageView.shadowBlur = 5.0f;
         imageView.cornerRadius = 0.0f;
-        
+#else
+        imageView = [[UIImageView alloc] initWithFrame:CGRectMake(70, 80, 180, 260)];
+        imageView.contentMode = UIViewContentModeScaleToFill;
+#endif
         if(DEVICE_IS_IPHONE5) {
             [self addShadow:imageView];
         }
         view = imageView;
  
         //load image
-        [(FXImageView *)view setImage:[UIImage imageNamed:viewPath]];
+        
+        
+        [(FXImageView *)view setImage:[PalUtil imageFromPath:viewPath]];
         
         [self.cardViews addObject:view];
         if (unlocked) [self.unlockedCardViews addObject:view];
@@ -423,7 +430,7 @@
         name = _DefaultCardImg;
     }
     else {
-        name = [PalUtil freeOriginalImagePath:i + CARD_START_NUMBER];//[NSString stringWithFormat:@"palsource/30%d.png", i];
+        name = [PalUtil freeOriginalImagePath:i + FREE_CARD_START_NUMBER];//[NSString stringWithFormat:@"palsource/30%d.png", i];
     }
     
     path = [[NSBundle mainBundle] pathForResource:name ofType:nil];
