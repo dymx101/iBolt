@@ -204,17 +204,17 @@
     NSNumber *freeLosses = [[NSUserDefaults standardUserDefaults] valueForKey:@"freeLosses"];
     
 
-    self.text1.text = [NSString stringWithFormat:@"获胜次数: %@\n失败次数: %@", totalEasyWins, totalEasyLosses];
-    self.text1_2.text = [NSString stringWithFormat:@"连续获胜次数: %@\n连续失败次数: %@", easyWins, easyLosses ];
+    self.text1.text = [NSString stringWithFormat:LocalString(@"win_lost_times"), totalEasyWins, totalEasyLosses];
+    self.text1_2.text = [NSString stringWithFormat:LocalString(@"contiuous_wins_losts"), easyWins, easyLosses ];
 
-    self.text2.text = [NSString stringWithFormat:@"获胜次数: %@\n失败次数: %@", totalNormalWins, totalNormalLosses];
-    self.text2_2.text = [NSString stringWithFormat:@"连续获胜次数: %@\n连续失败次数: %@", normalWins, normalLosses];
+    self.text2.text = [NSString stringWithFormat:LocalString(@"win_lost_times"), totalNormalWins, totalNormalLosses];
+    self.text2_2.text = [NSString stringWithFormat:LocalString(@"contiuous_wins_losts"), normalWins, normalLosses];
 
-    self.text3.text = [NSString stringWithFormat:@"获胜次数: %@\n失败次数: %@", totalHardWins, totalHardLosses];
-    self.text3_2.text = [NSString stringWithFormat:@"连续获胜次数: %@\n连续失败次数: %@", hardWins, hardLosses];
+    self.text3.text = [NSString stringWithFormat:LocalString(@"win_lost_times"), totalHardWins, totalHardLosses];
+    self.text3_2.text = [NSString stringWithFormat:LocalString(@"contiuous_wins_losts"), hardWins, hardLosses];
 
-    self.text4.text = [NSString stringWithFormat:@"获胜次数: %@\n失败次数: %@", totalFreeWins, totalFreeLosses];
-    self.text4_2.text = [NSString stringWithFormat:@"连续获胜次数: %@\n连续失败次数: %@", freeWins, freeLosses];
+    self.text4.text = [NSString stringWithFormat:LocalString(@"win_lost_times"), totalFreeWins, totalFreeLosses];
+    self.text4_2.text = [NSString stringWithFormat:LocalString(@"contiuous_wins_losts"), freeWins, freeLosses];
 
 }
 

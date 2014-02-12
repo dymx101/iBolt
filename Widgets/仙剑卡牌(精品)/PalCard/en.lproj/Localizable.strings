@@ -6,3 +6,5 @@
   Copyright (c) 2014 FlyinGeek. All rights reserved.
 */
 "game_about_start" = "Game is about to start!";
+"win_lost_times" = "Wins: %@\nLosts: %@";
+"contiuous_wins_losts" = "Continuous Wins: %@\nContinuous Losts: %@";

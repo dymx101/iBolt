@@ -6,3 +6,5 @@
   Copyright (c) 2014 FlyinGeek. All rights reserved.
 */
 "game_about_start" = "游戏即将开始";
+"win_lost_times" = "获胜次数: %@\n失败次数: %@";
+"contiuous_wins_losts" = "连续获胜次数: %@\n连续失败次数: %@";
