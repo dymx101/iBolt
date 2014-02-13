@@ -15,6 +15,8 @@
 {
     [PalDataInit gameDataInit];
     
+    [PalUtil appStoreVersionCheck];
+    
     return YES;
 }
 							

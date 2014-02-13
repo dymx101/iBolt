@@ -18,6 +18,8 @@
 #define TOTAL_CARD_COUNT    (62)
 #define FREE_CARD_START_NUMBER   (10001)
 
+#define APP_STORE_ID    @"678686043"
+
 #define _DefaultCardImg             @"cardface.png"
 #define FONT_NAME_DUAN_NING_XING    @"DuanNing-XIng"
 #define LocalString(key)            NSLocalizedString(key, nil) 

@@ -16,4 +16,6 @@
 +(NSString *)freePremiumImagePath:(NSUInteger)aNumber;
 
 +(UIImage *)imageFromPath:(NSString *)aImagePath;
+
++(void)appStoreVersionCheck;
 @end
