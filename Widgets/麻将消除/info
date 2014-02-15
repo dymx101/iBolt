@@ -1,0 +1,15 @@
+Mahjong Mania is a simple, single-player, tile-matching game.
+
+The objective of the game is to remove all the tiles from the board by pairing them with similar ones. You can only select tiles which have at least one side (left or right) free for pairing.
+
+http://itunes.apple.com/lookup?bundleId=com.mp.mahjongmania
+
+
+{
+ "resultCount":1,
+ "results": [
+{"kind":"software", "features":["gameCenter"], 
+"supportedDevices":["iPhone5", "iPhone5c", "iPad23G", "iPadWifi", "iPadMini4G", "iPhone4", "iPodTouchFifthGen", "iPod-touch-with-mic", "iPadFourthGen4G", "iPhone-3G", "iPad2Wifi", "iPhone4S", "iPhone-3GS", "iPodTouchThirdGen", "iPhone5s", "iPodTouchourthGen", "iPadThirdGen4G", "iPadMini", "iPadThirdGen", "iPad3G", "iPadFourthGen"], "isGameCenterEnabled":true, 
+"screenshotUrls":["http://a4.mzstatic.com/us/r30/Purple/v4/f1/57/34/f157345e-b76e-c75b-4fdc-c6c4a2672046/screen480x480.jpeg", "http://a5.mzstatic.com/us/r30/Purple/v4/fa/b8/ee/fab8ee13-49ec-06dd-d07d-2c2ffe1e3070/screen480x480.jpeg", "http://a1.mzstatic.com/us/r30/Purple/v4/ec/c7/6b/ecc76bca-0e2b-12e7-93ba-3e188d7bd2f1/screen480x480.jpeg", "http://a1.mzstatic.com/us/r30/Purple/v4/e5/82/26/e58226be-5f44-2dcf-0f94-94269ad3c352/screen480x480.jpeg", "http://a4.mzstatic.com/us/r30/Purple/v4/d8/a3/59/d8a35978-baf0-a9a5-0eff-0d4541db74d4/screen480x480.jpeg"], "ipadScreenshotUrls":[], "artworkUrl60":"http://a848.phobos.apple.com/us/r30/Purple/f0/e2/72/mzi.rcwpbiuq.png", "artworkUrl512":"http://a226.phobos.apple.com/us/r30/Purple/ad/7f/b7/mzm.etjcbffn.png", "artistViewUrl":"https://itunes.apple.com/us/artist/rakesh-patel/id807259628?uo=4", "artistId":807259628, "artistName":"Rakesh Patel", "price":0.00, "version":"1.01", 
+"description":"Mahjong Mania is a simple, single-player, tile-matching game.\n\nThe objective of the game is to remove all the tiles from the board by pairing them with similar ones. You can only select tiles which have at least one side (left or right) free for pairing.", "currency":"USD", "genres":["Games", "Entertainment", "Board", "Puzzle"], "genreIds":["6014", "6016", "7004", "7012"], "releaseDate":"2011-06-17T00:47:00Z", "sellerName":"Rakesh Patel", "bundleId":"com.mp.mahjongmania", "trackId":440988606, "trackName":"Mahjong Mania", "primaryGenreName":"Games", "primaryGenreId":6014, "releaseNotes":"-Sound fix.\n-Minor UI tweaks.", "formattedPrice":"Free", "wrapperType":"software", "trackCensoredName":"Mahjong Mania", "languageCodesISO2A":["EN"], "fileSizeBytes":"3210336", "sellerUrl":"https://itunes.apple.com/us/app/mahjong-mania/id440988606?mt=8", "contentAdvisoryRating":"4+", "averageUserRatingForCurrentVersion":4.0, "userRatingCountForCurrentVersion":9, "artworkUrl100":"http://a226.phobos.apple.com/us/r30/Purple/ad/7f/b7/mzm.etjcbffn.png", "trackViewUrl":"https://itunes.apple.com/us/app/mahjong-mania/id440988606?mt=8&uo=4", "trackContentRating":"4+", "averageUserRating":4.0, "userRatingCount":11}]
+}

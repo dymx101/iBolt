@@ -14,6 +14,12 @@
 #warning 3. 下载
 #warning 3. 广告 admob
 
+#warning set custom url cache to monitor each url request
+#warning right delegate for url cache
+#warning implement youtube download
+
+#warning choose an app to test appStore, add admob to it, and shubmit
+
 
 ////////////////////////////////////////////////////////////////////////////////
 #import <Foundation/Foundation.h> 

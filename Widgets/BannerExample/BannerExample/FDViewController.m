@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
 	
-#if 0
+#if 1
     //admob
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     bannerView_.adUnitID = MY_BANNER_UNIT_ID;
