@@ -25,6 +25,7 @@
 		EA1C640B18A618620009417C /* popeye.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA1C640A18A618620009417C /* popeye.mp4 */; };
 		EA4B62841894F03000CCEE65 /* FDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4B62831894F03000CCEE65 /* FDUtil.m */; };
 		EA702DEF1898E83C0022AB0B /* QQ_Music_API.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA702DEE1898E83C0022AB0B /* QQ_Music_API.txt */; };
+		EA7A4B1918B071AD00B7D5DD /* FDCustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7A4B1818B071AD00B7D5DD /* FDCustomURLCache.m */; };
 		EA96A5001896039E00AE1D2D /* BackLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96A4FF1896039E00AE1D2D /* BackLog.m */; };
 		EABC2FFA188CE2970042A9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FF9188CE2970042A9DB /* Foundation.framework */; };
 		EABC2FFC188CE2970042A9DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */; };
@@ -84,6 +85,8 @@
 		EA4B62821894F03000CCEE65 /* FDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUtil.h; sourceTree = "<group>"; };
 		EA4B62831894F03000CCEE65 /* FDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUtil.m; sourceTree = "<group>"; };
 		EA702DEE1898E83C0022AB0B /* QQ_Music_API.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QQ_Music_API.txt; sourceTree = "<group>"; };
+		EA7A4B1718B071AD00B7D5DD /* FDCustomURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCustomURLCache.h; sourceTree = "<group>"; };
+		EA7A4B1818B071AD00B7D5DD /* FDCustomURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCustomURLCache.m; sourceTree = "<group>"; };
 		EA96A4FE1896039E00AE1D2D /* BackLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackLog.h; sourceTree = "<group>"; };
 		EA96A4FF1896039E00AE1D2D /* BackLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackLog.m; sourceTree = "<group>"; };
 		EABC2FF6188CE2970042A9DB /* iBolter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBolter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +178,8 @@
 		EA186B37188CEF9100F14348 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EA7A4B1718B071AD00B7D5DD /* FDCustomURLCache.h */,
+				EA7A4B1818B071AD00B7D5DD /* FDCustomURLCache.m */,
 				EA186B3E188CF63600F14348 /* MMDrawerVisualStateManager.h */,
 				EA186B3F188CF63600F14348 /* MMDrawerVisualStateManager.m */,
 				EA186B38188CEFA400F14348 /* FDColor.h */,
@@ -423,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7A4B1918B071AD00B7D5DD /* FDCustomURLCache.m in Sources */,
 				EA186B2B188CEE1200F14348 /* main.m in Sources */,
 				EA186B40188CF63600F14348 /* MMDrawerVisualStateManager.m in Sources */,
 				EA186B3A188CEFA400F14348 /* FDColor.m in Sources */,

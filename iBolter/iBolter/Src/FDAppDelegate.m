@@ -14,7 +14,7 @@
 
 // drawer
 #import "MMDrawerVisualStateManager.h"
-
+#import "FDCustomURLCache.h"
 
 @implementation FDAppDelegate
 
@@ -22,6 +22,9 @@
 {
     // observe notifications
     [self watchOut];
+    
+    // custom cache
+    [NSURLCache setSharedURLCache:[FDCustomURLCache new]];
     
     // create window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

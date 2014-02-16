@@ -22,6 +22,8 @@
 
 - (void)viewDidLoad
 {
+    [self observeNotification:DF_NOTIFY_URL_REQUEST];
+    
     [super viewDidLoad];
     self.view.backgroundColor = FDColor.sharedInstance.purpleHeart;
     self.title = @"Browser";
@@ -124,6 +126,15 @@
         [textField resignFirstResponder];
     }
     return YES;
+}
+
+#pragma mark - notification handling
+-(void)handleNotification:(NSNotification *)notification {
+    NSString *name = notification.name;
+    if ([name isEqualToString:DF_NOTIFY_URL_REQUEST]) {
+        NSString *requestURL = notification.object;
+        DLog(@"%@", requestURL);
+    }
 }
 
 @end
