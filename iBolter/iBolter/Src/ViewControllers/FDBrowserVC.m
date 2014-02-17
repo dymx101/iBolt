@@ -7,6 +7,7 @@
 //
 
 #import "FDBrowserVC.h"
+#import "FDWebViewWacher.h"
 
 @interface FDBrowserVC () <UIWebViewDelegate, UITextFieldDelegate> {
     UIWebView           *_webview;
@@ -14,11 +15,16 @@
     UITextField         *_tfURL;
     
     NSString            *_currentURL;
+    FDWebViewWacher     *_webWatcher;
 }
 
 @end
 
 @implementation FDBrowserVC
+
+-(void)dealloc {
+    [_webWatcher stop];
+}
 
 - (void)viewDidLoad
 {
@@ -51,9 +57,13 @@
     _webview.delegate = self;
     [self.view addSubview:_webview];
     
+    // create web watcher
+    _webWatcher = [[FDWebViewWacher alloc] initWithWebView:_webview];
+    [_webWatcher start];
+    
     [self setupLayoutConstraints];
     
-    [self loadURL:@"http://m.letv.com/vplay_2224523.html"];
+    [self loadURL:@"http://youtube.com"];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -102,9 +112,10 @@
 
 #pragma mark - web view delegate
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
-    NSString *html = [webView stringByEvaluatingJavaScriptFromString:
-                      @"document.body.innerHTML"];
-    DLog(@"%@", html);
+//    NSString *html = [webView stringByEvaluatingJavaScriptFromString:
+//                      @"document.body.innerHTML"];
+//    DLog(@"%@", html);
+    
     [SVProgressHUD dismiss];
 }
 
