@@ -10,6 +10,7 @@
 #import "NSURL+QureyString.h"
 #import "NSString+QureyString.h"
 
+
 #define kYoutubeInfoURL         @"http://www.youtube.com/get_video_info?video_id="
 #define kYoutubeThumbnailURL    @"http://img.youtube.com/vi/%@/%@.jpg"
 #define kYoutubeDataURL         @"http://gdata.youtube.com/feeds/api/videos/%@?alt=json"
@@ -18,10 +19,16 @@
 static NSString *youtubeIdKey = @"data-youtube-id=\"";
 
 @implementation FDYoutubeParser
-+(NSDictionary *)parseHtml:(NSString *)aHtml {
++(FDYoutubeVideo *)parseHtml:(NSString *)aHtml {
     NSString *youtubeID = [self videoIdFromHtml:aHtml];
     
-    return [self videosWithYoutubeID:youtubeID];
+    NSDictionary *infoDic = [self videosWithYoutubeID:youtubeID];
+    if (infoDic.allKeys.count) {
+        FDYoutubeVideo *video = [[FDYoutubeVideo alloc] initWithInfo:infoDic];
+        return video;
+    }
+    
+    return nil;
 }
 
 +(NSString *)videoIdFromHtml:(NSString *)aHtml {
@@ -56,11 +63,13 @@ static NSString *youtubeIdKey = @"data-youtube-id=\"";
             NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
             
             NSMutableDictionary *parts = [responseString dictionaryFromQueryStringComponents];
-            NSMutableDictionary *videoDictionary = [NSMutableDictionary dictionary];
+            NSMutableDictionary *infoDic = [NSMutableDictionary dictionary];
             
-            NSArray *titleArr = [parts objectForKey:YOUTUBE_INFO_TITLE];
+            [infoDic setObject:youtubeID forKey:VIDEO_INFO_ID];
+            
+            NSArray *titleArr = [parts objectForKey:VIDEO_INFO_TITLE];
             if (titleArr.count) {
-                [videoDictionary setObject:titleArr.firstObject forKey:YOUTUBE_INFO_TITLE];
+                [infoDic setObject:titleArr.firstObject forKey:VIDEO_INFO_TITLE];
             }
             
             if (parts) {
@@ -69,6 +78,8 @@ static NSString *youtubeIdKey = @"data-youtube-id=\"";
                 if (fmtStreamMapString.length > 0) {
                     
                     NSArray *fmtStreamMapArray = [fmtStreamMapString componentsSeparatedByString:@","];
+                    NSMutableDictionary *videoDic = [NSMutableDictionary dictionary];
+                    [infoDic setObject:videoDic forKey:VIDEO_INFO_URLS];
                     
                     for (NSString *videoEncodedString in fmtStreamMapArray) {
                         NSMutableDictionary *videoComponents = [videoEncodedString dictionaryFromQueryStringComponents];
@@ -88,13 +99,13 @@ static NSString *youtubeIdKey = @"data-youtube-id=\"";
                                 if ([videoComponents objectForKey:@"stereo3d"] && [[videoComponents objectForKey:@"stereo3d"] boolValue]) {
                                     quality = [quality stringByAppendingString:@"-stereo3d"];
                                 }
-                                if([videoDictionary valueForKey:quality] == nil) {
-                                    [videoDictionary setObject:url forKey:quality];
+                                if([videoDic valueForKey:quality] == nil) {
+                                    [videoDic setObject:url forKey:quality];
                                 }
                             }
                         }
                     }
-                    return videoDictionary;
+                    return infoDic;
                 }
                 // Check for live data
                 else if ([parts objectForKey:@"live_playback"] != nil && [parts objectForKey:@"hlsvp"] != nil && [[parts objectForKey:@"hlsvp"] count] > 0) {

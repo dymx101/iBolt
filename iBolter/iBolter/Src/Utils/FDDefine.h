@@ -58,5 +58,15 @@ Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
 
+
+//
+#define VIDEO_QUALITY_MEDIUM  @"medium"
+#define VIDEO_QUALITY_SMALL   @"small"
+#define VIDEO_QUALITY_LIVE    @"live"
+
+#define VIDEO_INFO_TITLE    @"title"
+#define VIDEO_INFO_ID       @"id"
+#define VIDEO_INFO_URLS     @"urls"
+
 ///////////////////////////////////////////////////////////////////////////////////
 @interface FDDefine : NSObject @end
