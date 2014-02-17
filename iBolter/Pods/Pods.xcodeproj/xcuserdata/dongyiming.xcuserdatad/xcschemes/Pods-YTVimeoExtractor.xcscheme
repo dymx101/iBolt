@@ -13,9 +13,9 @@
             buildForTesting = "YES"
             buildForProfiling = "YES">
             <BuildableReference
-               BuildableName = "libPods-FMDB.a"
-               BlueprintName = "Pods-FMDB"
-               BlueprintIdentifier = "2FEA8B89FF7F4FF5933F1E18"
+               BuildableName = "libPods-YTVimeoExtractor.a"
+               BlueprintName = "Pods-YTVimeoExtractor"
+               BlueprintIdentifier = "C94C9232E0CA4A5B91C24322"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableIdentifier = "primary">
             </BuildableReference>

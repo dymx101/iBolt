@@ -43,7 +43,8 @@ PODS:
   - QuickDialog (0.8)
   - SSKeychain (1.2.1)
   - SVProgressHUD (1.0)
-  - UIAlertView-Blocks (0.0.1)
+  - UIAlertView-Blocks (1.0)
+  - YTVimeoExtractor (0.0.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 1.0)
@@ -54,6 +55,7 @@ DEPENDENCIES:
   - GDFileManagerKit (~> 0.0.2)
   - MMDrawerController (~> 0.4.0)
   - SVProgressHUD
+  - YTVimeoExtractor (~> 0.0.5)
 
 SPEC CHECKSUMS:
   AFKissXMLRequestOperation: c5010fd22d4f03371d9960fd09792f7bc3b32f45
@@ -70,6 +72,7 @@ SPEC CHECKSUMS:
   QuickDialog: 465692c7c599ad41a0c46022c55779dd61a4d4fe
   SSKeychain: d18926838c2e7cd342e2a49e9f869858e49f035a
   SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
-  UIAlertView-Blocks: 7689ad7dd941417e7a7da81507482bc6f4f15bcd
+  UIAlertView-Blocks: f7be28a08e85ec21143951ec6797ca6474faf563
+  YTVimeoExtractor: 25e8f61a3d875769cf8de0e3c2fe52d43f3f9db9
 
-COCOAPODS: 0.28.0
+COCOAPODS: 0.29.0
