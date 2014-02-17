@@ -9,6 +9,7 @@
 #import "FDWebViewWacher.h"
 #import "FDYoutubeParser.h"
 
+#define YOUTUBE_COM         @"youtube.com"
 #define CHECK_INTERVAL      (5.f)
 
 @interface FDWebViewWacher () {
@@ -43,9 +44,14 @@
 -(void)tick:(id)sender {
     NSString *html = [_webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.innerHTML"];
     if (html.length && ![html isEqualToString:_oldHtml]) {
-        // start analysis
-        FDYoutubeVideo *video = [FDYoutubeParser parseHtml:html];
-        DLog(@"Video Address:---> %@", video.url);
+        // -------> start analysis
+        //NSString *url = _webView.request.URL.absoluteString;
+        //NSString *mainDocURL = _webView.request.mainDocumentURL.absoluteString;
+        NSString *currentURL = [_webView stringByEvaluatingJavaScriptFromString:@"window.location.href"].lowercaseString;
+        if ([currentURL rangeOfString:YOUTUBE_COM].location != NSNotFound) {
+            FDYoutubeVideo *video = [FDYoutubeParser parseHtml:html];
+            DLog(@"Video Address:---> %@", video.url);
+        }
     }
     _oldHtml = html;
 }
