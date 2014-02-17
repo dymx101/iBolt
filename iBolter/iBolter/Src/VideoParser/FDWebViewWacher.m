@@ -8,6 +8,7 @@
 
 #import "FDWebViewWacher.h"
 #import "FDYoutubeParser.h"
+#import "FDVimeoVideo.h"
 
 #import "GGPredicate.h"
 
@@ -62,9 +63,17 @@
             
             NSString *videoID = [[currentURL componentsSeparatedByString:@"/"] lastObject];
             if ([GGPredicate checkNumeric:videoID] && videoID.length == 8) {
-                [YTVimeoExtractor fetchVideoURLFromID:videoID quality:YTVimeoVideoQualityHigh completionHandler:^(NSURL *videoURL, NSError *error, YTVimeoVideoQuality quality) {
-                    if (!error) {
-                        DLog(@"Video Address:---> %@", videoURL.absoluteString);
+                
+//                [YTVimeoExtractor fetchVideoURLFromID:videoID quality:YTVimeoVideoQualityHigh completionHandler:^(NSURL *videoURL, NSError *error, YTVimeoVideoQuality quality) {
+//                    if (!error) {
+//                        DLog(@"Video Address:---> %@", videoURL.absoluteString);
+//                    }
+//                }];
+                
+                [YTVimeoExtractor fetchVideoURLFromID:videoID callback:^(NSDictionary *aInfoDic, NSError *anError) {
+                    if (!anError && aInfoDic) {
+                        FDVimeoVideo *video = [[FDVimeoVideo alloc] initWithInfo:aInfoDic];
+                        DLog(@"Video Address:---> %@", video.url);
                     }
                 }];
             }

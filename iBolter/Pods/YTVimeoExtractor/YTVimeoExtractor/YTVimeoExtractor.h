@@ -13,6 +13,7 @@ extern NSString *const YTVimeoExtractorErrorDomain;
 enum {
     YTVimeoExtractorErrorCodeNotInitialized,
     YTVimeoExtractorErrorInvalidIdentifier,
+    YTVimeoExtractorErrorPrivate,
     YTVimeoExtractorErrorUnsupportedCodec,
     YTVimeoExtractorErrorUnavailableQuality
 };
@@ -24,6 +25,7 @@ typedef enum YTVimeoVideoQuality : NSUInteger {
 }YTVimeoVideoQuality;
 
 typedef void (^completionHandler) (NSURL *videoURL, NSError *error, YTVimeoVideoQuality quality);
+typedef void (^VideoParseCallback) (NSDictionary *aInfoDic, NSError *anError);
 
 @protocol  YTVimeoExtractorDelegate;
 
@@ -32,11 +34,13 @@ typedef void (^completionHandler) (NSURL *videoURL, NSError *error, YTVimeoVideo
 @property (nonatomic, readonly) BOOL running;
 @property (nonatomic, readonly) YTVimeoVideoQuality quality;
 @property (strong, nonatomic, readonly) NSURL *vimeoURL;
+@property (nonatomic, copy) NSString        *ID;
 
 @property (unsafe_unretained, nonatomic) id<YTVimeoExtractorDelegate> delegate;
 
 + (void)fetchVideoURLFromURL:(NSString *)videoURL quality:(YTVimeoVideoQuality)quality completionHandler:(completionHandler)handler;
 + (void)fetchVideoURLFromID:(NSString *)videoURL quality:(YTVimeoVideoQuality)quality completionHandler:(completionHandler)handler;
++ (void)fetchVideoURLFromID:(NSString *)videoID callback:(VideoParseCallback)aCallback;
 
 - (id)initWithURL:(NSString *)videoURL quality:(YTVimeoVideoQuality)quality;
 - (id)initWithID:(NSString *)videoID quality:(YTVimeoVideoQuality)quality;

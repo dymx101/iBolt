@@ -60,6 +60,9 @@ _Pragma("clang diagnostic pop") \
 
 
 //
+#define VIDEO_QUALITY_MOBILE    @"mobile"
+#define VIDEO_QUALITY_SD        @"sd"
+#define VIDEO_QUALITY_HD        @"hd"
 #define VIDEO_QUALITY_MEDIUM  @"medium"
 #define VIDEO_QUALITY_SMALL   @"small"
 #define VIDEO_QUALITY_LIVE    @"live"

@@ -10,9 +10,13 @@
 
 typedef enum {
     kVideoTypeYoutube = 0
+    , kVideoTypeVimeo
 }EVideoType;
 
-@interface FDVideo : NSObject
+@interface FDVideo : NSObject {
+ @protected
+    EVideoType _type;
+}
 @property (nonatomic, assign) EVideoType        type;
 @property (nonatomic, assign) NSString          *ID;
 @property (nonatomic, copy)     NSString        *title;

@@ -10,11 +10,14 @@
 NSString *const YTVimeoPlayerConfigURL = @"http://player.vimeo.com/v2/video/%@/config";
 NSString *const YTVimeoExtractorErrorDomain = @"YTVimeoExtractorErrorDomain";
 
-@interface YTVimeoExtractor ()
+@interface YTVimeoExtractor () {
+    NSMutableDictionary *_infoDic;
+}
 
 @property (strong, nonatomic) NSURLConnection *connection;
 @property (strong, nonatomic) NSMutableData *buffer;
 @property (copy, nonatomic) completionHandler completionHandler;
+@property (copy, nonatomic) VideoParseCallback callback;;
 
 - (void)extractorFailedWithMessage:(NSString*)message errorCode:(int)code;
 
@@ -36,12 +39,19 @@ NSString *const YTVimeoExtractorErrorDomain = @"YTVimeoExtractorErrorDomain";
     [extractor start];
 }
 
++ (void)fetchVideoURLFromID:(NSString *)videoID callback:(VideoParseCallback)aCallback {
+    YTVimeoExtractor *extractor = [[YTVimeoExtractor alloc] initWithID:videoID quality:YTVimeoVideoQualityHigh];
+    extractor.callback = aCallback;
+    [extractor start];
+}
+
 #pragma mark - Constructors
 
 - (id)initWithID:(NSString *)videoID quality:(YTVimeoVideoQuality)quality
 {
     self = [super init];
     if (self) {
+        _ID = videoID;
         _vimeoURL = [NSURL URLWithString:[NSString stringWithFormat:YTVimeoPlayerConfigURL, videoID]];
         _quality = quality;
         _running = NO;
@@ -67,7 +77,7 @@ NSString *const YTVimeoExtractorErrorDomain = @"YTVimeoExtractorErrorDomain";
 
 - (void)start
 {
-    if (!(self.delegate || self.completionHandler) || !self.vimeoURL) {
+    if (!(self.delegate || self.completionHandler || self.callback) || !self.vimeoURL) {
         [self extractorFailedWithMessage:@"Delegate, block or URL not specified" errorCode:YTVimeoExtractorErrorCodeNotInitialized];
         return;
     }
@@ -90,6 +100,9 @@ NSString *const YTVimeoExtractorErrorDomain = @"YTVimeoExtractorErrorDomain";
     if (self.completionHandler) {
         self.completionHandler(nil, error, self.quality);
     }
+    else if (_callback) {
+        _callback(_infoDic, error);
+    }
     else if ([self.delegate respondsToSelector:@selector(vimeoExtractor:failedExtractingVimeoURLWithError:)]) {
         [self.delegate vimeoExtractor:self failedExtractingVimeoURLWithError:error];
     }
@@ -103,7 +116,12 @@ NSString *const YTVimeoExtractorErrorDomain = @"YTVimeoExtractorErrorDomain";
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)response;
     NSInteger statusCode = [httpResponse statusCode];
     if (statusCode != 200) {
-        [self extractorFailedWithMessage:@"Invalid video indentifier" errorCode:YTVimeoExtractorErrorInvalidIdentifier];
+        if (statusCode == 403) {
+            [self extractorFailedWithMessage:@"Because of its privacy settings, this video cannot be played here." errorCode:YTVimeoExtractorErrorPrivate];
+        } else {
+            [self extractorFailedWithMessage:@"Invalid video indentifier" errorCode:YTVimeoExtractorErrorInvalidIdentifier];
+        }
+        
         [connection cancel];
     }
     
@@ -119,6 +137,7 @@ NSString *const YTVimeoExtractorErrorDomain = @"YTVimeoExtractorErrorDomain";
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     NSError *error;
+    NSString *jsonStr = [NSString stringWithUTF8String:self.buffer.bytes];
     NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:self.buffer options:NSJSONReadingAllowFragments error:&error];
     
     if (error) {
@@ -132,6 +151,33 @@ NSString *const YTVimeoExtractorErrorDomain = @"YTVimeoExtractorErrorDomain";
         return;
     }
     
+    //
+    _infoDic = [NSMutableDictionary dictionary];
+    NSString *title = [jsonData valueForKeyPath:@"video.title"];
+    if (title.length) {
+        [_infoDic setObject:title forKey:@"title"];
+    }
+    [_infoDic setObject:_ID forKey:@"id"];
+    
+    NSMutableDictionary *videoDic = [NSMutableDictionary dictionary];
+    [_infoDic setObject:videoDic forKey:@"urls"];
+    NSString *url = [[filesInfo objectForKey:@"mobile"] objectForKey:@"url"];
+    if (url.length) {
+        [videoDic setObject:url forKey:@"mobile"];
+    }
+    
+    url = [[filesInfo objectForKey:@"sd"] objectForKey:@"url"];
+    if (url.length) {
+        [videoDic setObject:url forKey:@"sd"];
+    }
+    
+    url = [[filesInfo objectForKey:@"hd"] objectForKey:@"url"];
+    if (url.length) {
+        [videoDic setObject:url forKey:@"hd"];
+    }
+    
+    
+    //
     NSDictionary *videoInfo;
     YTVimeoVideoQuality videoQuality = self.quality;
     do {
@@ -147,6 +193,9 @@ NSString *const YTVimeoExtractorErrorDomain = @"YTVimeoExtractorErrorDomain";
     NSURL *fileURL = [NSURL URLWithString:[videoInfo objectForKey:@"url"]];
     if (self.completionHandler) {
         self.completionHandler(fileURL, nil, videoQuality);
+    }
+    else if (_callback) {
+        _callback(_infoDic, error);
     }
     else if ([self.delegate respondsToSelector:@selector(vimeoExtractor:didSuccessfullyExtractVimeoURL:withQuality:)]) {
         [self.delegate vimeoExtractor:self didSuccessfullyExtractVimeoURL:fileURL withQuality:videoQuality];

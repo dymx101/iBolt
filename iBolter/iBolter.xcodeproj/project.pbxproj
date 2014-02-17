@@ -27,6 +27,7 @@
 		EA702DEF1898E83C0022AB0B /* QQ_Music_API.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA702DEE1898E83C0022AB0B /* QQ_Music_API.txt */; };
 		EA7A4B1918B071AD00B7D5DD /* FDCustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7A4B1818B071AD00B7D5DD /* FDCustomURLCache.m */; };
 		EA92DE7618B24C1D0089126C /* GGPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92DE7518B24C1D0089126C /* GGPredicate.m */; };
+		EA92DE7918B254040089126C /* FDVimeoVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92DE7818B254040089126C /* FDVimeoVideo.m */; };
 		EA96A5001896039E00AE1D2D /* BackLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96A4FF1896039E00AE1D2D /* BackLog.m */; };
 		EABC2FFA188CE2970042A9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FF9188CE2970042A9DB /* Foundation.framework */; };
 		EABC2FFC188CE2970042A9DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */; };
@@ -97,6 +98,8 @@
 		EA7A4B1818B071AD00B7D5DD /* FDCustomURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCustomURLCache.m; sourceTree = "<group>"; };
 		EA92DE7418B24C1D0089126C /* GGPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPredicate.h; sourceTree = "<group>"; };
 		EA92DE7518B24C1D0089126C /* GGPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPredicate.m; sourceTree = "<group>"; };
+		EA92DE7718B254040089126C /* FDVimeoVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDVimeoVideo.h; sourceTree = "<group>"; };
+		EA92DE7818B254040089126C /* FDVimeoVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDVimeoVideo.m; sourceTree = "<group>"; };
 		EA96A4FE1896039E00AE1D2D /* BackLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackLog.h; sourceTree = "<group>"; };
 		EA96A4FF1896039E00AE1D2D /* BackLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackLog.m; sourceTree = "<group>"; };
 		EABC2FF6188CE2970042A9DB /* iBolter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBolter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -333,6 +336,8 @@
 				EAC10CF218B2084C00C7EA15 /* FDVideo.m */,
 				EAC10CF418B20C7400C7EA15 /* FDYoutubeVideo.h */,
 				EAC10CF518B20C7400C7EA15 /* FDYoutubeVideo.m */,
+				EA92DE7718B254040089126C /* FDVimeoVideo.h */,
+				EA92DE7818B254040089126C /* FDVimeoVideo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 				EAC10CF618B20C7400C7EA15 /* FDYoutubeVideo.m in Sources */,
 				EA186B32188CEE1200F14348 /* FDSettingsVC.m in Sources */,
 				EA186B2E188CEE1200F14348 /* FDDownloadsVC.m in Sources */,
+				EA92DE7918B254040089126C /* FDVimeoVideo.m in Sources */,
 				EA186B2F188CEE1200F14348 /* FDMediaVC.m in Sources */,
 				EA186B2A188CEE1200F14348 /* FDAppDelegate.m in Sources */,
 				EAC10CE618B1F4CA00C7EA15 /* FDYoutubeParser.m in Sources */,

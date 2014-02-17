@@ -17,6 +17,8 @@
         if (url.length <= 0) {
             url = [urls objectForKey:VIDEO_QUALITY_SMALL];
         }
+        
+        return url;
     }
     
     return nil;
