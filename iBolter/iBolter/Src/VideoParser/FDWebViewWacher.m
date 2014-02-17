@@ -45,7 +45,7 @@
     if (html.length && ![html isEqualToString:_oldHtml]) {
         // start analysis
         FDYoutubeVideo *video = [FDYoutubeParser parseHtml:html];
-        DLog(@"%@", video.url);
+        DLog(@"Video Address:---> %@", video.url);
     }
     _oldHtml = html;
 }

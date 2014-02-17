@@ -24,7 +24,9 @@
     [self watchOut];
     
     // custom cache
+#if !(TARGET_IPHONE_SIMULATOR)
     [NSURLCache setSharedURLCache:[FDCustomURLCache new]];
+#endif
     
     // create window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
