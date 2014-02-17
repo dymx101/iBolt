@@ -14,6 +14,7 @@
 #import <SVProgressHUD.h>
 
 #import <UIAlertView+Blocks.h>
+#import <YTVimeoExtractor/YTVimeoExtractor.h>
 
 #import "FDDefine.h"
 #import "NSObject+BeeNotification.h"

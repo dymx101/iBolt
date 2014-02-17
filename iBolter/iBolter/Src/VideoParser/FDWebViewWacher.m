@@ -9,7 +9,11 @@
 #import "FDWebViewWacher.h"
 #import "FDYoutubeParser.h"
 
+#import "GGPredicate.h"
+
 #define YOUTUBE_COM         @"youtube.com"
+#define VIMEO_COM           @"vimeo.com"
+
 #define CHECK_INTERVAL      (5.f)
 
 @interface FDWebViewWacher () {
@@ -48,9 +52,22 @@
         //NSString *url = _webView.request.URL.absoluteString;
         //NSString *mainDocURL = _webView.request.mainDocumentURL.absoluteString;
         NSString *currentURL = [_webView stringByEvaluatingJavaScriptFromString:@"window.location.href"].lowercaseString;
+        
         if ([currentURL rangeOfString:YOUTUBE_COM].location != NSNotFound) {
+            
             FDYoutubeVideo *video = [FDYoutubeParser parseHtml:html];
             DLog(@"Video Address:---> %@", video.url);
+            
+        } else if ([currentURL rangeOfString:VIMEO_COM].location != NSNotFound) {
+            
+            NSString *videoID = [[currentURL componentsSeparatedByString:@"/"] lastObject];
+            if ([GGPredicate checkNumeric:videoID] && videoID.length == 8) {
+                [YTVimeoExtractor fetchVideoURLFromID:videoID quality:YTVimeoVideoQualityHigh completionHandler:^(NSURL *videoURL, NSError *error, YTVimeoVideoQuality quality) {
+                    if (!error) {
+                        DLog(@"Video Address:---> %@", videoURL.absoluteString);
+                    }
+                }];
+            }
         }
     }
     _oldHtml = html;

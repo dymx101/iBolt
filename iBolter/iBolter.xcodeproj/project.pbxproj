@@ -26,6 +26,7 @@
 		EA4B62841894F03000CCEE65 /* FDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4B62831894F03000CCEE65 /* FDUtil.m */; };
 		EA702DEF1898E83C0022AB0B /* QQ_Music_API.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA702DEE1898E83C0022AB0B /* QQ_Music_API.txt */; };
 		EA7A4B1918B071AD00B7D5DD /* FDCustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7A4B1818B071AD00B7D5DD /* FDCustomURLCache.m */; };
+		EA92DE7618B24C1D0089126C /* GGPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92DE7518B24C1D0089126C /* GGPredicate.m */; };
 		EA96A5001896039E00AE1D2D /* BackLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96A4FF1896039E00AE1D2D /* BackLog.m */; };
 		EABC2FFA188CE2970042A9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FF9188CE2970042A9DB /* Foundation.framework */; };
 		EABC2FFC188CE2970042A9DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC2FFB188CE2970042A9DB /* CoreGraphics.framework */; };
@@ -94,6 +95,8 @@
 		EA702DEE1898E83C0022AB0B /* QQ_Music_API.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QQ_Music_API.txt; sourceTree = "<group>"; };
 		EA7A4B1718B071AD00B7D5DD /* FDCustomURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCustomURLCache.h; sourceTree = "<group>"; };
 		EA7A4B1818B071AD00B7D5DD /* FDCustomURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCustomURLCache.m; sourceTree = "<group>"; };
+		EA92DE7418B24C1D0089126C /* GGPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPredicate.h; sourceTree = "<group>"; };
+		EA92DE7518B24C1D0089126C /* GGPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPredicate.m; sourceTree = "<group>"; };
 		EA96A4FE1896039E00AE1D2D /* BackLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackLog.h; sourceTree = "<group>"; };
 		EA96A4FF1896039E00AE1D2D /* BackLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackLog.m; sourceTree = "<group>"; };
 		EABC2FF6188CE2970042A9DB /* iBolter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBolter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +204,8 @@
 		EA186B37188CEF9100F14348 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EA92DE7418B24C1D0089126C /* GGPredicate.h */,
+				EA92DE7518B24C1D0089126C /* GGPredicate.m */,
 				EA7A4B1718B071AD00B7D5DD /* FDCustomURLCache.h */,
 				EA7A4B1818B071AD00B7D5DD /* FDCustomURLCache.m */,
 				EA186B3E188CF63600F14348 /* MMDrawerVisualStateManager.h */,
@@ -495,6 +500,7 @@
 				EA186B2A188CEE1200F14348 /* FDAppDelegate.m in Sources */,
 				EAC10CE618B1F4CA00C7EA15 /* FDYoutubeParser.m in Sources */,
 				EAC10CE918B1FA0000C7EA15 /* NSString+QureyString.m in Sources */,
+				EA92DE7618B24C1D0089126C /* GGPredicate.m in Sources */,
 				EA186B2D188CEE1200F14348 /* FDBrowserVC.m in Sources */,
 				EA96A5001896039E00AE1D2D /* BackLog.m in Sources */,
 				EA186B44188CFDAC00F14348 /* NSObject+BeeNotification.m in Sources */,
