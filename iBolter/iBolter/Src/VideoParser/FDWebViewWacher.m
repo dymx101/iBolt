@@ -44,8 +44,10 @@
     NSString *html = [_webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.innerHTML"];
     if (html.length && ![html isEqualToString:_oldHtml]) {
         // start analysis
-        FDYoutubeParser *youtubeParser = [FDYoutubeParser new];
-        [youtubeParser parseHtml:html];
+        NSDictionary *dic = [FDYoutubeParser parseHtml:html];
+        if (dic) {
+            NSString *mediumURL = [dic objectForKey:YOUTUBE_QUALITY_MEDIUM];
+        }
     }
     _oldHtml = html;
 }

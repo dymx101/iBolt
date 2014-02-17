@@ -40,6 +40,8 @@
 		EAC10CE018B1F09900C7EA15 /* FDWebViewWacher.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC10CDF18B1F09900C7EA15 /* FDWebViewWacher.m */; };
 		EAC10CE318B1F4B400C7EA15 /* FDVideoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC10CE218B1F4B400C7EA15 /* FDVideoParser.m */; };
 		EAC10CE618B1F4CA00C7EA15 /* FDYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC10CE518B1F4CA00C7EA15 /* FDYoutubeParser.m */; };
+		EAC10CE918B1FA0000C7EA15 /* NSString+QureyString.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC10CE818B1FA0000C7EA15 /* NSString+QureyString.m */; };
+		EAC10CEC18B1FA5800C7EA15 /* NSURL+QureyString.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC10CEB18B1FA5800C7EA15 /* NSURL+QureyString.m */; };
 		EACDC8C618A4B62F0008A6A6 /* requirement_doc.txt in Resources */ = {isa = PBXBuildFile; fileRef = EACDC8C518A4B62F0008A6A6 /* requirement_doc.txt */; };
 		EACDC8C818A4E3AF0008A6A6 /* world_video_site.txt in Resources */ = {isa = PBXBuildFile; fileRef = EACDC8C718A4E3AF0008A6A6 /* world_video_site.txt */; };
 /* End PBXBuildFile section */
@@ -111,6 +113,10 @@
 		EAC10CE218B1F4B400C7EA15 /* FDVideoParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDVideoParser.m; sourceTree = "<group>"; };
 		EAC10CE418B1F4CA00C7EA15 /* FDYoutubeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDYoutubeParser.h; sourceTree = "<group>"; };
 		EAC10CE518B1F4CA00C7EA15 /* FDYoutubeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDYoutubeParser.m; sourceTree = "<group>"; };
+		EAC10CE718B1FA0000C7EA15 /* NSString+QureyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QureyString.h"; sourceTree = "<group>"; };
+		EAC10CE818B1FA0000C7EA15 /* NSString+QureyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QureyString.m"; sourceTree = "<group>"; };
+		EAC10CEA18B1FA5800C7EA15 /* NSURL+QureyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+QureyString.h"; sourceTree = "<group>"; };
+		EAC10CEB18B1FA5800C7EA15 /* NSURL+QureyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QureyString.m"; sourceTree = "<group>"; };
 		EACDC8C518A4B62F0008A6A6 /* requirement_doc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = requirement_doc.txt; sourceTree = "<group>"; };
 		EACDC8C718A4E3AF0008A6A6 /* world_video_site.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = world_video_site.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +213,10 @@
 			children = (
 				EA186B42188CFDAC00F14348 /* NSObject+BeeNotification.h */,
 				EA186B43188CFDAC00F14348 /* NSObject+BeeNotification.m */,
+				EAC10CE718B1FA0000C7EA15 /* NSString+QureyString.h */,
+				EAC10CE818B1FA0000C7EA15 /* NSString+QureyString.m */,
+				EAC10CEA18B1FA5800C7EA15 /* NSURL+QureyString.h */,
+				EAC10CEB18B1FA5800C7EA15 /* NSURL+QureyString.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -464,12 +474,14 @@
 				EA186B2F188CEE1200F14348 /* FDMediaVC.m in Sources */,
 				EA186B2A188CEE1200F14348 /* FDAppDelegate.m in Sources */,
 				EAC10CE618B1F4CA00C7EA15 /* FDYoutubeParser.m in Sources */,
+				EAC10CE918B1FA0000C7EA15 /* NSString+QureyString.m in Sources */,
 				EA186B2D188CEE1200F14348 /* FDBrowserVC.m in Sources */,
 				EA96A5001896039E00AE1D2D /* BackLog.m in Sources */,
 				EA186B44188CFDAC00F14348 /* NSObject+BeeNotification.m in Sources */,
 				EA1C640818A617780009417C /* FDMoviePlayerVC.m in Sources */,
 				EA186B30188CEE1200F14348 /* FDMenuVC.m in Sources */,
 				EA186B36188CEE4A00F14348 /* FDBaseVC.m in Sources */,
+				EAC10CEC18B1FA5800C7EA15 /* NSURL+QureyString.m in Sources */,
 				EA4B62841894F03000CCEE65 /* FDUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

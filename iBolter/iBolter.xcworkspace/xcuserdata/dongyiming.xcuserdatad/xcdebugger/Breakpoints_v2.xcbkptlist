@@ -10,12 +10,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iBolter/Src/VideoParser/FDYoutubeParser.m"
-            timestampString = "414316490.725354"
+            timestampString = "414319618.640519"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "-videoIdFromHtml:"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "+videosWithYoutubeID:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iBolter/Src/VideoParser/FDWebViewWacher.m"
+            timestampString = "414318188.510619"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-tick:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
