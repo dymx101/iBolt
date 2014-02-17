@@ -65,7 +65,8 @@
     
     //
     //[self loadURL:@"http://youtube.com"];
-    [self loadURL:@"https://vimeo.com"];
+    //[self loadURL:@"https://vimeo.com"];
+    [self loadURL:@"http://vine.co"];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
