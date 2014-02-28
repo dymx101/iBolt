@@ -123,7 +123,7 @@
     int cardCount = CardIsUnlocked.count;
     for (int i = 0; i < cardCount; i++) {
         BOOL isUnlocked = [(CardIsUnlocked[i]) boolValue];
-        if (!isUnlocked && totalWins.intValue > i * (i / 2 + 1)) {
+        if (i < 5 || (!isUnlocked && totalWins.intValue > i * (i / 2 + 1))) {
             CardIsUnlocked[i] = @1;
             flag = YES;
         }

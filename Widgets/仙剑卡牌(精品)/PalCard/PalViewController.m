@@ -158,13 +158,15 @@
         
         [self.hintView setFrame:CGRectMake(35, 125, 250, 200) ];
         
-        [self.Display setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:20]];
-        [self.TextDisplay setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:20]];
+        UIFont *font = [UIFont systemFontOfSize:18];
+        [self.Display setFont:font];
+        [self.TextDisplay setFont:font];
 
     }
     else {
-        [self.Display setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:25]];
-        [self.TextDisplay setFont:[UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:25]];
+        UIFont *font = [UIFont systemFontOfSize:20];
+        [self.Display setFont:font];
+        [self.TextDisplay setFont:font];
     }
     
     // set images
@@ -253,17 +255,17 @@
     // Time setting
     if ([self.mode isEqualToString:@"easy"]) {
         _totalTime = 15.0;
-        _watchTime = 1.5;
+        _watchTime = 3;
         _numberOfBlackCards = 0;
     }
     else if ([self.mode isEqualToString:@"normal"]) {
         _totalTime = 13.0;
-        _watchTime = 1.2;
+        _watchTime = 4;
         _numberOfBlackCards = 2;
     }
     else if ([self.mode isEqualToString:@"hard"]) {
         _totalTime = 10.0;
-        _watchTime = 1.0;
+        _watchTime = 5;
         _numberOfBlackCards = 4;
     }
     else if ([self.mode isEqualToString:@"freeStyle"]) {
@@ -338,8 +340,8 @@
     self.gameProgress.alpha = 1.0;
     
     if (DEVICE_IS_IPHONE5) {
-        self.TextDisplay.text = LocalString(@"time_left");
-        self.Display.text = [NSString stringWithFormat:LocalString(@"num_sec"), 15];
+        //self.TextDisplay.text = //LocalString(@"time_left");
+        self.TextDisplay.text = [NSString stringWithFormat:@"Time left: %d", 15];
     }
     else {
         self.TextDisplay.text = @"";
@@ -357,8 +359,9 @@
         _roundTime -= 0.1;
         self.gameProgress.progress = (float)_roundTime / _totalTime;
         
+        int round = roundf(_roundTime + 0.5);
         if (DEVICE_IS_IPHONE5) {
-            self.Display.text = [NSString stringWithFormat:LocalString(@"num_sec"), _roundTime + 0.5];
+            self.TextDisplay.text = [NSString stringWithFormat:@"Time left: %d", round];
         }
         
         if (_roundTime <= 0.0) {
@@ -442,11 +445,11 @@
     
     
     // call alert
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"\n\n\n" message:@"\n\n\n" delegate:self cancelButtonTitle:LocalString(@"restart") otherButtonTitles:LocalString(@"back"),nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over..." message:@"Try again?" delegate:self cancelButtonTitle:@"Alright"otherButtonTitles:@"No,thanks",nil];
     [alert show];
     
-    UIImageView *imgv = [alert valueForKey:@"_backgroundImageView"];
-    imgv.image = [UIImage imageNamed:_GameLoseImg];
+//    UIImageView *imgv = [alert valueForKey:@"_backgroundImageView"];
+//    imgv.image = [UIImage imageNamed:_GameLoseImg];
     
     
     // check whether new achievement unlocked

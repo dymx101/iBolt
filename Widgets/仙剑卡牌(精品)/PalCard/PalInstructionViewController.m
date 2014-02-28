@@ -23,6 +23,8 @@
 
 #define _ButtonPressedSound @"button_pressed.wav"
 
+#define INSTRUCTION_STR @"Tap a card to make it flip over,  match same cards to clear them, clear all the cards as fast as you can!\n\n(Beware do NOT touch the animated cards.)\n\nHave fun!"
+
 
 #define DEVICE_IS_IPHONE5 ([[UIScreen mainScreen] bounds].size.height == 568)
 
@@ -106,7 +108,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    _text2.text = INSTRUCTION_STR;
     
     
     // I use storyboard to design UI for iphone 5
@@ -119,7 +121,7 @@
         [self.freeView setFrame:CGRectMake(160, 325, 110, 66)];
         
         [self.text1 setFrame:CGRectMake(40, 60, 240, 95)];
-        [self.text2 setFrame:CGRectMake(40, 140, 240, 95)];
+        //[self.text2 setFrame:CGRectMake(40, 140, 240, 95)];
         [self.text3 setFrame:CGRectMake(40, 270, 240, 95)];
         [self.text4 setFrame:CGRectMake(40, 370, 240, 95)];
         

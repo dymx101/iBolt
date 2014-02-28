@@ -118,7 +118,8 @@
         }
     }
 
-    path = [PalUtil freeOriginalImagePath:cards[cardNumber]]; //[NSString stringWithFormat:@"1Free/original/%d.png", cards[cardNumber]];    _lastIsBlack = NO;
+    path = [PalUtil freeOriginalImagePath:cards[cardNumber]];
+    _lastIsBlack = NO;
     return path;
 }
 

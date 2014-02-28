@@ -94,6 +94,7 @@
 {
     [super viewDidLoad];
 
+    _textInfo.text = @"Hearthstone Flipping Crazy \nv1.0\n\nHave fun!";
     
     // I use storyboard to design UI for iphone 5
     // here are frame tweaks for iPhone 4/4S
@@ -101,7 +102,7 @@
         
         [self.infoBG setFrame:CGRectMake(-10, 5, 340, 445)];
         
-        [self.textInfo setFrame:CGRectMake(27, 35, 266, 373)];
+        //[self.textInfo setFrame:CGRectMake(27, 35, 266, 373)];
         
         [self.returnButton setFrame:CGRectMake(250, 430, 50, 45)];
         
