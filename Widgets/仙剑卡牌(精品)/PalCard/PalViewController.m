@@ -18,7 +18,7 @@
 #define _ANITIME_SHORT 0.3
 #define _AMOUNT_OF_CARDS 12
 
-#define _GameBG @"palsource/bg4_R.jpg"
+#define _GameBG @"palsource/bg.jpg"
 
 #define _GameLoseImg @"UIimages/fal.png"
 #define _GameWinImg @"UIimages/suc.png"
@@ -254,18 +254,18 @@
     
     // Time setting
     if ([self.mode isEqualToString:@"easy"]) {
-        _totalTime = 15.0;
+        _totalTime = 20.0;
         _watchTime = 3;
         _numberOfBlackCards = 0;
     }
     else if ([self.mode isEqualToString:@"normal"]) {
-        _totalTime = 13.0;
+        _totalTime = 18.0;
         _watchTime = 4;
         _numberOfBlackCards = 2;
     }
     else if ([self.mode isEqualToString:@"hard"]) {
-        _totalTime = 10.0;
-        _watchTime = 5;
+        _totalTime = 15.0;
+        _watchTime = 3;
         _numberOfBlackCards = 4;
     }
     else if ([self.mode isEqualToString:@"freeStyle"]) {
@@ -385,7 +385,7 @@
 
 // check whether user win the game 
 
-- (bool) win
+-(bool)win
 {
     if (_gameOver) return NO;
     
@@ -407,11 +407,11 @@
     
     self.Display.text = @"";
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"\n\n\n" message:@"\n\n\n" delegate:self cancelButtonTitle:LocalString(@"restart") otherButtonTitles:LocalString(@"back"),nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations!" message:@"You win!" delegate:self cancelButtonTitle:@"Play again" otherButtonTitles:@"Back", nil];
     [alert show];
     
-    UIImageView *imgv = [alert valueForKey:@"_backgroundImageView"];
-    imgv.image = [UIImage imageNamed:_GameWinImg];
+    //UIImageView *imgv = [alert valueForKey:@"_backgroundImageView"];
+    //imgv.image = [UIImage imageNamed:_GameWinImg];
     
     
     if([PalAchievementBrain newAchievementUnlocked:self.mode win:YES timeUsed:_totalTime - _roundTime timeLeft:_roundTime wrongsTimes:_wrongs rightTimes:_rights endWithBlackOrNot:_endWithBlack])
@@ -445,7 +445,7 @@
     
     
     // call alert
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over..." message:@"Try again?" delegate:self cancelButtonTitle:@"Alright"otherButtonTitles:@"No,thanks",nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over..." message:@"Try again?" delegate:self cancelButtonTitle:@"Yes"otherButtonTitles:@"No,thanks",nil];
     [alert show];
     
 //    UIImageView *imgv = [alert valueForKey:@"_backgroundImageView"];
