@@ -427,7 +427,7 @@
 }
 
 
-- (void)gameFinish
+-(void)gameFinish
 {
     _gameOver = YES;
     
@@ -445,7 +445,7 @@
     
     
     // call alert
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over..." message:@"Try again?" delegate:self cancelButtonTitle:@"Yes"otherButtonTitles:@"No,thanks",nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over..." message:@"Try again?" delegate:self cancelButtonTitle:@"Yes"otherButtonTitles:@"No,thanks", nil];
     [alert show];
     
 //    UIImageView *imgv = [alert valueForKey:@"_backgroundImageView"];
