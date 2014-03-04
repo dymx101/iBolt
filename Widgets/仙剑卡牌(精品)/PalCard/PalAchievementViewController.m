@@ -184,7 +184,7 @@
     
     
     // default settings for labels
-    [self.descriptionDisplay setFont:[UIFont systemFontOfSize:18]];
+    //[self.descriptionDisplay setFont:[UIFont systemFontOfSize:18]];
     
     self.descriptionDisplay.numberOfLines = 5;
     
