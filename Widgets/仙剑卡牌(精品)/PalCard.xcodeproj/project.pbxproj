@@ -23,6 +23,14 @@
 		EAC7D0E318AB6DD3002F1C3A /* whatever in Resources */ = {isa = PBXBuildFile; fileRef = EAC7D0E218AB6DD3002F1C3A /* whatever */; };
 		EAC7D0E618AB82DA002F1C3A /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC7D0E518AB82DA002F1C3A /* UIImage+animatedGIF.m */; };
 		EAC7D0E818AB83FF002F1C3A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC7D0E718AB83FF002F1C3A /* ImageIO.framework */; };
+		EACAB2DF18E1B8A200E9E8E9 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACAB2DE18E1B8A200E9E8E9 /* libGoogleAdMobAds.a */; };
+		EACAB2E118E1BA5B00E9E8E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACAB2E018E1BA5B00E9E8E9 /* CoreTelephony.framework */; };
+		EACAB2E318E1BA6200E9E8E9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACAB2E218E1BA6200E9E8E9 /* StoreKit.framework */; };
+		EACAB2E518E1BA6900E9E8E9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACAB2E418E1BA6900E9E8E9 /* AdSupport.framework */; };
+		EACAB2E718E1BA7500E9E8E9 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EACAB2E618E1BA7500E9E8E9 /* libz.1.1.3.dylib */; };
+		EACAB2E918E1BA8F00E9E8E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACAB2E818E1BA8F00E9E8E9 /* SystemConfiguration.framework */; };
+		EACAB2EB18E1BA9800E9E8E9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACAB2EA18E1BA9800E9E8E9 /* iAd.framework */; };
+		EACAB2ED18E1BAAA00E9E8E9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACAB2EC18E1BAAA00E9E8E9 /* MessageUI.framework */; };
 		EACFD08E18AA0C530024EECF /* 1Free in Resources */ = {isa = PBXBuildFile; fileRef = EACFD08D18AA0C530024EECF /* 1Free */; };
 		EACFD09018AA296F0024EECF /* cardface.png in Resources */ = {isa = PBXBuildFile; fileRef = EACFD08F18AA296F0024EECF /* cardface.png */; };
 		F70F928616CF40E700151527 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70F928316CF40E700151527 /* FXImageView.m */; };
@@ -89,6 +97,23 @@
 		EAC7D0E418AB82DA002F1C3A /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		EAC7D0E518AB82DA002F1C3A /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		EAC7D0E718AB83FF002F1C3A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		EACAB2D518E1B8A200E9E8E9 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		EACAB2D618E1B8A200E9E8E9 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		EACAB2D718E1B8A200E9E8E9 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		EACAB2D818E1B8A200E9E8E9 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		EACAB2D918E1B8A200E9E8E9 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		EACAB2DA18E1B8A200E9E8E9 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		EACAB2DB18E1B8A200E9E8E9 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		EACAB2DC18E1B8A200E9E8E9 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		EACAB2DD18E1B8A200E9E8E9 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		EACAB2DE18E1B8A200E9E8E9 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		EACAB2E018E1BA5B00E9E8E9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EACAB2E218E1BA6200E9E8E9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EACAB2E418E1BA6900E9E8E9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EACAB2E618E1BA7500E9E8E9 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		EACAB2E818E1BA8F00E9E8E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EACAB2EA18E1BA9800E9E8E9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		EACAB2EC18E1BAAA00E9E8E9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EACFD08D18AA0C530024EECF /* 1Free */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 1Free; sourceTree = "<group>"; };
 		EACFD08F18AA296F0024EECF /* cardface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardface.png; sourceTree = "<group>"; };
 		F70F928216CF40E700151527 /* FXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXImageView.h; sourceTree = "<group>"; };
@@ -162,9 +187,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC7D0E818AB83FF002F1C3A /* ImageIO.framework in Frameworks */,
-				F71F398D16BE282200F39979 /* QuartzCore.framework in Frameworks */,
+				EACAB2ED18E1BAAA00E9E8E9 /* MessageUI.framework in Frameworks */,
+				EACAB2EB18E1BA9800E9E8E9 /* iAd.framework in Frameworks */,
+				EACAB2E918E1BA8F00E9E8E9 /* SystemConfiguration.framework in Frameworks */,
 				F7E40B3316BB155B00F1CF97 /* AudioToolbox.framework in Frameworks */,
+				EACAB2E718E1BA7500E9E8E9 /* libz.1.1.3.dylib in Frameworks */,
+				EACAB2E518E1BA6900E9E8E9 /* AdSupport.framework in Frameworks */,
+				EACAB2E318E1BA6200E9E8E9 /* StoreKit.framework in Frameworks */,
+				EACAB2E118E1BA5B00E9E8E9 /* CoreTelephony.framework in Frameworks */,
+				EAC7D0E818AB83FF002F1C3A /* ImageIO.framework in Frameworks */,
+				EACAB2DF18E1B8A200E9E8E9 /* libGoogleAdMobAds.a in Frameworks */,
+				F71F398D16BE282200F39979 /* QuartzCore.framework in Frameworks */,
 				F742875D16BB0F9500C8B9F9 /* AVFoundation.framework in Frameworks */,
 				F7F7001F16B7211D00876181 /* UIKit.framework in Frameworks */,
 				F7F7002116B7211D00876181 /* Foundation.framework in Frameworks */,
@@ -202,6 +235,23 @@
 				EA7557B318A923FF00211CB3 /* win.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		EACAB2D418E1B8A200E9E8E9 /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				EACAB2D518E1B8A200E9E8E9 /* GADAdMobExtras.h */,
+				EACAB2D618E1B8A200E9E8E9 /* GADAdNetworkExtras.h */,
+				EACAB2D718E1B8A200E9E8E9 /* GADAdSize.h */,
+				EACAB2D818E1B8A200E9E8E9 /* GADBannerView.h */,
+				EACAB2D918E1B8A200E9E8E9 /* GADBannerViewDelegate.h */,
+				EACAB2DA18E1B8A200E9E8E9 /* GADInterstitial.h */,
+				EACAB2DB18E1B8A200E9E8E9 /* GADInterstitialDelegate.h */,
+				EACAB2DC18E1B8A200E9E8E9 /* GADRequest.h */,
+				EACAB2DD18E1B8A200E9E8E9 /* GADRequestError.h */,
+				EACAB2DE18E1B8A200E9E8E9 /* libGoogleAdMobAds.a */,
+			);
+			path = Admob;
 			sourceTree = "<group>";
 		};
 		F70F928116CF40E700151527 /* FXImageView */ = {
@@ -269,6 +319,13 @@
 		F7F7001D16B7211D00876181 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EACAB2EC18E1BAAA00E9E8E9 /* MessageUI.framework */,
+				EACAB2EA18E1BA9800E9E8E9 /* iAd.framework */,
+				EACAB2E818E1BA8F00E9E8E9 /* SystemConfiguration.framework */,
+				EACAB2E618E1BA7500E9E8E9 /* libz.1.1.3.dylib */,
+				EACAB2E418E1BA6900E9E8E9 /* AdSupport.framework */,
+				EACAB2E218E1BA6200E9E8E9 /* StoreKit.framework */,
+				EACAB2E018E1BA5B00E9E8E9 /* CoreTelephony.framework */,
 				EAC7D0E718AB83FF002F1C3A /* ImageIO.framework */,
 				F7E40B3216BB155B00F1CF97 /* AudioToolbox.framework */,
 				F71F398C16BE282200F39979 /* QuartzCore.framework */,
@@ -283,6 +340,7 @@
 		F7F7002416B7211D00876181 /* PalCard */ = {
 			isa = PBXGroup;
 			children = (
+				EACAB2D418E1B8A200E9E8E9 /* Admob */,
 				EA6CA55418AA75EC0098B880 /* Util */,
 				F7F7002D16B7211D00876181 /* PalAppDelegate.h */,
 				F7F7002E16B7211D00876181 /* PalAppDelegate.m */,
@@ -564,6 +622,11 @@
 				GCC_PREFIX_HEADER = "PalCard/PalCard-Prefix.pch";
 				INFOPLIST_FILE = "PalCard/PalCard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PalCard/Admob",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -579,7 +642,12 @@
 				GCC_PREFIX_HEADER = "PalCard/PalCard-Prefix.pch";
 				INFOPLIST_FILE = "PalCard/PalCard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PalCard/Admob",
+				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "24BC9142-FF11-4218-B067-7C929F675506";

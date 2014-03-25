@@ -12,6 +12,8 @@
 #import "PalAchievementBrain.h"
 #import "PalCard.h"
 
+#import "PalAppDelegate.h"
+
 #import <QuartzCore/QuartzCore.h>
 
 #define _ANITIME_LONG 0.4
@@ -98,7 +100,12 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
     
-    // hide navigation bar
+    GADBannerView *banner = SharedDelegate.bannerView;
+    CGRect bannerRc = banner.frame;
+    bannerRc.origin.y = self.view.frame.size.height - bannerRc.size.height;
+    banner.frame = bannerRc;
+    
+    [self.view addSubview:banner];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -158,15 +165,15 @@
         
         [self.hintView setFrame:CGRectMake(35, 125, 250, 200) ];
         
-        UIFont *font = [UIFont systemFontOfSize:18];
-        [self.Display setFont:font];
-        [self.TextDisplay setFont:font];
+        //UIFont *font = [UIFont systemFontOfSize:18];
+        //[self.Display setFont:font];
+        //[self.TextDisplay setFont:font];
 
     }
     else {
-        UIFont *font = [UIFont systemFontOfSize:20];
-        [self.Display setFont:font];
-        [self.TextDisplay setFont:font];
+        //UIFont *font = [UIFont systemFontOfSize:20];
+        //[self.Display setFont:font];
+        //[self.TextDisplay setFont:font];
     }
     
     // set images

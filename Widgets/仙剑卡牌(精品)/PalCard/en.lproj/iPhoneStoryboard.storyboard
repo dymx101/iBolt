@@ -144,7 +144,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" id="Qsw-yD-Uiw" userLabel="soundOnOff">
-                                <rect key="frame" x="259" y="504" width="35" height="35"/>
+                                <rect key="frame" x="259" y="438" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -342,7 +342,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e0v-5L-7Hz" userLabel="easyModeButton">
-                                <rect key="frame" x="95" y="140" width="130" height="65"/>
+                                <rect key="frame" x="95" y="100" width="130" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
@@ -359,7 +359,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Yf-5J-pjS" userLabel="normalModeButton">
-                                <rect key="frame" x="95" y="230" width="130" height="65"/>
+                                <rect key="frame" x="95" y="150" width="130" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
@@ -376,7 +376,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1z5-B7-c2w" userLabel="hardModeButton">
-                                <rect key="frame" x="95" y="320" width="130" height="65"/>
+                                <rect key="frame" x="95" y="200" width="130" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
@@ -393,7 +393,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FZj-ht-IRd" userLabel="freeModeButton">
-                                <rect key="frame" x="95" y="410" width="130" height="65"/>
+                                <rect key="frame" x="95" y="250" width="130" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
@@ -410,7 +410,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hJL-YD-g4u" userLabel="ReturnButton">
-                                <rect key="frame" x="250" y="505" width="50" height="45"/>
+                                <rect key="frame" x="250" y="446" width="50" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
@@ -552,9 +552,9 @@
                                 </connections>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" id="54t-2d-TBz" userLabel="Time Label">
-                                <rect key="frame" x="35" y="505" width="259" height="31"/>
+                                <rect key="frame" x="35" y="486" width="259" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -574,7 +574,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <progressView opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" progress="1" id="0Me-u5-fSC">
-                                <rect key="frame" x="25" y="540" width="270" height="2"/>
+                                <rect key="frame" x="25" y="510" width="270" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="progressTintColor" red="0.89626514668367352" green="0.0" blue="0.0097253787864384541" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.41770966198979587" green="0.41770966198979587" blue="0.41770966198979587" alpha="1" colorSpace="calibratedRGB"/>

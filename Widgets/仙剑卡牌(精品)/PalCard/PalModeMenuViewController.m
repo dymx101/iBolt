@@ -11,6 +11,8 @@
 #import "PalMountainAndCloudView.h"
 #import "MCSoundBoard.h"
 
+#import "PalAppDelegate.h"
+
 #define _ModeChoiceLabelImg @"UIimages/difficulty_choice.png"
 
 #define _EasyModeButtonImg @"UIimages/easy2.png"
@@ -76,6 +78,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stopAnimation) name:UIApplicationDidEnterBackgroundNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restartAnimation) name:UIApplicationWillEnterForegroundNotification object:nil];
+    
+    
+    GADBannerView *banner = SharedDelegate.bannerView;
+    CGRect bannerRc = banner.frame;
+    bannerRc.origin.y = self.view.frame.size.height - bannerRc.size.height;
+    banner.frame = bannerRc;
+    
+    [self.view addSubview:banner];
 }
 
 - (void)stopAnimation

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GADBannerView.h"
 
-@interface PalAppDelegate : UIResponder <UIApplicationDelegate>
+@interface PalAppDelegate : UIResponder <UIApplicationDelegate, GADBannerViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) GADBannerView *bannerView;
 
 @end
+
+
+#define SharedDelegate ((PalAppDelegate *)([UIApplication sharedApplication].delegate))
