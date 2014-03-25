@@ -146,28 +146,43 @@
     
     
     // set default images
-    self.difChoice.image = [UIImage imageNamed:_ModeChoiceLabelImg];
+    //self.difChoice.image = [UIImage imageNamed:_ModeChoiceLabelImg];
     
+    [self.easyButton setTitle:@"Easy" forState:UIControlStateNormal];
+    [self.normalButton setTitle:@"Normal" forState:UIControlStateNormal];
+    [self.hardButton setTitle:@"Hard" forState:UIControlStateNormal];
+    [self.freeStyleButton setTitle:@"Free Style" forState:UIControlStateNormal];
     
-    [self.easyButton setBackgroundImage:[UIImage imageNamed:_EasyModeButtonImg] forState:UIControlStateNormal];
+    [self.easyButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.normalButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.hardButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.freeStyleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
-    [self.easyButton setBackgroundImage:[UIImage imageNamed:_EasyModeButtonPressedImg] forState:UIControlStateHighlighted];
-
-    [self.normalButton setBackgroundImage:[UIImage imageNamed:_NormalModeButtonImg] forState:UIControlStateNormal];
+    UIFont *font = [UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:30];
+    self.easyButton.titleLabel.font = font;
+    self.normalButton.titleLabel.font = font;
+    self.hardButton.titleLabel.font = font;
+    self.freeStyleButton.titleLabel.font = font;
     
-    [self.normalButton setBackgroundImage:[UIImage imageNamed:_NormalModeButtonPressedImg] forState:UIControlStateHighlighted];
-    
-    [self.hardButton setBackgroundImage:[UIImage imageNamed:_HardModeButtonImg] forState:UIControlStateNormal];
-    
-    [self.hardButton setBackgroundImage:[UIImage imageNamed:_HardModeButtonPressedImg] forState:UIControlStateHighlighted];
-    
-    [self.freeStyleButton setBackgroundImage:[UIImage imageNamed:_FreeStyleModeButtonImg] forState:UIControlStateNormal];
-    
-    [self.freeStyleButton setBackgroundImage:[UIImage imageNamed:_FreeStyleModeButtonPressedImg] forState:UIControlStateHighlighted];
-    
-    [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonImg] forState:UIControlStateNormal];
-    
-    [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonPressedImg] forState:UIControlStateHighlighted];
+//    [self.easyButton setBackgroundImage:[UIImage imageNamed:_EasyModeButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.easyButton setBackgroundImage:[UIImage imageNamed:_EasyModeButtonPressedImg] forState:UIControlStateHighlighted];
+//
+//    [self.normalButton setBackgroundImage:[UIImage imageNamed:_NormalModeButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.normalButton setBackgroundImage:[UIImage imageNamed:_NormalModeButtonPressedImg] forState:UIControlStateHighlighted];
+//    
+//    [self.hardButton setBackgroundImage:[UIImage imageNamed:_HardModeButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.hardButton setBackgroundImage:[UIImage imageNamed:_HardModeButtonPressedImg] forState:UIControlStateHighlighted];
+//    
+//    [self.freeStyleButton setBackgroundImage:[UIImage imageNamed:_FreeStyleModeButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.freeStyleButton setBackgroundImage:[UIImage imageNamed:_FreeStyleModeButtonPressedImg] forState:UIControlStateHighlighted];
+//    
+//    [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonPressedImg] forState:UIControlStateHighlighted];
     
     
     // check whether user has turned off sound
