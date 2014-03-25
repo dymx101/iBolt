@@ -153,6 +153,8 @@
     self.normalImg.image = [UIImage imageNamed:_NormalImg];
     self.hardImg.image = [UIImage imageNamed:_HardImg];
     self.freeImg.image = [UIImage imageNamed:_FreeImg];
+    
+    
     self.infoBG.image = [UIImage imageNamed:_InfoBG];
     self.infoBG.alpha = 0.7;
     

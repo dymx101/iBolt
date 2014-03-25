@@ -152,7 +152,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="headTruncation" id="L48-Em-FrK" userLabel="gameStartButton">
-                                <rect key="frame" x="57" y="200" width="207" height="46"/>
+                                <rect key="frame" x="57" y="250" width="207" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="10" height="10"/>
                                 <state key="normal" title="Start Game"/>
@@ -160,8 +160,8 @@
                                     <action selector="gameStartButtonPressed:" destination="SWO-lb-cUf" eventType="touchUpInside" id="eG5-2O-91q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="headTruncation" id="JL3-RW-Ah8" userLabel="achViewButton">
-                                <rect key="frame" x="90" y="250" width="140" height="46"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="headTruncation" id="JL3-RW-Ah8" userLabel="achViewButton">
+                                <rect key="frame" x="35" y="472" width="140" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="10" height="10"/>
                                 <state key="normal" title="Gallery"/>

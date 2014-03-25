@@ -123,6 +123,8 @@
     
     [PalAchievementBrain newAchievementUnlocked:@"" win:0 timeUsed:0 timeLeft:0 wrongsTimes:0 rightTimes:0 endWithBlackOrNot:0];
     
+    _dataButton.hidden = YES;
+    
     // I use storyboard to design UI for iphone 5
     // here are frame tweaks for iPhone 4/4S
     if (!DEVICE_IS_IPHONE5) {
