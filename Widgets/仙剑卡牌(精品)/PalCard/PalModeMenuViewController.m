@@ -180,9 +180,9 @@
 //    
 //    [self.freeStyleButton setBackgroundImage:[UIImage imageNamed:_FreeStyleModeButtonPressedImg] forState:UIControlStateHighlighted];
 //    
-//    [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonImg] forState:UIControlStateNormal];
-//    
-//    [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonPressedImg] forState:UIControlStateHighlighted];
+    [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonImg] forState:UIControlStateNormal];
+    
+    [self.returnButton setBackgroundImage:[UIImage imageNamed:_ReturnButtonPressedImg] forState:UIControlStateHighlighted];
     
     
     // check whether user has turned off sound
