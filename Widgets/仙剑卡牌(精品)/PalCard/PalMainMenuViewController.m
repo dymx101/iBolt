@@ -171,21 +171,32 @@ typedef enum {
 
 
     // set default images for the buttons
-    [self.gameStartButton setBackgroundImage:[UIImage imageNamed:_GameStartButtonImg] forState:UIControlStateNormal];
+    [self.gameStartButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.achViewButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.instructionButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.informationButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
-    [self.gameStartButton setBackgroundImage:[UIImage imageNamed:_GameStartButtonPressedImg] forState:UIControlStateHighlighted];
+    UIFont *font = [UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:30];
+    self.gameStartButton.titleLabel.font = font;
+    self.achViewButton.titleLabel.font = font;
+    self.instructionButton.titleLabel.font = font;
+    self.informationButton.titleLabel.font = font;
     
-    [self.achViewButton setBackgroundImage:[UIImage imageNamed:_AchievementButtonImg] forState:UIControlStateNormal];
-    
-    [self.achViewButton setBackgroundImage:[UIImage imageNamed:_AchievementButtonPressedImg] forState:UIControlStateHighlighted];
-    
-    [self.instructionButton setBackgroundImage:[UIImage imageNamed:_InstructionButtonImg] forState:UIControlStateNormal];
-    
-    [self.instructionButton setBackgroundImage:[UIImage imageNamed:_InstructionButtonPressedImg] forState:UIControlStateHighlighted];
-    
-    [self.informationButton setBackgroundImage:[UIImage imageNamed:_InformationButtonImg] forState:UIControlStateNormal];
-    
-    [self.informationButton setBackgroundImage:[UIImage imageNamed:_InformationButtonPressedImg] forState:UIControlStateHighlighted];
+//    [self.gameStartButton setBackgroundImage:[UIImage imageNamed:_GameStartButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.gameStartButton setBackgroundImage:[UIImage imageNamed:_GameStartButtonPressedImg] forState:UIControlStateHighlighted];
+//    
+//    [self.achViewButton setBackgroundImage:[UIImage imageNamed:_AchievementButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.achViewButton setBackgroundImage:[UIImage imageNamed:_AchievementButtonPressedImg] forState:UIControlStateHighlighted];
+//    
+//    [self.instructionButton setBackgroundImage:[UIImage imageNamed:_InstructionButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.instructionButton setBackgroundImage:[UIImage imageNamed:_InstructionButtonPressedImg] forState:UIControlStateHighlighted];
+//    
+//    [self.informationButton setBackgroundImage:[UIImage imageNamed:_InformationButtonImg] forState:UIControlStateNormal];
+//    
+//    [self.informationButton setBackgroundImage:[UIImage imageNamed:_InformationButtonPressedImg] forState:UIControlStateHighlighted];
     
     [self.bgAnimationView setup];
 }

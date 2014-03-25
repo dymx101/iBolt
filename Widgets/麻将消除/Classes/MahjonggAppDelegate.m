@@ -121,6 +121,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 -(void)createAdBanner {
     _bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    _bannerView.delegate = self;
     CGRect bannerRc = _bannerView.frame;
     bannerRc.origin.y = gameView.bounds.size.height - bannerRc.size.height;
     _bannerView.frame = bannerRc;
@@ -135,5 +136,13 @@ void uncaughtExceptionHandler(NSException *exception) {
     [_bannerView loadRequest:request];
 }
 
+
+- (void)adViewDidReceiveAd:(GADBannerView *)view {
+    
+}
+
+- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
+    
+}
 
 @end
