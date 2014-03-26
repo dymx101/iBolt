@@ -17,9 +17,10 @@
 		EA3FAAAA18E266CF00887449 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9F18E266CF00887449 /* Icon-Small.png */; };
 		EA3FAAAB18E266CF00887449 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAA018E266CF00887449 /* Icon-Small@2x.png */; };
 		EA3FAAAC18E266CF00887449 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAA118E266CF00887449 /* icon.png */; };
-		EA3FAAAD18E266CF00887449 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAA218E266CF00887449 /* icon@2x.png */; };
+		EA3FAAAD18E266CF00887449 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAA218E266CF00887449 /* icon114.png */; };
 		EA3FAAAF18E2673A00887449 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAAE18E2673A00887449 /* Icon-120.png */; };
 		EA3FAAB118E2677900887449 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAB018E2677900887449 /* Icon-80.png */; };
+		EA3FAAB318E27F4F00887449 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAB218E27F4F00887449 /* icon57.png */; };
 		EA6CA55718AA75FA0098B880 /* PalUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6CA55618AA75FA0098B880 /* PalUtil.m */; };
 		EA7557BA18A923FF00211CB3 /* button_pressed.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557AE18A923FF00211CB3 /* button_pressed.wav */; };
 		EA7557BB18A923FF00211CB3 /* los.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557AF18A923FF00211CB3 /* los.wav */; };
@@ -96,9 +97,10 @@
 		EA3FAA9F18E266CF00887449 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		EA3FAAA018E266CF00887449 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		EA3FAAA118E266CF00887449 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		EA3FAAA218E266CF00887449 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		EA3FAAA218E266CF00887449 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 		EA3FAAAE18E2673A00887449 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		EA3FAAB018E2677900887449 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
+		EA3FAAB218E27F4F00887449 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
 		EA6CA55518AA75FA0098B880 /* PalUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalUtil.h; sourceTree = "<group>"; };
 		EA6CA55618AA75FA0098B880 /* PalUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalUtil.m; sourceTree = "<group>"; };
 		EA7557AE18A923FF00211CB3 /* button_pressed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_pressed.wav; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 		F7F7000F16B7211D00876181 = {
 			isa = PBXGroup;
 			children = (
+				EA3FAAB218E27F4F00887449 /* icon57.png */,
 				EA3FAAB018E2677900887449 /* Icon-80.png */,
 				EA3FAAAE18E2673A00887449 /* Icon-120.png */,
 				EA3FAA9818E266CF00887449 /* Icon-72_1.png */,
@@ -330,7 +333,7 @@
 				EA3FAA9F18E266CF00887449 /* Icon-Small.png */,
 				EA3FAAA018E266CF00887449 /* Icon-Small@2x.png */,
 				EA3FAAA118E266CF00887449 /* icon.png */,
-				EA3FAAA218E266CF00887449 /* icon@2x.png */,
+				EA3FAAA218E266CF00887449 /* icon114.png */,
 				F7F7002416B7211D00876181 /* PalCard */,
 				F7F7001D16B7211D00876181 /* Frameworks */,
 				F7F7001B16B7211D00876181 /* Products */,
@@ -503,7 +506,7 @@
 				EA7557BB18A923FF00211CB3 /* los.wav in Resources */,
 				F7F7002916B7211D00876181 /* InfoPlist.strings in Resources */,
 				EA3FAAAA18E266CF00887449 /* Icon-Small.png in Resources */,
-				EA3FAAAD18E266CF00887449 /* icon@2x.png in Resources */,
+				EA3FAAAD18E266CF00887449 /* icon114.png in Resources */,
 				F7F7003116B7211D00876181 /* Default.png in Resources */,
 				F7F7003316B7211D00876181 /* Default@2x.png in Resources */,
 				F7F7003516B7211D00876181 /* Default-568h@2x.png in Resources */,
@@ -528,6 +531,7 @@
 				EA7557BA18A923FF00211CB3 /* button_pressed.wav in Resources */,
 				EA3FAAAF18E2673A00887449 /* Icon-120.png in Resources */,
 				EA3FAAA618E266CF00887449 /* Icon-72@2x.png in Resources */,
+				EA3FAAB318E27F4F00887449 /* icon57.png in Resources */,
 				EA3FAAB118E2677900887449 /* Icon-80.png in Resources */,
 				F77DC61016C498290002D88B /* CardsInformation.plist in Resources */,
 				F70F929216CF523D00151527 /* ASMediaFocusController.xib in Resources */,
@@ -659,7 +663,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PalCard/PalCard-Prefix.pch";
 				INFOPLIST_FILE = "PalCard/PalCard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PalCard/Admob",
@@ -680,7 +684,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PalCard/PalCard-Prefix.pch";
 				INFOPLIST_FILE = "PalCard/PalCard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PalCard/Admob",
