@@ -1,0 +1,10 @@
+PODS:
+  - SpriteKit-Helper (0.0.1)
+
+DEPENDENCIES:
+  - SpriteKit-Helper
+
+SPEC CHECKSUMS:
+  SpriteKit-Helper: c03055e8d11c6c5a38148e215e61396d5c0cca22
+
+COCOAPODS: 0.26.2
