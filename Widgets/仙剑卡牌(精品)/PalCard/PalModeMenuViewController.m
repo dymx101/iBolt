@@ -163,10 +163,11 @@
     [self.hardButton setTitle:@"Hard" forState:UIControlStateNormal];
     [self.freeStyleButton setTitle:@"Free Style" forState:UIControlStateNormal];
     
-    [self.easyButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.normalButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.hardButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.freeStyleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    UIColor *color = UIColorFromRGB(0x253529);
+    [self.easyButton setTitleColor:color forState:UIControlStateNormal];
+    [self.normalButton setTitleColor:color forState:UIControlStateNormal];
+    [self.hardButton setTitleColor:color forState:UIControlStateNormal];
+    [self.freeStyleButton setTitleColor:color forState:UIControlStateNormal];
     
     UIFont *font = [UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:30];
     self.easyButton.titleLabel.font = font;

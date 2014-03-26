@@ -48,6 +48,7 @@
     
     _mountainView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, MountainImgWidth, self.bounds.size.height)];
     self.mountainView.image = [UIImage imageNamed:MountainImg];
+    _mountainView.contentMode = UIViewContentModeScaleAspectFill;
         
     _backCloudView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CloudImgWidth, self.bounds.size.height)];
     self.backCloudView.image = [UIImage imageNamed:CloudImg_1];

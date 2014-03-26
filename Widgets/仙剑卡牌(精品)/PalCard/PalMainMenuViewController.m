@@ -185,6 +185,12 @@ typedef enum {
     [self.instructionButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.informationButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
+    UIColor *color = UIColorFromRGB(0x253529);
+    [self.gameStartButton setTitleColor:color forState:UIControlStateNormal];
+    [self.achViewButton setTitleColor:color forState:UIControlStateNormal];
+    [self.instructionButton setTitleColor:color forState:UIControlStateNormal];
+    [self.informationButton setTitleColor:color forState:UIControlStateNormal];
+    
     UIFont *font = [UIFont fontWithName:FONT_NAME_DUAN_NING_XING size:30];
     self.gameStartButton.titleLabel.font = font;
     self.achViewButton.titleLabel.font = font;
