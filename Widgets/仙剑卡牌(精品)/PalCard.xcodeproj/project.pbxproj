@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3FAAA318E266CF00887449 /* Icon-72_1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9818E266CF00887449 /* Icon-72_1.png */; };
+		EA3FAAA418E266CF00887449 /* Icon-72_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9918E266CF00887449 /* Icon-72_1@2x.png */; };
+		EA3FAAA518E266CF00887449 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9A18E266CF00887449 /* Icon-72.png */; };
+		EA3FAAA618E266CF00887449 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9B18E266CF00887449 /* Icon-72@2x.png */; };
+		EA3FAAA718E266CF00887449 /* Icon-Small_58.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9C18E266CF00887449 /* Icon-Small_58.png */; };
+		EA3FAAA818E266CF00887449 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9D18E266CF00887449 /* Icon-Small-50.png */; };
+		EA3FAAA918E266CF00887449 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9E18E266CF00887449 /* Icon-Small-50@2x.png */; };
+		EA3FAAAA18E266CF00887449 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAA9F18E266CF00887449 /* Icon-Small.png */; };
+		EA3FAAAB18E266CF00887449 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAA018E266CF00887449 /* Icon-Small@2x.png */; };
+		EA3FAAAC18E266CF00887449 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAA118E266CF00887449 /* icon.png */; };
+		EA3FAAAD18E266CF00887449 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAA218E266CF00887449 /* icon@2x.png */; };
+		EA3FAAAF18E2673A00887449 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAAE18E2673A00887449 /* Icon-120.png */; };
+		EA3FAAB118E2677900887449 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3FAAB018E2677900887449 /* Icon-80.png */; };
 		EA6CA55718AA75FA0098B880 /* PalUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6CA55618AA75FA0098B880 /* PalUtil.m */; };
 		EA7557BA18A923FF00211CB3 /* button_pressed.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557AE18A923FF00211CB3 /* button_pressed.wav */; };
 		EA7557BB18A923FF00211CB3 /* los.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA7557AF18A923FF00211CB3 /* los.wav */; };
@@ -49,8 +62,6 @@
 		F742874E16BA209B00C8B9F9 /* palsource in Resources */ = {isa = PBXBuildFile; fileRef = F742874D16BA209B00C8B9F9 /* palsource */; };
 		F742875116BA20C000C8B9F9 /* pallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F742874F16BA20C000C8B9F9 /* pallogo.png */; };
 		F742875D16BB0F9500C8B9F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F742875C16BB0F9500C8B9F9 /* AVFoundation.framework */; };
-		F77DC60C16C4601D0002D88B /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = F77DC60B16C4601D0002D88B /* icon57.png */; };
-		F77DC60E16C460210002D88B /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = F77DC60D16C460210002D88B /* icon114.png */; };
 		F77DC61016C498290002D88B /* CardsInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = F77DC60F16C498280002D88B /* CardsInformation.plist */; };
 		F794E09016FD2AA900C4FB15 /* MCSoundBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F794E08F16FD2AA900C4FB15 /* MCSoundBoard.m */; };
 		F7A3C03F16C1CAE100D42AAF /* PalInstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A3C03E16C1CAE000D42AAF /* PalInstructionViewController.m */; };
@@ -77,6 +88,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA3FAA9818E266CF00887449 /* Icon-72_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72_1.png"; sourceTree = "<group>"; };
+		EA3FAA9918E266CF00887449 /* Icon-72_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72_1@2x.png"; sourceTree = "<group>"; };
+		EA3FAA9A18E266CF00887449 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		EA3FAA9B18E266CF00887449 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		EA3FAA9C18E266CF00887449 /* Icon-Small_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small_58.png"; sourceTree = "<group>"; };
+		EA3FAA9D18E266CF00887449 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		EA3FAA9E18E266CF00887449 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		EA3FAA9F18E266CF00887449 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		EA3FAAA018E266CF00887449 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		EA3FAAA118E266CF00887449 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		EA3FAAA218E266CF00887449 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		EA3FAAAE18E2673A00887449 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		EA3FAAB018E2677900887449 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
 		EA6CA55518AA75FA0098B880 /* PalUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalUtil.h; sourceTree = "<group>"; };
 		EA6CA55618AA75FA0098B880 /* PalUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalUtil.m; sourceTree = "<group>"; };
 		EA7557AE18A923FF00211CB3 /* button_pressed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_pressed.wav; sourceTree = "<group>"; };
@@ -141,8 +165,6 @@
 		F742874D16BA209B00C8B9F9 /* palsource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = palsource; sourceTree = "<group>"; };
 		F742874F16BA20C000C8B9F9 /* pallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pallogo.png; sourceTree = "<group>"; };
 		F742875C16BB0F9500C8B9F9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		F77DC60B16C4601D0002D88B /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
-		F77DC60D16C460210002D88B /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 		F77DC60F16C498280002D88B /* CardsInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CardsInformation.plist; sourceTree = "<group>"; };
 		F794E08E16FD2AA900C4FB15 /* MCSoundBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSoundBoard.h; sourceTree = "<group>"; };
 		F794E08F16FD2AA900C4FB15 /* MCSoundBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSoundBoard.m; sourceTree = "<group>"; };
@@ -300,8 +322,19 @@
 		F7F7000F16B7211D00876181 = {
 			isa = PBXGroup;
 			children = (
-				F77DC60D16C460210002D88B /* icon114.png */,
-				F77DC60B16C4601D0002D88B /* icon57.png */,
+				EA3FAAB018E2677900887449 /* Icon-80.png */,
+				EA3FAAAE18E2673A00887449 /* Icon-120.png */,
+				EA3FAA9818E266CF00887449 /* Icon-72_1.png */,
+				EA3FAA9918E266CF00887449 /* Icon-72_1@2x.png */,
+				EA3FAA9A18E266CF00887449 /* Icon-72.png */,
+				EA3FAA9B18E266CF00887449 /* Icon-72@2x.png */,
+				EA3FAA9C18E266CF00887449 /* Icon-Small_58.png */,
+				EA3FAA9D18E266CF00887449 /* Icon-Small-50.png */,
+				EA3FAA9E18E266CF00887449 /* Icon-Small-50@2x.png */,
+				EA3FAA9F18E266CF00887449 /* Icon-Small.png */,
+				EA3FAAA018E266CF00887449 /* Icon-Small@2x.png */,
+				EA3FAAA118E266CF00887449 /* icon.png */,
+				EA3FAAA218E266CF00887449 /* icon@2x.png */,
 				F7F7002416B7211D00876181 /* PalCard */,
 				F7F7001D16B7211D00876181 /* Frameworks */,
 				F7F7001B16B7211D00876181 /* Products */,
@@ -469,33 +502,44 @@
 			files = (
 				EACFD08E18AA0C530024EECF /* 1Free in Resources */,
 				EAC7D0D918AB1F6D002F1C3A /* play05.mp3 in Resources */,
+				EA3FAAA918E266CF00887449 /* Icon-Small-50@2x.png in Resources */,
 				F71F39A716BE647A00F39979 /* 钟齐段宁行书.ttf in Resources */,
 				EA7557BE18A923FF00211CB3 /* selected.wav in Resources */,
 				EA7557BC18A923FF00211CB3 /* main_bg.mp3 in Resources */,
 				EA7557BB18A923FF00211CB3 /* los.wav in Resources */,
 				F7F7002916B7211D00876181 /* InfoPlist.strings in Resources */,
+				EA3FAAAA18E266CF00887449 /* Icon-Small.png in Resources */,
+				EA3FAAAD18E266CF00887449 /* icon@2x.png in Resources */,
 				F7F7003116B7211D00876181 /* Default.png in Resources */,
 				F7F7003316B7211D00876181 /* Default@2x.png in Resources */,
 				F7F7003516B7211D00876181 /* Default-568h@2x.png in Resources */,
 				F742874E16BA209B00C8B9F9 /* palsource in Resources */,
+				EA3FAAA518E266CF00887449 /* Icon-72.png in Resources */,
 				EAC7D0D518AB1F6D002F1C3A /* play01.mp3 in Resources */,
 				F742875116BA20C000C8B9F9 /* pallogo.png in Resources */,
 				EACFD09018AA296F0024EECF /* cardface.png in Resources */,
 				F7ED0FF116BCF9910036B782 /* UIimages in Resources */,
+				EA3FAAA318E266CF00887449 /* Icon-72_1.png in Resources */,
 				EAC7D0DA18AB1F6D002F1C3A /* play06.mp3 in Resources */,
+				EA3FAAA418E266CF00887449 /* Icon-72_1@2x.png in Resources */,
+				EA3FAAAB18E266CF00887449 /* Icon-Small@2x.png in Resources */,
 				F7ED0FF416BD11540036B782 /* palsource_black in Resources */,
 				EAC7D0DD18AB5E4E002F1C3A /* Localizable.strings in Resources */,
 				EAC7D0D618AB1F6D002F1C3A /* play02.mp3 in Resources */,
 				EA7557BF18A923FF00211CB3 /* win.wav in Resources */,
 				EAC7D0D818AB1F6D002F1C3A /* play04.mp3 in Resources */,
+				EA3FAAA818E266CF00887449 /* Icon-Small-50.png in Resources */,
 				F71F39BA16BF1F4300F39979 /* iPhoneStoryboard.storyboard in Resources */,
 				EAC7D0E318AB6DD3002F1C3A /* whatever in Resources */,
-				F77DC60C16C4601D0002D88B /* icon57.png in Resources */,
-				F77DC60E16C460210002D88B /* icon114.png in Resources */,
+				EA3FAAAC18E266CF00887449 /* icon.png in Resources */,
 				EAC7D0D718AB1F6D002F1C3A /* play03.mp3 in Resources */,
 				EA7557BA18A923FF00211CB3 /* button_pressed.wav in Resources */,
+				EA3FAAAF18E2673A00887449 /* Icon-120.png in Resources */,
+				EA3FAAA618E266CF00887449 /* Icon-72@2x.png in Resources */,
+				EA3FAAB118E2677900887449 /* Icon-80.png in Resources */,
 				F77DC61016C498290002D88B /* CardsInformation.plist in Resources */,
 				F70F929216CF523D00151527 /* ASMediaFocusController.xib in Resources */,
+				EA3FAAA718E266CF00887449 /* Icon-Small_58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +662,8 @@
 		F7F7003F16B7211D00876181 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yiming Dong (Z45HDA65GT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yiming Dong (Z45HDA65GT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PalCard/PalCard-Prefix.pch";
 				INFOPLIST_FILE = "PalCard/PalCard-Info.plist";
@@ -628,6 +674,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "61CBD242-9E8B-44F0-97DF-F38E21D82EB9";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -636,8 +683,8 @@
 		F7F7004016B7211D00876181 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: JIAQI LIU";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: YI MING DONG (K2QJU8A9HC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: YI MING DONG (K2QJU8A9HC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PalCard/PalCard-Prefix.pch";
 				INFOPLIST_FILE = "PalCard/PalCard-Info.plist";
@@ -649,8 +696,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "24BC9142-FF11-4218-B067-7C929F675506";
+				PROVISIONING_PROFILE = "0A1EA82D-9715-4238-8A6B-811804587B80";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0A1EA82D-9715-4238-8A6B-811804587B80";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
