@@ -149,20 +149,20 @@ typedef enum {
     
     // I use storyboard to design UI for iphone 5
     // here are frame tweaks for iPhone 4/4S
-    if (!DEVICE_IS_IPHONE5) {
-        
-        [self.gameStartButton setFrame:CGRectMake(22, 210, 60, 180)];
-        
-        [self.achViewButton setFrame:CGRectMake(94, 245, 60, 180)];
-        
-        [self.instructionButton setFrame:CGRectMake(169, 210, 60, 180)];
-        
-        [self.informationButton setFrame:CGRectMake(242, 245, 60, 180)];
-        
-        [self.soundSwitch setFrame:CGRectMake(260, 430, 30, 30)];
-        
-        [self.bgAnimationView setFrame:CGRectMake(0, 0, 320, 480)];
-    }
+//    if (!DEVICE_IS_IPHONE5) {
+//        
+//        [self.gameStartButton setFrame:CGRectMake(22, 210, 60, 180)];
+//        
+//        [self.achViewButton setFrame:CGRectMake(94, 245, 60, 180)];
+//        
+//        [self.instructionButton setFrame:CGRectMake(169, 210, 60, 180)];
+//        
+//        [self.informationButton setFrame:CGRectMake(242, 245, 60, 180)];
+//        
+//        [self.soundSwitch setFrame:CGRectMake(260, 430, 30, 30)];
+//        
+//        [self.bgAnimationView setFrame:CGRectMake(0, 0, 320, 480)];
+//    }
     
     self.logoPic.image = [UIImage imageNamed:_LOGOPIC];
     

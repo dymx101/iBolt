@@ -100,12 +100,14 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
     
-    GADBannerView *banner = SharedDelegate.bannerView;
-    CGRect bannerRc = banner.frame;
-    bannerRc.origin.y = self.view.frame.size.height - bannerRc.size.height;
-    banner.frame = bannerRc;
-    
-    [self.view addSubview:banner];
+    if (DEVICE_IS_IPHONE5) {
+        GADBannerView *banner = SharedDelegate.bannerView;
+        CGRect bannerRc = banner.frame;
+        bannerRc.origin.y = self.view.frame.size.height - bannerRc.size.height;
+        banner.frame = bannerRc;
+        
+        [self.view addSubview:banner];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

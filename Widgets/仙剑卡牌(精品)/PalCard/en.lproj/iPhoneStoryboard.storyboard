@@ -144,14 +144,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" id="Qsw-yD-Uiw" userLabel="soundOnOff">
-                                <rect key="frame" x="259" y="438" width="35" height="35"/>
+                                <rect key="frame" x="260" y="361" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="q3f-bD-0mg" appends="YES" id="OZQ-sH-ZQl"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="headTruncation" id="L48-Em-FrK" userLabel="gameStartButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="headTruncation" id="L48-Em-FrK" userLabel="gameStartButton">
                                 <rect key="frame" x="57" y="250" width="207" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="10" height="10"/>
@@ -169,7 +169,7 @@
                                     <action selector="achievementButtonPressed:" destination="SWO-lb-cUf" eventType="touchUpInside" id="zbJ-gh-ZCN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="headTruncation" id="Pkp-kK-rKN" userLabel="instructionViewButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="headTruncation" id="Pkp-kK-rKN" userLabel="instructionViewButton">
                                 <rect key="frame" x="72" y="300" width="176" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="10" height="10"/>
@@ -178,7 +178,7 @@
                                     <action selector="instructionButtonPressed:" destination="SWO-lb-cUf" eventType="touchUpInside" id="5xb-e9-nNo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="G3F-by-pXG" userLabel="infoViewButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="G3F-by-pXG" userLabel="infoViewButton">
                                 <rect key="frame" x="88" y="350" width="144" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="10" height="10"/>
@@ -410,7 +410,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hJL-YD-g4u" userLabel="ReturnButton">
-                                <rect key="frame" x="250" y="446" width="50" height="45"/>
+                                <rect key="frame" x="223" y="323" width="50" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>

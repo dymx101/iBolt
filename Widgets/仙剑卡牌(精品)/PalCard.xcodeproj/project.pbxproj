@@ -59,7 +59,6 @@
 		F71F399F16BE5E3600F39979 /* PalAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71F399E16BE5E3600F39979 /* PalAchievementViewController.m */; };
 		F71F39A716BE647A00F39979 /* 钟齐段宁行书.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F71F39A616BE646A00F39979 /* 钟齐段宁行书.ttf */; };
 		F71F39BA16BF1F4300F39979 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F39B816BF1F4300F39979 /* iPhoneStoryboard.storyboard */; };
-		F742874E16BA209B00C8B9F9 /* palsource in Resources */ = {isa = PBXBuildFile; fileRef = F742874D16BA209B00C8B9F9 /* palsource */; };
 		F742875116BA20C000C8B9F9 /* pallogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F742874F16BA20C000C8B9F9 /* pallogo.png */; };
 		F742875D16BB0F9500C8B9F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F742875C16BB0F9500C8B9F9 /* AVFoundation.framework */; };
 		F77DC61016C498290002D88B /* CardsInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = F77DC60F16C498280002D88B /* CardsInformation.plist */; };
@@ -70,7 +69,6 @@
 		F7ED0FCA16BB67DE0036B782 /* PalMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7ED0FC916BB67DE0036B782 /* PalMainMenuViewController.m */; };
 		F7ED0FE416BC96C60036B782 /* PalModeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7ED0FE316BC96C60036B782 /* PalModeMenuViewController.m */; };
 		F7ED0FF116BCF9910036B782 /* UIimages in Resources */ = {isa = PBXBuildFile; fileRef = F7ED0FF016BCF9910036B782 /* UIimages */; };
-		F7ED0FF416BD11540036B782 /* palsource_black in Resources */ = {isa = PBXBuildFile; fileRef = F7ED0FF316BD11540036B782 /* palsource_black */; };
 		F7F7001F16B7211D00876181 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7001E16B7211D00876181 /* UIKit.framework */; };
 		F7F7002116B7211D00876181 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7002016B7211D00876181 /* Foundation.framework */; };
 		F7F7002316B7211D00876181 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7002216B7211D00876181 /* CoreGraphics.framework */; };
@@ -162,7 +160,6 @@
 		F71F399E16BE5E3600F39979 /* PalAchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PalAchievementViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F71F39A616BE646A00F39979 /* 钟齐段宁行书.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "钟齐段宁行书.ttf"; sourceTree = "<group>"; };
 		F71F39B916BF1F4300F39979 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = PalCard/en.lproj/iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
-		F742874D16BA209B00C8B9F9 /* palsource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = palsource; sourceTree = "<group>"; };
 		F742874F16BA20C000C8B9F9 /* pallogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pallogo.png; sourceTree = "<group>"; };
 		F742875C16BB0F9500C8B9F9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F77DC60F16C498280002D88B /* CardsInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CardsInformation.plist; sourceTree = "<group>"; };
@@ -178,7 +175,6 @@
 		F7ED0FE216BC96C60036B782 /* PalModeMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalModeMenuViewController.h; sourceTree = "<group>"; };
 		F7ED0FE316BC96C60036B782 /* PalModeMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalModeMenuViewController.m; sourceTree = "<group>"; };
 		F7ED0FF016BCF9910036B782 /* UIimages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIimages; sourceTree = "<group>"; };
-		F7ED0FF316BD11540036B782 /* palsource_black */ = {isa = PBXFileReference; lastKnownFileType = folder; path = palsource_black; sourceTree = "<group>"; };
 		F7F7001A16B7211D00876181 /* PalCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F7001E16B7211D00876181 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7F7002016B7211D00876181 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -412,8 +408,6 @@
 				EACFD08D18AA0C530024EECF /* 1Free */,
 				EA7557AD18A923FF00211CB3 /* Sounds */,
 				F7ED0FF016BCF9910036B782 /* UIimages */,
-				F7ED0FF316BD11540036B782 /* palsource_black */,
-				F742874D16BA209B00C8B9F9 /* palsource */,
 				F7F7002616B7211D00876181 /* PalCard-Info.plist */,
 				F7F7002716B7211D00876181 /* InfoPlist.strings */,
 				F7F7002A16B7211D00876181 /* main.m */,
@@ -513,7 +507,6 @@
 				F7F7003116B7211D00876181 /* Default.png in Resources */,
 				F7F7003316B7211D00876181 /* Default@2x.png in Resources */,
 				F7F7003516B7211D00876181 /* Default-568h@2x.png in Resources */,
-				F742874E16BA209B00C8B9F9 /* palsource in Resources */,
 				EA3FAAA518E266CF00887449 /* Icon-72.png in Resources */,
 				EAC7D0D518AB1F6D002F1C3A /* play01.mp3 in Resources */,
 				F742875116BA20C000C8B9F9 /* pallogo.png in Resources */,
@@ -523,7 +516,6 @@
 				EAC7D0DA18AB1F6D002F1C3A /* play06.mp3 in Resources */,
 				EA3FAAA418E266CF00887449 /* Icon-72_1@2x.png in Resources */,
 				EA3FAAAB18E266CF00887449 /* Icon-Small@2x.png in Resources */,
-				F7ED0FF416BD11540036B782 /* palsource_black in Resources */,
 				EAC7D0DD18AB5E4E002F1C3A /* Localizable.strings in Resources */,
 				EAC7D0D618AB1F6D002F1C3A /* play02.mp3 in Resources */,
 				EA7557BF18A923FF00211CB3 /* win.wav in Resources */,
@@ -674,7 +666,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "61CBD242-9E8B-44F0-97DF-F38E21D82EB9";
+				PROVISIONING_PROFILE = "EEE671E0-EF71-4467-BA2F-91F64933544A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -696,8 +688,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0A1EA82D-9715-4238-8A6B-811804587B80";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0A1EA82D-9715-4238-8A6B-811804587B80";
+				PROVISIONING_PROFILE = "D447E68F-9C07-43F9-AB64-3EE887F1844E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D447E68F-9C07-43F9-AB64-3EE887F1844E";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

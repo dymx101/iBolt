@@ -135,24 +135,24 @@
     
     // I use storyboard to design UI for iphone 5
     // here are frame tweaks for iPhone 4/4S
-    if (!DEVICE_IS_IPHONE5) {
-        
-        [self.difChoice setFrame:CGRectMake(40, 0, 240, 128)];
-        
-        [self.easyButton setFrame:CGRectMake(95, 120, 130, 65)];
-        
-        [self.normalButton setFrame:CGRectMake(95, 200, 130, 65)];
-        
-        [self.hardButton setFrame:CGRectMake(95, 280, 130, 65)];
-        
-        [self.freeStyleButton setFrame:CGRectMake(95, 360, 130, 65)];
-        
-        [self.returnButton setFrame:CGRectMake(250, 425, 50, 45)];
-        
-        [self.bgAnimationView setFrame:CGRectMake(0, 0, 320, 480)];
-        
-
-    }
+//    if (!DEVICE_IS_IPHONE5) {
+//        
+//        [self.difChoice setFrame:CGRectMake(40, 0, 240, 128)];
+//        
+//        [self.easyButton setFrame:CGRectMake(95, 120, 130, 65)];
+//        
+//        [self.normalButton setFrame:CGRectMake(95, 200, 130, 65)];
+//        
+//        [self.hardButton setFrame:CGRectMake(95, 280, 130, 65)];
+//        
+//        [self.freeStyleButton setFrame:CGRectMake(95, 360, 130, 65)];
+//        
+//        [self.returnButton setFrame:CGRectMake(250, 425, 50, 45)];
+//        
+//        [self.bgAnimationView setFrame:CGRectMake(0, 0, 320, 480)];
+//        
+//
+//    }
     
     
     // set default images
